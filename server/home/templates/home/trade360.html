@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block extra_css %}
+    {% image self.hero_image original format-webp as hero_img %}
+    <link rel="stylesheet" href="{% static 'css/trade360.css' %}">
+    <style>
+        
+    </style>
+{% endblock %}
+{% include "home/tagmanager_head.html" %}
+{% block content %}
+    <div class="main-wrapper">
+        <div class="wrapper">
+            <div class="form-wrapper">
+                <div class="form-title">
+                    {{ self.form_title }}
+                </div>
+                <form class="ui form" method="post">
+                    {% csrf_token %}
+                    
+                    <div class="field">
+                        <input type="text" name="firstName" placeholder="{{ self.firstName_placeholder }}" />
+                    </div>
+                    <div class="field">
+                        <input type="text" name="lastName" placeholder="{{ self.lastName_placeholder }}" />
+                    </div>
+                    <div class="field">
+                        <input type="email" name="email" placeholder="{{ self.email_placeholder }}" />
+                    </div>
+                    <div class="field">
+                        <input type="password" name="password" placeholder="{{ self.password_placeholder }}" />
+                    </div>
+                    <div class="field">
+                        <input type="text" name="phone" placeholder="{{ self.phone_placeholder }}" />
+                    </div>
+                    <button class="ui fluid orange big button custom-btn">{{ self.submit_button_text }}</button>
+                </form>
+            </div>
+
+            <div class="top-right-head">
+                {% for block in self.body %}
+                    {% if block.block_type == "trade360_head_right" %}
+                        {% include_block block %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="three-column-block">
+            {% for block in self.body %}
+                {% if block.block_type == "trade360_three_column_block" %}
+                    {% include_block block %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+{% endblock %}

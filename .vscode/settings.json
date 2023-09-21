@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "env/bin/python3.9",
+    "html-fmt-vscode.indentSize": 2,
+    "html-fmt-vscode.multilineAttributeThreshold": 2,
+    "editor.defaultFormatter": "batisteo.vscode-django",
+    "editor.formatOnSave": true,
+    "nuxt.isNuxtApp": false
+}

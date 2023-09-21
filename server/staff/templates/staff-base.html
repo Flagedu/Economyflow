@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+	<link rel="icon" href="{% static 'home/img/R_favicon.svg' %}" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <style>
+        .container{
+            min-width: 100%;
+        }
+
+        .container > .row {
+            margin: 0;
+        }
+
+
+        .container > .row > .col {
+            padding: 0;
+        }
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Changa';
+        }
+
+        .side_menu_a_link_color{
+            color: white;
+            font-size: 14px;
+        }
+
+        .side_menu_a_link_color:hover{
+            color: grey;
+        }
+
+        .left_menu_color_dashboard{
+            color: white;
+        }
+
+        .left_menu_color_dashboard:hover{
+            color: grey;
+        }
+
+        .left_menu_active_color{
+            color: grey;
+            font-size: 14px;
+        }
+
+        .left_menu_active_color_dashboard{
+            color: grey;
+        }
+
+        .left_menu_active_color_dashboard:hover{
+            color: white;
+        }
+
+        .left_menu_active_color:hover{
+            color: white;
+        }
+
+        .footer_bottom_link_text a:hover{
+            text-decoration: underline;
+        }
+    </style>
+
+    {% block style %}
+    {% endblock %}
+</head>
+
+<body>
+    <!--nav-->
+    <div class="ui stackable grid">
+        <div class="sixteen wide column" style="background: #333; padding: 10px;">
+            <div class="ui secondary menu" style="margin-top: 15px;">
+                <a href="/staff/" class="active item" style="color: white; font-size: 24px; font-weight: bold;">
+                    ECONOMYFLOW ADMIN
+                </a>
+                
+                <div class="right menu">
+                    <a href="#" class="item" style="color: white;">
+                        Welcome, {{ request.user | title }}
+                    </a>
+                    <a href="{% url 'staff:logout' %}" class="ui item" style="color: white;">
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end nav-->
+
+    <!--body-->
+    {% block modal %}
+
+    {% endblock %}
+    <div class="ui stackable grid" style="">
+        <div class="two column row" style="padding-top: 0px;">
+
+            <div class="three wide column tablet or lower hidden" style="height: 100%; background: rgba(0, 0, 0, 0.91); margin: 0px; padding: 0px; margin-bottom: 50px;">
+                <div class="ui big list" style="color: white; margin-top: 30px; margin-bottom: 30px; background-color: #333; padding: 30px;">
+                    <div class="item" style="">
+                        {% if active_menu == "dashboard" %}
+                            <i style="font-weight: bold;" class="chart area icon left_menu_active_color_dashboard"></i>
+
+                            <a href="/staff/" class="content left_menu_active_color_dashboard" style="">
+                                <b>Dashboard</b>
+                            </a>
+                        {% else %}
+                            <i style="font-weight: bold;" class="chart area icon left_menu_color_dashboard"></i>
+
+                            <a href="/staff/" class="content left_menu_color_dashboard" style="">
+                                <b>Dashboard</b>
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="ui inverted stackable segment" style="background-color: #333; margin-bottom: 0px; border-radius: 0px; padding: 30px;">                    
+                    {% for menu in menus %}
+                        <div class="ui inverted accordion" style="margin-top: 20px;">
+                            {% if menu.label == activate_submenu_for %}
+                                <div class="active title">
+                            {% else %}
+                                <div class="title">
+                            {% endif %}
+                                <i style="font-weight: bold;" class="dropdown icon"></i>
+                                <b style="font-size: 18px;">{{ menu.value }}</b>
+                            </div>
+
+                            {% if menu.label == activate_submenu_for %}
+                                <div class="active content">
+                            {% else %}
+                                <div class="content">
+                            {% endif %}
+                                <div class="ui list" style="color: white; background-color: #333; padding: 10px;">
+                                    {% for submenu in menu.submenu %}
+                                        {% if submenu.label == active_menu %}
+                                            <div class="item" style="margin-top: 10px;">
+                                                <i class="{{ submenu.icon }} icon left_menu_active_color"></i>
+
+                                                <a href="{{ submenu.link }}" class="content left_menu_active_color" style="">
+                                                    {{ submenu.value }}
+                                                </a>
+                                            </div>
+                                        {% else %}
+                                            <div class="item" style="margin-top: 10px;">
+                                                <i class="{{ submenu.icon }} icon side_menu_a_link_color"></i>
+
+                                                <a href="{{ submenu.link }}" class="content side_menu_a_link_color" style="">
+                                                    {{ submenu.value }}
+                                                </a>
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!--main content body-->
+            <div class="thirteen wide column" style="height: 100%; background-color: #ebedf2; padding: 10px; margin: 0px;">
+                {% block body %}
+                {% endblock %}
+            </div>
+            <!--end main content body-->
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="ui stackable grid" style="padding: 0px; margin: 0px;">
+        <div class="column" style="min-height: 300px; background: rgba(0, 0, 0, 0.91);">
+            <div class="ui stackable grid" style="padding: 30px; margin-top: 10px;">
+                <div class="ten wide centered column" style="">
+                    <h2 style="color: white;">ECONOMYFLOW</h2>
+
+                    <div class="ui list" style="margin-top: 30px;">
+                        <a class="item" style="margin-top: 20px;">
+                            <i style="color: white;" class="phone icon"></i>
+
+                            <div class="content">
+                                <div style="color: white;" class="description">01974265888</div>
+                            </div>
+                        </a>
+
+                        <a class="item" style="margin-top: 5px;">
+                            <i style="color: white;" class="envelope icon"></i>
+
+                            <div class="content">
+                                <div style="color: white;" class="description">contact@economyflow.com</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <p style="margin: 0px; margin-top: 20px;">
+                        <span style="color: grey;">Powered by </span> <span style="color: white;"> economyflow.com</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end footer-->
+
+    <!--end body-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js"></script>
+    <script src="{% static 'script/pagination.js'%}"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <script>
+        {% comment %} $('.ui.dropdown').dropdown(); {% endcomment %}
+    </script>
+
+    <script>
+        $('.ui.accordion').accordion();
+    </script>
+
+    {% block script %}
+    {% endblock %}
+</body>
+</html>

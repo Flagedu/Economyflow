@@ -1,0 +1,24 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% for block in self.columns %}
+    {% image block.logo original format-webp as logo_img %}
+    <div class="single-column">
+        <div class="img-container">
+            <img height="70" width="70" src="{{ logo_img.url }}">
+        </div>
+        <div class="column-body">
+            <div class="red-title">{{ block.title }}</div>
+            <div class="red-subtitle">{{ block.subtitle }}</div>
+        </div>
+    </div>
+{% endfor %}
+
+
+{% comment %} <div class="img-container">
+                <img height="70" width="70" src="{{ logo_img.url }}">
+            </div>
+            <div class="column-body">
+                <div class="red-title">{{ block.title }}</div>
+                <div class="red-subtitle">{{ block.subtitle }}</div>
+            </div>
+        </div> {% endcomment %}

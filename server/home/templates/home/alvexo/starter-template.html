@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from lps.alvexo.ae/finance/discover-the-best-performing-assets by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Jun 2021 20:20:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    {% include "home/tagmanager_head.html" %}
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>اكتشف أفضل الأسهم العالمية للاستثمار  </title>
+        <meta name="csrfToken" content="901187d19ce061f39c193bd5c70310f388e56e25a9aa9eeac16d45520913ecc2>">
+        <meta http-equiv="Cache-control" content="public">
+        {% comment %} <link rel="preconnect" href="https://img06.en25.com/">
+        <link rel="preconnect" href="https://a.quora.com/">
+        <link rel="preconnect" href="https://static.ads-twitter.com/">
+        <link rel="preconnect" href="https://www.google-analytics.com/">
+        <link rel="preconnect" href="https://www.googleadservices.com/">
+        <link rel="preconnect" href="https://script.crazyegg.com/">
+        <link rel="preconnect" href="https://sjs.bizographics.com/">
+        <link rel="preconnect" href="https://www.googletagmanager.com/"> {% endcomment %}
+        <link rel="shortcut icon" href="https://lps.alvexo.ae/general_images/favicon.ico" type="image/x-icon">
+
+        <!-- css -->
+        <link rel="stylesheet" href="https://lps.alvexo.ae/css/bootstrap/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://lps.alvexo.ae/css/bootstrap/bootstrap-rtl.min.css">
+        
+        <link rel="stylesheet" href="https://lps.alvexo.ae/css/swiper/swiper.min.css">
+        <link rel="stylesheet" href="https://lps.alvexo.ae/css/animate/animate.min.css">
+        <link rel="stylesheet" href="https://lps.alvexo.ae/css/select2/select2.min.css">
+
+        <link rel="stylesheet" href="https://lps.alvexo.ae/css/general.min.css?ver=0.2.94">
+        <link rel="stylesheet" href="https://lps.alvexo.ae/css/components.min.css?ver=0.2.94">
+        <link rel="stylesheet" href="https://lps.alvexo.ae/css/form.min.css?ver=0.2.94">
+        <!-- /css -->
+
+        <style>
+            .swal-text{
+                font-size: 20px;
+                font-weight: 700;
+            }
+        </style>
+
+        
+<link href="https://lps.alvexo.ae/custom_css/finance/general/discover_the_best_performing_assets_ar.css?ver=0.2.94" rel="stylesheet"/>
+
+        <script>
+            var dataLayer = [];
+        </script>
+                    
+            </head>
+
+    <body class="rtl">
+        
+                
+                <!-- loader-->
+        <div class="loader_container">
+    <img src="https://lps.alvexo.ae/general_images/loader.gif" alt="loader">
+</div>        <!-- /loader-->
+
+        <!-- my page-->
+        <section class="top">
+    <img class="logo" src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/logo_alvexo.svg">
+    <div class="container">
+        <h1>تداول <span class="typed-text"></span><span class="cursor">&nbsp;</span>مع
+            <br>            0%* عمولة</h1>
+        <h3>تعرف على أفضل الأصول أداءً الآن</h3>
+        <div class="form_section_desktop">
+            <div class="form_section">
+                <div class="form_wrapper">
+                    <h2> سجل مجانًا <span>الآن</span></h2>
+                    <form method="post" autocomplete="off">
+                        {% csrf_token %}
+                        <p class="server_error_msg"></p>
+
+<!-- full name -->
+<div class="input-wrapper">
+    <div class="form-group">
+        <input class="input form-control fullName" type="text" name="fullName" placeholder="الاسم الشخصي" title="الاسم الشخصي" maxlength="30" pattern="[^0-9!,#$%^&*()]{3,100}" required />
+        <label class="form-control-placeholder">الاسم الشخصي</label>
+        <p class="invalid_message"></p>
+    </div>
+</div>
+<!-- /full name -->
+
+<!-- email -->
+<div class="input-wrapper">
+    <div class="form-group">
+        <input class="input form-control email" type="email" name="email" placeholder="البريد الالكتروني" title="البريد الالكتروني" maxlength="100" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+        <label class="form-control-placeholder">البريد الالكتروني</label>
+        <span class="mail_spinner" style="display: none;"></span>        <p class="invalid_message"></p>
+    </div>
+</div>
+<!-- /email -->
+
+<input type="hidden" class="countryId" name="countryID" />
+<input type="hidden" class="clientIp" name="clientIP" />
+
+<!-- phone number -->
+<div class="input-wrapper">
+    <div class="input phone-container">
+        <div class="country_code_container">
+            <span class="plus">+</span>
+            <input class="phoneCountryCode" name="PhoneCountryCode" type="tel" maxlength="4" pattern="[0-9]{1,3}" required />
+        </div>
+        <div class="phone_number_container form-group">
+            <input class="form-control phoneNumber" name="telephone" type="tel" placeholder="الهاتف" maxlength="14" pattern="[0-9]{6,14}" required>
+            <label class="form-control-placeholder">الهاتف</label>
+        </div>
+    </div>
+    <p class="invalid_message"></p>
+</div>
+<!-- /phone number -->
+
+<!-- checkbox -->
+<div class="checkbox_wrapper">
+    <div class="checkbox">
+        <input type="checkbox" name="checkbox" checked value="" required>
+        <label></label>
+    </div>
+    <p class="checkbox_txt">
+                انا أوافق ان <a
+href="https://www.alvexo.ae/documents/hsn/footer/privacy_policy.pdf" target="_blank">سياسة الخصوصية‎</a>
+ يتم التواصل معي من قبل ألفكسو وان اتلقى مواد تسويقية عبر البريد الإلكتروني أو الرسائل النصية القصيرة أو الاتصالات الهاتفية            </p>
+    <div class="clear"></div>
+</div>
+<!-- /checkbox -->                        <!-- submit button -->
+                        <div class="btn-form">
+                            <div class="button_wrapper">
+                                <button class="btn btn-f" type="submit">افتح حساب!</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <span class="risk">رأس مالك في خطر</span>
+                    <div class="reg_flags_wrap">
+                        <div class="country"><div class="country_img"><img alt="" src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/1920/form_section/Seychelles.svg"></div><p>مرخصة من قبل FSA رخصة رقم SD030</p></div>
+                    </div>
+                </div>
+                <div class="trustpilot-container">
+                    <div class="row-one">
+                        <p>"تقييم الشركة"</p>
+                        <img src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/1920/Trustpilot_4star.svg" alt="">
+                    </div>
+                    <div class="row-two">
+                        <p>تعليق في</p>
+                        <img src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/1920/trustpilot-logo-white.svg?" alt=""> **
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <div class="container">
+            <h2 class="blue_color">من نحن؟</h2>
+            <p>ألفكسو، وسيط مالي مُؤسس يتميز بتركيزه على التعليم والخدمات.</p>
+            <p> نهجنا يجمع بين شقين يقومان على الابتكار التكنولوجي والمنصة المتطورة لتقديم ما يحتاجه<br>                المتداولون لبناء نجاحهم في السوق على المدى الطويل.</p>
+        </div>
+    </div>
+</section>
+
+<section class="instruments_section">
+    <div class="container">
+        <h2><span class="blue_color">الأسهم</span>  الأكثر شعبية </h2>
+        <div class="instruments">
+            <div class="strip">
+                <div class="wrap1">
+                    <div>
+                        <div class="img"><img src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/1920/stocks/Tesla.svg" alt=""></div>
+                        <div class="instrument_name">
+                            <div class="instrument_name_top">
+                                <div class="instrument_name_short">تيسلا</div>
+                                <div class="mobile_group">
+                                    <div class="precent red_color">-14%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap2">
+                    <div class="btnWrap">
+                        <div class="btn scroll-to-element">تداول الآن</div>
+                    </div>
+                </div>
+                <div class="wrap3">
+                    <div class="progressbar-line">
+                        <div class="title">
+                            <span class="sellers"> 58% البائعين</span>
+                            <span class="buyers"> 42% المشترين</span>
+                        </div>
+                        <div class="progressbar">
+                            <div class="fill" style="width: 42%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="strip">
+                <div class="wrap1">
+                    <div>
+                        <div class="img"><img src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/1920/stocks/facebook-2.svg" alt=""></div>
+                        <div class="instrument_name">
+                            <div class="instrument_name_top">
+                                <div class="instrument_name_short">فيسبوك</div>
+                                <div class="mobile_group">
+                                    <div class="precent green_color">+20.1%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap2">
+                    <div class="btnWrap">
+                        <div class="btn scroll-to-element">تداول الآن</div>
+                    </div>
+                </div>
+                <div class="wrap3">
+                    <div class="progressbar-line">
+                        <div class="title">
+                            <span class="sellers"> 68% البائعين</span>
+                            <span class="buyers"> 32% المشترين</span>
+                        </div>
+                        <div class="progressbar">
+                            <div class="fill" style="width: 32%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="strip">
+                <div class="wrap1">
+                    <div>
+                        <div class="img"><img src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/1920/stocks/apple.svg" alt=""></div>
+                        <div class="instrument_name">
+                            <div class="instrument_name_top">
+                                <div class="instrument_name_short">أبل</div>
+                                <div class="mobile_group">
+                                    <div class="precent green_color">+4.2%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap2">
+                    <div class="btnWrap">
+                        <div class="btn scroll-to-element">تداول الآن</div>
+                    </div>
+                </div>
+                <div class="wrap3">
+                    <div class="progressbar-line">
+                        <div class="title">
+                            <span class="sellers"> 23% البائعين</span>
+                            <span class="buyers"> 77% المشترين</span>
+                        </div>
+                        <div class="progressbar">
+                            <div class="fill" style="width: 77%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="strip">
+                <div class="wrap1">
+                    <div>
+                        <div class="img"><img src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/1920/stocks/Google__G__Logo.png" alt=""></div>
+                        <div class="instrument_name">
+                            <div class="instrument_name_top">
+                                <div class="instrument_name_short">جوجل</div>
+                                <div class="mobile_group">
+                                    <div class="precent green_color">+16.4%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap2">
+                    <div class="btnWrap">
+                        <div class="btn scroll-to-element">تداول الآن</div>
+                    </div>
+                </div>
+                <div class="wrap3">
+                    <div class="progressbar-line">
+                        <div class="title">
+                            <span class="sellers"> 45% البائعين</span>
+                            <span class="buyers"> 55% المشترين</span>
+                        </div>
+                        <div class="progressbar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="strip">
+                <div class="wrap1">
+                    <div>
+                        <div class="img"><img src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/1920/stocks/netflix.svg" alt=""></div>
+                        <div class="instrument_name">
+                            <div class="instrument_name_top">
+                                <div class="instrument_name_short">نتفليكس</div>
+                                <div class="mobile_group">
+                                    <div class="precent red_color">-5.5%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap2">
+                    <div class="btnWrap">
+                        <div class="btn scroll-to-element">تداول الآن</div>
+                    </div>
+                </div>
+                <div class="wrap3">
+                    <div class="progressbar-line">
+                        <div class="title">
+                            <span class="sellers"> 36% البائعين</span>
+                            <span class="buyers"> 64% المشترين</span>
+                        </div>
+                        <div class="progressbar">
+                            <div class="fill" style="width: 64%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="data-p"> البيانات الصادرة بين تاريخ 16/03/21 و 16/06/202*</p>
+    </div>
+</section>
+
+<section class="alvexo_plus_section" data-wow-offset="10">
+    <div class="container">
+        <div class="headline">
+            <svg xmlns="http://www.w3.org/2000/svg" class="alvexoPlusLogo" width="216.557" height="61.289" viewBox="0 0 216.557 61.289"><defs><style>.alvexoPlusLogo .a{fill:#424242;}.alvexoPlusLogo .b{fill:#87b62a;}.alvexoPlusLogo .c{fill:#8ac33f;}</style></defs><g transform="translate(-124 -631)"><g transform="translate(124 631)"><g transform="translate(0 0)"><path class="a" d="M407.6,142.979q-3.509,5.148-10.471,5.149a13.259,13.259,0,0,1-10.3-4.388,16.777,16.777,0,0,1,0-21.414,13.6,13.6,0,0,1,10.589-4.388,11.608,11.608,0,0,1,10.179,5.208v-4.739h4.388V147.66H407.6Zm-9.888,1.169a9.262,9.262,0,0,0,7.49-3.275,12.991,12.991,0,0,0,0-15.68,9.262,9.262,0,0,0-7.49-3.275,9.711,9.711,0,0,0-7.6,3.275,12.548,12.548,0,0,0,0,15.68A9.711,9.711,0,0,0,397.715,144.148Z" transform="translate(-382.973 -94.021)"></path><path class="b" d="M425.6,147.574h-6.137V107.342H425.6Z" transform="translate(-383.488 -93.871)"></path><path class="a" d="M460.137,118.414l-11.408,29.252h-5.148l-11.468-29.252h4.8l9.243,24.571,9.186-24.571Z" transform="translate(-383.666 -94.028)"></path><path class="a" d="M477.357,144.148q5.908,0,8.482-4.914h4.8a14.119,14.119,0,0,1-4.826,6.435,13.9,13.9,0,0,1-8.513,2.459,14.154,14.154,0,0,1-10.765-4.388,14.975,14.975,0,0,1-4.036-10.707,15.232,15.232,0,0,1,3.862-10.707,15.112,15.112,0,0,1,21.3,0,15.232,15.232,0,0,1,3.861,10.707v1.755H467a10.611,10.611,0,0,0,3.218,6.67A9.9,9.9,0,0,0,477.357,144.148Zm-.35-22.23a9.687,9.687,0,0,0-6.788,2.514,10.4,10.4,0,0,0-3.16,6.262h19.892a10.4,10.4,0,0,0-3.159-6.262A9.691,9.691,0,0,0,477.007,121.918Z" transform="translate(-384.095 -94.021)"></path><path class="a" d="M509.142,132.571l11.35,15.095h-5.618l-8.248-11.935-8.307,11.935H492.76l11.292-15.095-10.591-14.157h5.617l7.547,11.057,7.488-11.057h5.618Z" transform="translate(-384.522 -94.028)"></path><path class="a" d="M536.346,117.938A13.9,13.9,0,0,1,547,122.326a16.78,16.78,0,0,1,0,21.414,15.114,15.114,0,0,1-21.3,0,16.779,16.779,0,0,1,0-21.414A13.9,13.9,0,0,1,536.346,117.938Zm0,26.21a9.257,9.257,0,0,0,7.488-3.275,12.983,12.983,0,0,0,0-15.68,10.2,10.2,0,0,0-14.977,0,12.995,12.995,0,0,0,0,15.68A9.259,9.259,0,0,0,536.346,144.148Z" transform="translate(-384.932 -94.021)"></path><g transform="translate(38.483 0)"><line class="b" y1="61.289" transform="translate(0.566 0)"></line><rect class="b" width="1.131" height="61.289"></rect></g></g><g transform="translate(170.889 23.918)"><path class="a" d="M524.386,654.751,513.437,643.8a3.861,3.861,0,0,0-5.459,0l-10.95,10.95a3.861,3.861,0,0,0,0,5.459l10.95,10.949a3.859,3.859,0,0,0,5.459,0l10.949-10.949A3.859,3.859,0,0,0,524.386,654.751Zm-5.7,4.835h-6.207l-1.028,6.223h-4.224l1.029-6.223h-6.228l.706-4.212h6.218l1.028-6.223H514.2l-1.029,6.223h6.217Z" transform="translate(-479.849 -642.671)"></path><path class="c" d="M492.549,660.21a3.86,3.86,0,0,1,0-5.459L503.5,643.8a3.929,3.929,0,0,1,.648-.52,3.861,3.861,0,0,0-4.81.52l-10.949,10.95a3.859,3.859,0,0,0,0,5.459l10.949,10.949a3.86,3.86,0,0,0,4.81.521,3.863,3.863,0,0,1-.648-.521Z" transform="translate(-479.518 -642.671)"></path><path class="a" d="M484.581,660.21a3.859,3.859,0,0,1,0-5.459l10.949-10.95a3.929,3.929,0,0,1,.648-.52,3.86,3.86,0,0,0-4.809.52l-10.95,10.95a3.861,3.861,0,0,0,0,5.459l10.95,10.949a3.858,3.858,0,0,0,4.809.521,3.864,3.864,0,0,1-.648-.521Z" transform="translate(-479.29 -642.671)"></path></g></g></g></svg>
+            <p>عزز معرفتك المالية ومهاراتك الاستثمارية وخبراتك في السوق من خلال مجموعتنا الهائلة من خدمات التداول</p>
+        </div>
+        <ul class="tabs">
+            <li class="signals active">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.855" height="44.34" viewBox="0 0 47.855 44.34"><defs><clipPath id="targetA"><rect class="a" width="47.855" height="44.34"></rect></clipPath></defs><g class="b"><path class="c" d="M24.225,1.671A20.628,20.628,0,1,0,44.751,22.3,20.576,20.576,0,0,0,24.225,1.671m0,37.129a16.5,16.5,0,1,1,16.42-16.5,16.461,16.461,0,0,1-16.42,16.5" transform="translate(3.104 1.416)"></path><path class="c" d="M20.377,6.26A12.147,12.147,0,1,0,32.464,18.407,12.116,12.116,0,0,0,20.377,6.26m8.367,12.147A8.371,8.371,0,1,1,20.37,10h.007a8.4,8.4,0,0,1,8.367,8.411" transform="translate(6.952 5.306)"></path><path class="c" d="M16.979,10.309a4.667,4.667,0,1,1-4.642,4.666,4.653,4.653,0,0,1,4.642-4.666" transform="translate(10.346 8.738)"></path><path class="d" d="M9.476,19.048a9.524,9.524,0,1,1,9.476-9.525,9.512,9.512,0,0,1-9.476,9.525m0-7.7.116-.179H9.36Z" transform="translate(0 -0.001)"></path><ellipse class="e" cx="4.963" cy="4.988" rx="4.963" ry="4.988" transform="translate(4.535 4.732)"></ellipse><path class="f" d="M8.709.915A7.833,7.833,0,1,0,16.5,8.748,7.815,7.815,0,0,0,8.709.915m2.056,10.71H7.4v-.782H8.633V7.282c0-.137,0-.281.011-.434l-.873.734a.275.275,0,0,1-.11.065.4.4,0,0,1-.112.017A.3.3,0,0,1,7.4,7.626a.284.284,0,0,1-.1-.081l-.327-.453L8.815,5.508H9.67v5.334h1.094Z" transform="translate(0.767 0.775)"></path></g></svg>
+            </li>
+            <li class="news">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.008" height="43.209" viewBox="0 0 26.008 43.209"><defs><clipPath id="micA"><rect class="a" width="26.008" height="43.209"></rect></clipPath></defs><g class="b"><path class="c" d="M6.723,12.584a6.954,6.954,0,0,0,6.722-7.129V0H0V5.455a6.953,6.953,0,0,0,6.723,7.129" transform="translate(19.725 12.584) rotate(180)"></path><path class="d" d="M17.06,12.523h-2.5a.557.557,0,1,1,0-1.114h2.5V9.99h-2.5a.557.557,0,1,1,0-1.114h2.5V7.461h-2.5a.558.558,0,0,1,0-1.116h2.49a6.729,6.729,0,0,0-13.436,0H6.1a.558.558,0,0,1,0,1.116H3.6V8.876H6.1a.557.557,0,1,1,0,1.114H3.6v1.418H6.1a.557.557,0,1,1,0,1.114H3.6v2.308H17.06Z" transform="translate(2.673 0.001)"></path><path class="e" d="M13,21.834A10.132,10.132,0,0,1,2.9,12.019H0A13.056,13.056,0,0,0,11.553,24.65v6.76H7.771v2.9H18.237v-2.9H14.454V24.65A13.061,13.061,0,0,0,26.01,12.019h-2.9A10.126,10.126,0,0,1,13,21.834" transform="translate(-0.001 8.9)"></path><path class="e" d="M10.328,21.078a6.738,6.738,0,0,0,6.722-6.717V9.905H3.605v4.456a6.737,6.737,0,0,0,6.723,6.717" transform="translate(2.676 6.278)"></path></g></svg>
+            </li>
+            <li class="academy">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64.96" height="44.684" viewBox="0 0 64.96 44.684"><defs><clipPath id="hatA"><rect class="a" width="64.96" height="44.684" transform="translate(0 0)"></rect></clipPath></defs><g class="b" transform="translate(0 0)"><path class="c" d="M30.183,30.444a3.111,3.111,0,0,1-1.254-.263L12.862,23.147V33.3a7.057,7.057,0,0,0,2.33,4.663c2.923,2.86,8.026,4.309,15.164,4.309S42.6,40.825,45.52,37.965A7.057,7.057,0,0,0,47.85,33.3V23.237L31.4,30.2a3.124,3.124,0,0,1-1.218.247" transform="translate(-1.584 -2.59)"></path><path class="d" d="M57.642,18.24v3a1.766,1.766,0,0,0-.394,3.286l-1.579,14.8H60.4l-1.588-14.8a1.763,1.763,0,0,0-.385-3.286v-3.33" transform="translate(-6.856 -2.004)"></path><path class="c" d="M56.426,12.2,28.717.071A1.008,1.008,0,0,0,28.367,0a.738.738,0,0,0-.342.071L.544,11.7A.9.9,0,0,0,.535,13.34L28.253,25.471a.78.78,0,0,0,.35.081.876.876,0,0,0,.333-.071L44.675,18.82l1.307-.552,3.21-1.358,1-.425.59-.25,2.489-1.052,3.141-1.329a.9.9,0,0,0,.009-1.653m-8.275,1.334-2.211.935-1.754.741-.415.175-.708.3-2.26.956-.92.388L28.8,21.722a.616.616,0,0,1-.235.05.544.544,0,0,1-.247-.057L8.8,13.173a.631.631,0,0,1,.007-1.157L28.159,3.83a.525.525,0,0,1,.241-.049.7.7,0,0,1,.246.049l19.511,8.543a.636.636,0,0,1-.006,1.164" transform="translate(0)"></path></g></svg>            </li>
+            <li class="webinars">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50.386" height="44.894" viewBox="0 0 50.386 44.894"><defs><clipPath id="chatA"><rect class="a" width="50.386" height="44.894"></rect></clipPath></defs><g class="b"><rect class="c" width="13.022" height="6.907" transform="translate(34.834 2.707)"></rect><path class="d" d="M31.079,7.182C31.079,3.215,26.985,0,21.932,0s-9.149,3.215-9.149,7.182,4.1,7.182,9.149,7.182a11.13,11.13,0,0,0,4.325-.851l4.049,1.61-1.29-3.4a6.289,6.289,0,0,0,2.063-4.543m-12.518,0a1.445,1.445,0,1,1-1.443-1.438,1.442,1.442,0,0,1,1.443,1.438m4.814,0a1.443,1.443,0,1,1-1.443-1.438,1.442,1.442,0,0,1,1.443,1.438m4.817,0a1.445,1.445,0,1,1-1.446-1.438,1.442,1.442,0,0,1,1.446,1.438" transform="translate(19.304 0)"></path><path class="e" d="M2.242,30.783H4.8a.808.808,0,0,0,.808-.806V9.193H15.679A.848.848,0,0,0,15.9,9.16c-.013.052,1.812-3.66,1.795-3.69a.805.805,0,0,0-.715-.432H5.126A3.708,3.708,0,0,0,1.431,8.716V29.977a.808.808,0,0,0,.811.806" transform="translate(2.161 7.54)"></path><path class="e" d="M45.584,22.824H42.873V12.147a.8.8,0,0,0-.452-.721.394.394,0,0,0-.11-.045l.008-.007c-.088-.012-3.635,2.214-3.607,2.2a.726.726,0,0,0-.01.127v9.122H.811A.805.805,0,0,0,0,23.63a4.264,4.264,0,0,0,4.27,4.246H42.12A4.265,4.265,0,0,0,46.4,23.63a.808.808,0,0,0-.811-.806" transform="translate(0 17.017)"></path><path class="c" d="M9.862,21.852a10.952,10.952,0,0,1-2.485-6.847c0-6.87,6.82-12.459,15.2-12.459s15.2,5.589,15.2,12.459-6.82,12.464-15.2,12.464a18.287,18.287,0,0,1-5.979-1l-10,3.974Z" transform="translate(9.973 3.809)"></path><rect class="c" width="20.835" height="8.633" transform="translate(22.681 14.794)"></rect><path class="d" d="M10.775,19.814,8.988,24.527l5.618-2.234a15.462,15.462,0,0,0,6,1.183c7.011,0,12.694-4.463,12.694-9.968S27.616,3.546,20.6,3.546,7.911,8.007,7.911,13.509a8.744,8.744,0,0,0,2.864,6.306m16.509-8.3a1.993,1.993,0,1,1-2,1.992,2,2,0,0,1,2-1.992m-6.68,0a1.993,1.993,0,1,1-2,1.992,2,2,0,0,1,2-1.992m-6.68,0a1.993,1.993,0,1,1-2.006,1.992,2,2,0,0,1,2.006-1.992" transform="translate(11.947 5.306)"></path></g></svg>
+            </li>
+            <li class="webTV">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41.113" height="50.131" viewBox="0 0 41.113 50.131"><defs><clipPath id="tvA"><rect class="a" width="41.113" height="50.131"></rect></clipPath></defs><g class="b"><path class="c" d="M36.818,15.846H23.386a4.98,4.98,0,0,0-1.185-2.02l6.609-9.876a2.009,2.009,0,1,0-2.528-1.937,2.1,2.1,0,0,0,.072.545l-6.619,9.892a4.811,4.811,0,0,0-1.95-.023l-6.92-9.094a1.787,1.787,0,0,0,.021-.279A2,2,0,1,0,8.624,5.035l6.642,8.728a4.98,4.98,0,0,0-1.249,2.083H4.3A4.087,4.087,0,0,0,0,19.679V42.794a4.087,4.087,0,0,0,4.3,3.831h.723l-.326,1.844a1.4,1.4,0,0,0,2.35,1.272l3.234-3.116H30.839l3.232,3.118a1.4,1.4,0,0,0,.969.389h.023a1.413,1.413,0,0,0,1.384-1.411,1.277,1.277,0,0,0-.031-.3l-.316-1.8h.719a4.087,4.087,0,0,0,4.3-3.831V19.679a4.088,4.088,0,0,0-4.3-3.833m.3,24c0,1.54-1.58,2.794-3.519,2.794H7.476c-1.941,0-3.519-1.253-3.519-2.794V22.62c0-1.54,1.578-2.794,3.519-2.794H33.6c1.939,0,3.519,1.253,3.519,2.794Z" transform="translate(0 0)"></path><path class="d" d="M20.648,18.518a7.056,7.056,0,1,1-7.055-7.1,7.077,7.077,0,0,1,7.055,7.1" transform="translate(6.963 12.315)"></path><path class="e" d="M8.9,16.461V13.324l2.7,1.567,2.7,1.569-2.7,1.567L8.9,19.6Z" transform="translate(9.483 14.372)"></path></g></svg>
+            </li>
+            <li class="ebook">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.052" height="47.637" viewBox="0 0 42.052 47.637"><defs><clipPath id="bookA"><rect class="a" width="42.052" height="47.637"></rect></clipPath></defs><g class="b"><path class="c" d="M33.866,3.711h2.01V0H4.812A4.805,4.805,0,0,0,.326,3.2a1.819,1.819,0,0,0-.318.976V37.951a5.215,5.215,0,0,0,4.8,5.528H34.046a1.822,1.822,0,0,0,1.807-1.835V9.855h.023V6.144H34.12c-.023,0-.045-.014-.066-.014A1.23,1.23,0,0,1,32.865,4.9a1.2,1.2,0,0,1,1-1.188M4.81,3.671H29.395a5.059,5.059,0,0,0,0,2.463H4.81a1.237,1.237,0,0,1,0-2.471Zm27.426,8.621V39.81H4.81c-.558,0-1.182-.794-1.182-1.855V9.633A4.587,4.587,0,0,0,4.81,9.8H9.9V22.162l5.028-4.716,5.028,4.716V9.8h9.615v.053h2.663Z" transform="translate(0 0)"></path><path class="d" d="M21.279,35.11a11.165,11.165,0,1,1,11-11.163,11.1,11.1,0,0,1-11,11.163m0-9.025.135-.21h-.269Z" transform="translate(9.776 12.528)"></path><g class="e" transform="translate(23.682 29.308)"><ellipse class="g" cx="7.001" cy="7.105" rx="7.001" ry="7.105"></ellipse><ellipse class="a" cx="7.001" cy="7.105" rx="6.501" ry="6.605"></ellipse></g><path class="f" d="M20.326,28.707l1.883-2.9,1.881-2.9H21.325V17.221h-2V22.91H16.564l1.881,2.9Zm0-14.923a9.181,9.181,0,1,1-9.047,9.181,9.113,9.113,0,0,1,9.047-9.181" transform="translate(10.727 13.509)"></path></g></svg>
+            </li>
+            <li class="economic">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.061" height="42.511" viewBox="0 0 38.061 42.511"><defs><clipPath id="economicA"><rect class="a" width="38.061" height="42.511"></rect></clipPath></defs><g class="b"><path class="c" d="M33.832,4.251H31.716V0H27.488V4.251H10.573V0H6.343V4.251C3.442,3.854-.049,5.034,0,8.5V38.26a4.24,4.24,0,0,0,4.23,4.251h29.6a4.252,4.252,0,0,0,4.228-4.251V8.5a4.251,4.251,0,0,0-4.228-4.251m0,34.01H4.23V17.006h29.6Zm0-25.507H4.23V8.5h29.6Z" transform="translate(0 0)"></path><rect class="d" width="6.705" height="6.74" transform="translate(6.866 19.566)"></rect><rect class="d" width="6.705" height="6.74" transform="translate(15.355 19.566)"></rect><rect class="d" width="6.705" height="6.74" transform="translate(23.845 19.566)"></rect><rect class="d" width="6.705" height="6.74" transform="translate(6.866 28.289)"></rect><rect class="d" width="6.705" height="6.74" transform="translate(15.355 28.289)"></rect></g></svg>
+            </li>
+        </ul>
+        <ul class="content">
+            <li class="signals active">
+                <div class="text">
+                    <h2>إشارات التداول</h2>
+                    <p>إشارات تداول يقدمها الخبراء على مجموعة واسعة من الأصول</p>
+                </div>
+                <div class="video">
+                    <iframe src="https://player.vimeo.com/video/491681439?autoplay=1&amp;loop=1&amp;autopause=0&amp;muted=1&amp;quality=1080p" width="100%" height="100%" allow="autoplay" frameborder="0" muted="" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                </div>
+            </li>
+            <li class="news">
+                <div class="text">
+                    <h2>أخبار السوق</h2>
+                    <p>نتناول أهم أحداث السوق ونعرضها عبر مقالات تفصيلية بالتحليل</p>
+                </div>
+                <div class="video">
+                    <iframe src="https://player.vimeo.com/video/492071957?autoplay=1&amp;loop=1&amp;autopause=0&amp;muted=1&amp;quality=1080p" width="100%" height="100%" allow="autoplay" frameborder="0" muted="" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                </div>
+            </li>
+            <li class="academy">
+                <div class="text">
+                    <h2>أكاديمية التعليم</h2>
+                    <p>تعلم التداول عبر فيديوهات وأدوات تعليمية لتعزيز تجربة التداول الخاصة بك</p>
+                </div>
+                <img src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/1920/alvexo_plus_section/academy.png">
+            </li>
+            <li class="webinars">
+                <div class="text">
+                    <h2>الندوات التعليمية</h2>
+                    <p>ندوات حية ومباشرة للتداول مع محللي ألفكسو لجميع المستويات</p>
+                </div>
+                <img src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/1920/alvexo_plus_section/webinars.png">
+            </li>
+            <li class="webTV">
+                <div class="text">
+                    <h2>القناة المالية</h2>
+                    <p>قناة مستقلة لأخبار السوق الخاصة بالمواضيع والأصول التي تهمك</p>
+                </div>
+                <div class="video">
+                    <iframe src="https://player.vimeo.com/video/492071861?autoplay=1&amp;loop=1&amp;autopause=0&amp;muted=1&amp;quality=1080p" width="100%" height="100%" allow="autoplay" frameborder="0" muted="" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                </div>
+            </li>
+            <li class="ebook">
+                <div class="text">
+                    <h2>الكتب الإلكترونية</h2>
+                    <p>مجموعة واسعة من الكتب الإلكترونية حول التداول والأسواق المالية</p>
+                </div>
+                <img src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/1920/alvexo_plus_section/eBook.png">
+            </li>
+            <li class="economic">
+                <div class="text">
+                    <h2>الأجندة الاقتصادية</h2>
+                    <p>مواعيد وأوقات أهم الأحداث الاقتصادية والبيانات التي تؤثر في السوق</p>
+                </div>
+                <div class="video">
+                    <iframe src="https://player.vimeo.com/video/491681388?autoplay=1&amp;loop=1&amp;autopause=0&amp;muted=1&amp;quality=1080p" width="100%" height="100%" allow="autoplay" frameborder="0" muted="" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="trading-platform trading-platform-desktop">
+    <div class="container">
+        <h2><span class="blue_color">منصات</span> التداول الخاصة بنا </h2>
+        <h3>تم تصميم مجموعة منصات ألفكسو لتوفر لك أقصى درجات المرونة في تداولك.</h3>
+        <div class="innerWrap">
+            <div class="screen">
+                <img src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/1920/trading_platform/screen.png">
+            </div>
+            <div class="textWrap">
+                <p>اختر واحدة من منصات ألفكسو للتداول: منصة ويب تريدر التي تعمل مباشرةً على المتصفح والتي تم تصميمها لتقوم بتنفيذ سريع للصفقات وتقدم رسوم بيانية وأدوات تداول تلبي احتياجات المتداولين المبتدئين وذوي الخبرة. منصة MT4 والتي تعتبر احدى المنصات الأكثر موثوقية في العالم مجموعة واسعة من الميزات المتقدمة مع أنواع متعددة لتنفيذ الصفقات، والتداول القائم على الرسم البياني، وحفظ الصفقات، وأدوات التخصيص.
+                    <br><span>تطبيق الهاتف الجوال</span>  <br>
+                    تعرف على فرص التداول المحتملة من أي مكان في العالم عبر أجهزة أندرويد وآي فون والأجهزة اللوحية. قم بإدارة الصفقات واختر تداولاتك بكل سهولة، وادخل إلى الأسواق العالمية أينما كنت وفي أي</p>
+                <div class="btnWrap">
+                    <div class="btn scroll-to-element">ابدأ الآن</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="trading-platform trading-platform-mobile">
+    <div class="container">
+        <h2>تطبيق الهاتف</h2>
+        <img src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/360/trading_platform/alvexo-mobile2.png">
+        <p>استفد من فرص محتملة للتداول من أي مكان في العالم عبر أجهزة أندرويد وآيفون والأجهزة اللوحية. احترف إدارة المراكز، وقم بتعيين تداولاتك، وادخل بسهولة إلى الأسواق العالمية في أي وقت ومن كل مكان.</p>
+        <div class="btnWrap">
+            <div class="btn scroll-to-element sticky-no">حمل التطبيق</div>
+        </div>
+    </div>
+</section>
+
+<section class="credit_cards_section">
+    <h3>نحن نقبل
+    </h3>
+    <div class="container">
+
+        <!-- Slider main container -->
+        <div class="swiper-container" id="credit_cards_swiper_container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="master" width="44.526" height="34.64" viewBox="0 0 44.526 34.64"><defs><style>.master .a{fill:#231f20;}.master .b{fill:#f79410;}.master .c{fill:#ff5f00;}.master .d{fill:#eb001b;}.master .e{fill:#f79e1b;}</style></defs><g transform="translate(-35.25 -2805)"><path class="a" d="M144.9,1321.948v.089h.083a.089.089,0,0,0,.044-.011.04.04,0,0,0,.017-.034.038.038,0,0,0-.017-.033.081.081,0,0,0-.044-.011H144.9Zm.084-.063a.155.155,0,0,1,.1.029.1.1,0,0,1,.035.079.09.09,0,0,1-.028.069.137.137,0,0,1-.08.033l.111.127h-.086l-.1-.126H144.9v.126h-.072v-.337h.156Zm-.022.453a.267.267,0,0,0,.109-.022.289.289,0,0,0,.089-.06.281.281,0,0,0,.06-.089.288.288,0,0,0,0-.22.292.292,0,0,0-.06-.089.283.283,0,0,0-.089-.06.28.28,0,0,0-.109-.021.3.3,0,0,0-.111.021.28.28,0,0,0-.15.372.266.266,0,0,0,.059.089.286.286,0,0,0,.091.06.281.281,0,0,0,.111.022m0-.646a.373.373,0,0,1,.262.107.359.359,0,0,1,.079.4.378.378,0,0,1-.079.115.393.393,0,0,1-.117.078.36.36,0,0,1-.144.029.366.366,0,0,1-.146-.029.347.347,0,0,1-.2-.2.359.359,0,0,1,.079-.4.352.352,0,0,1,.118-.078.373.373,0,0,1,.146-.029m-34.086-1.3a1.106,1.106,0,1,1,1.108,1.17,1.1,1.1,0,0,1-1.108-1.17m2.958,0v-1.828h-.794v.445a1.385,1.385,0,0,0-1.154-.536,1.921,1.921,0,0,0,0,3.837,1.385,1.385,0,0,0,1.154-.535v.444h.794v-1.828Zm26.844,0a1.106,1.106,0,1,1,1.109,1.17,1.1,1.1,0,0,1-1.109-1.17m2.959,0V1317.1h-.8v1.912a1.384,1.384,0,0,0-1.154-.536,1.921,1.921,0,0,0,0,3.837,1.385,1.385,0,0,0,1.154-.535v.444h.8Zm-19.943-1.208a.907.907,0,0,1,.925.886h-1.9a.941.941,0,0,1,.971-.886m.016-.712a1.92,1.92,0,0,0,.053,3.837,2.22,2.22,0,0,0,1.5-.512l-.389-.589a1.741,1.741,0,0,1-1.063.382,1.015,1.015,0,0,1-1.093-.895h2.713c.008-.1.016-.2.016-.305a1.753,1.753,0,0,0-1.735-1.919m9.592,1.919a1.106,1.106,0,1,1,1.108,1.17,1.1,1.1,0,0,1-1.108-1.17m2.958,0v-1.826h-.794v.445a1.386,1.386,0,0,0-1.154-.536,1.921,1.921,0,0,0,0,3.837,1.386,1.386,0,0,0,1.154-.535v.444h.794v-1.828Zm-7.444,0a1.846,1.846,0,0,0,1.949,1.919,1.91,1.91,0,0,0,1.313-.436l-.382-.642a1.606,1.606,0,0,1-.957.329,1.172,1.172,0,0,1,0-2.339,1.609,1.609,0,0,1,.957.329l.382-.642a1.911,1.911,0,0,0-1.313-.436,1.846,1.846,0,0,0-1.949,1.919m10.242-1.919a1.079,1.079,0,0,0-.963.535v-.443h-.787v3.653h.8v-2.048c0-.6.26-.941.779-.941a1.289,1.289,0,0,1,.5.092l.245-.749a1.69,1.69,0,0,0-.566-.1m-21.3.382a2.732,2.732,0,0,0-1.49-.382c-.926,0-1.521.444-1.521,1.169,0,.6.444.963,1.261,1.078l.375.053c.436.061.641.176.641.382,0,.283-.289.444-.833.444a1.947,1.947,0,0,1-1.215-.382l-.373.619a2.636,2.636,0,0,0,1.582.474c1.055,0,1.667-.5,1.667-1.192,0-.642-.481-.978-1.276-1.093l-.374-.054c-.344-.044-.619-.114-.619-.359,0-.267.26-.428.7-.428a2.357,2.357,0,0,1,1.139.313l.344-.642Zm10.251-.381a1.076,1.076,0,0,0-.962.535v-.444h-.787v3.653h.794v-2.048c0-.6.26-.941.779-.941a1.289,1.289,0,0,1,.5.092l.245-.749a1.69,1.69,0,0,0-.566-.1m-6.779.092h-1.3v-1.108h-.8v1.108h-.741v.726h.741v1.667c0,.848.329,1.353,1.269,1.353a1.865,1.865,0,0,0,.994-.283l-.23-.68a1.471,1.471,0,0,1-.7.207c-.4,0-.527-.245-.527-.612v-1.651h1.3Zm-11.878,3.654v-2.293a1.36,1.36,0,0,0-1.437-1.452,1.415,1.415,0,0,0-1.284.65,1.341,1.341,0,0,0-1.207-.65,1.209,1.209,0,0,0-1.07.542v-.452h-.8v3.653h.8v-2.026a.855.855,0,0,1,.895-.971c.528,0,.794.344.794.963v2.033h.8v-2.026a.862.862,0,0,1,.894-.971c.542,0,.8.344.8.963v2.033Z" transform="translate(-66.005 1517.219)"></path><path class="b" d="M1930.009,977.754v-.534h-.139l-.161.367-.16-.367h-.14v.534h.1v-.4l.151.347h.1l.151-.348v.4h.1Zm-.883,0v-.443h.178v-.09h-.455v.09h.178v.443h.1Z" transform="translate(-1850.663 1849.533)"></path><path class="c" d="M741.75,153.787H729.71V132.15h12.04Z" transform="translate(-678.216 2675.792)"></path><path class="d" d="M17.007,13.76A13.738,13.738,0,0,1,22.262,2.941a13.761,13.761,0,1,0,0,21.637A13.738,13.738,0,0,1,17.007,13.76" transform="translate(35.25 2805.001)"></path><path class="e" d="M1022.373,13.76a13.76,13.76,0,0,1-22.263,10.819,13.762,13.762,0,0,0,0-21.637,13.76,13.76,0,0,1,22.263,10.819" transform="translate(-942.597 2805.001)"></path></g></svg>
+                </div>
+
+                <div class="swiper-slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="visa" width="62.417" height="62.417" viewBox="0 0 62.417 62.417"><defs><style>.visa .a{fill:#2566af;}.visa .b{fill:#e6a540;}.visa .c{fill:none;}</style></defs><g transform="translate(-284.583 -2787)"><g transform="translate(289.527 2809.688)"><path class="a" d="M34,68.277H29.712l2.679-16.463h4.287ZM26.106,51.813,22.019,63.137,21.536,60.7h0l-1.442-7.4a1.835,1.835,0,0,0-2.033-1.482H11.305l-.079.279a16.035,16.035,0,0,1,4.484,1.882l3.724,14.3H23.9l6.819-16.464ZM59.819,68.277h3.936L60.324,51.813H56.878A1.97,1.97,0,0,0,54.9,53.04L48.507,68.277h4.468l.894-2.445h5.449ZM55.1,62.453l2.252-6.161,1.267,6.161Zm-6.261-6.681.612-3.535a12.372,12.372,0,0,0-3.855-.718c-2.127,0-7.178.93-7.178,5.45,0,4.253,5.928,4.306,5.928,6.54s-5.318,1.834-7.073.425l-.637,3.7a12.012,12.012,0,0,0,4.838.93c2.925,0,7.338-1.514,7.338-5.636,0-4.281-5.982-4.679-5.982-6.54s4.175-1.622,6.009-.612Z" transform="translate(-11.226 -51.519)"></path></g><path class="b" d="M21.536,61.072l-1.442-7.4a1.835,1.835,0,0,0-2.033-1.482H11.305l-.079.279a16.607,16.607,0,0,1,6.361,3.194A12.838,12.838,0,0,1,21.536,61.072Z" transform="translate(278.301 2757.796)"></path><path class="c" d="M0,0H62.417V62.417H0Z" transform="translate(284.583 2787)"></path></g></svg>
+                </div>
+
+                <div class="swiper-slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="paypal" width="111.5" height="29.556" viewBox="0 0 111.5 29.556"><defs><style>.paypal .a{fill:#003087;}.paypal .b{fill:#009cde;}.paypal .c{fill:#012169;}</style></defs><path class="a" d="M-3322.125-1822.322c-1.369-1.56-3.844-2.228-7.008-2.228h-9.186a1.314,1.314,0,0,0-1.3,1.109l-3.824,24.257a.791.791,0,0,0,.657.9.844.844,0,0,0,.123.009h5.67l1.426-9.033-.046.283a1.314,1.314,0,0,1,1.294-1.11h2.7c5.293,0,9.439-2.15,10.648-8.369.037-.184.067-.363.094-.538.36-2.3,0-3.864-1.246-5.281" transform="translate(3343.452 1824.55)"></path><path class="b" d="M-2027.939-1691.218c-.347,2.276-2.085,2.276-3.765,2.276h-.957l.672-4.25a.528.528,0,0,1,.521-.446h.44c1.145,0,2.225,0,2.783.653a2.116,2.116,0,0,1,.307,1.767m-.731-5.939h-6.342a.882.882,0,0,0-.872.744l-2.562,16.259a.529.529,0,0,0,.44.6.528.528,0,0,0,.081.006h3.254a.618.618,0,0,0,.609-.52l.727-4.611a.881.881,0,0,1,.87-.744h2.006c4.177,0,6.588-2.021,7.218-6.027a4.882,4.882,0,0,0-.809-4.092c-.9-1.059-2.5-1.621-4.622-1.621" transform="translate(2113.658 1704.989)"></path><path class="a" d="M-2763.573-1691.218c-.345,2.276-2.083,2.276-3.765,2.276h-.957l.672-4.25a.526.526,0,0,1,.521-.446h.44c1.143,0,2.224,0,2.782.653a2.113,2.113,0,0,1,.307,1.767m-.731-5.939h-6.341a.883.883,0,0,0-.871.744l-2.562,16.259a.527.527,0,0,0,.439.6.543.543,0,0,0,.082.006h3.029a.881.881,0,0,0,.87-.743l.693-4.386a.879.879,0,0,1,.869-.744h2.008c4.176,0,6.587-2.022,7.215-6.028a4.878,4.878,0,0,0-.808-4.092c-.9-1.059-2.5-1.621-4.622-1.621m14.721,11.776a3.384,3.384,0,0,1-3.427,2.9,2.561,2.561,0,0,1-2.039-.82,2.574,2.574,0,0,1-.476-2.132,3.4,3.4,0,0,1,3.4-2.922,2.563,2.563,0,0,1,2.025.827,2.617,2.617,0,0,1,.514,2.147m4.234-5.911h-3.037a.528.528,0,0,0-.524.447l-.133.849-.212-.308c-.658-.954-2.124-1.273-3.585-1.273a6.982,6.982,0,0,0-6.778,6.107,5.735,5.735,0,0,0,1.13,4.665,4.753,4.753,0,0,0,3.824,1.544,5.812,5.812,0,0,0,4.2-1.736l-.135.844a.527.527,0,0,0,.437.6.563.563,0,0,0,.084.007h2.734a.882.882,0,0,0,.872-.745l1.641-10.393a.529.529,0,0,0-.441-.6.5.5,0,0,0-.082-.006" transform="translate(2804.065 1704.989)"></path><path class="b" d="M-1794.513-1600.191a3.386,3.386,0,0,1-3.427,2.9,2.563,2.563,0,0,1-2.04-.82,2.581,2.581,0,0,1-.475-2.132,3.4,3.4,0,0,1,3.4-2.922,2.558,2.558,0,0,1,2.024.828,2.609,2.609,0,0,1,.515,2.146m4.232-5.91h-3.036a.529.529,0,0,0-.523.447l-.133.849-.212-.308c-.657-.954-2.123-1.274-3.587-1.274a6.984,6.984,0,0,0-6.777,6.107,5.734,5.734,0,0,0,1.132,4.665,4.749,4.749,0,0,0,3.823,1.544,5.817,5.817,0,0,0,4.206-1.737l-.136.844a.527.527,0,0,0,.436.6.487.487,0,0,0,.085.007h2.733a.882.882,0,0,0,.871-.745l1.642-10.393a.529.529,0,0,0-.44-.6.554.554,0,0,0-.083-.006" transform="translate(1894.222 1619.799)"></path><path class="a" d="M-2259.644-1601.745h-3.053a.88.88,0,0,0-.729.386l-4.209,6.2-1.785-5.959a.884.884,0,0,0-.845-.629h-3a.529.529,0,0,0-.528.529.52.52,0,0,0,.029.171l3.36,9.865-3.162,4.459a.531.531,0,0,0,.128.738.53.53,0,0,0,.3.1h3.05a.881.881,0,0,0,.723-.378l10.15-14.649a.527.527,0,0,0-.133-.735.528.528,0,0,0-.3-.095" transform="translate(2334.531 1615.444)"></path><path class="b" d="M-1552.708-1696.7l-2.6,16.557a.529.529,0,0,0,.441.6.542.542,0,0,0,.082.006h2.618a.881.881,0,0,0,.87-.743l2.566-16.259a.527.527,0,0,0-.439-.6.493.493,0,0,0-.084-.007h-2.928a.527.527,0,0,0-.522.447" transform="translate(1660.228 1704.977)"></path><path class="a" d="M-3322.125-1822.322c-1.369-1.56-3.844-2.228-7.008-2.228h-9.186a1.314,1.314,0,0,0-1.3,1.109l-3.824,24.257a.791.791,0,0,0,.657.9.844.844,0,0,0,.123.009h5.67l1.426-9.033-.046.283a1.314,1.314,0,0,1,1.294-1.11h2.7c5.293,0,9.439-2.15,10.648-8.369.037-.184.067-.363.094-.538.36-2.3,0-3.864-1.246-5.281" transform="translate(3343.452 1824.55)"></path><path class="a" d="M-3334.054-1817a1.153,1.153,0,0,1,1.137-.97h7.2a15.145,15.145,0,0,1,2.374.172,9.937,9.937,0,0,1,1.177.263,6.462,6.462,0,0,1,1.268.5c.361-2.3,0-3.864-1.244-5.282-1.37-1.559-3.843-2.227-7.009-2.227h-9.185a1.313,1.313,0,0,0-1.3,1.11l-3.825,24.254a.787.787,0,0,0,.654.9.762.762,0,0,0,.124.01h5.67l1.425-9.034Z" transform="translate(3343.466 1824.536)"></path><path class="b" d="M-3228.409-1702.41c-.029.18-.059.36-.1.539-1.209,6.219-5.354,8.37-10.648,8.37h-2.7a1.309,1.309,0,0,0-1.293,1.109l-1.379,8.749-.395,2.481a.693.693,0,0,0,.575.79.669.669,0,0,0,.108.008h4.78a1.149,1.149,0,0,0,1.135-.97l.047-.243.9-5.709.056-.315a1.151,1.151,0,0,1,1.138-.971h.715c4.63,0,8.256-1.88,9.317-7.322.441-2.272.211-4.172-.957-5.5a4.587,4.587,0,0,0-1.31-1.01" transform="translate(3250.981 1709.919)"></path><path class="c" d="M-3202.49-1717.266c-.185-.054-.375-.1-.57-.146s-.4-.082-.608-.115a14.787,14.787,0,0,0-2.374-.174h-7.2a1.149,1.149,0,0,0-1.136.971l-1.529,9.7-.045.282a1.311,1.311,0,0,1,1.292-1.11h2.7c5.293,0,9.439-2.149,10.648-8.369.038-.185.068-.363.1-.539a6.566,6.566,0,0,0-1-.42c-.09-.03-.18-.057-.272-.085" transform="translate(3223.793 1724.271)"></path></svg>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="https://lps.alvexo.ae/custom_images/ar/finance/discover_the_best_performing_assets/1920/skrill.png" width="58" height="20" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="paysafe" width="169.103" height="28.651" viewBox="0 0 169.103 28.651"><defs><style>.paysafe .a{fill:#008ac9;}.paysafe .b{fill:#e3001b;}</style></defs><path class="a" d="M140.427,25.462c-.017-.584-.3-.884-.834-.9h-2.87a1.009,1.009,0,0,0-1.051,1.118v5.156a1.044,1.044,0,0,0,1.151,1.118h2.62a.9.9,0,0,0,.684-.3.744.744,0,0,0,.284-.6ZM132,24.728a4.53,4.53,0,0,1,.868-2.937,3.6,3.6,0,0,1,1.1-.718,3.349,3.349,0,0,1,1.335-.3h5.256c2.319.017,3.5,1.285,3.538,3.8v7.759a3.172,3.172,0,0,1-1.051,2.319,3.326,3.326,0,0,1-2.4,1.051h-4.973V41.3H132V24.728m18.756,6.458a.594.594,0,0,0,.3.517.984.984,0,0,0,.667.234h2.82c.634,0,.968-.25.984-.751V30.135c0-.584-.334-.868-1.018-.868h-2.8a1.26,1.26,0,0,0-.768.184,1.16,1.16,0,0,0-.2.8Zm4.789-5.824c.017-.567-.317-.834-.985-.818h-7.409V20.773h8.343c2.436.033,3.671,1.218,3.7,3.538V32.22a3.732,3.732,0,0,1-.918,2.486,3.08,3.08,0,0,1-2.4,1.018h-5.039c-2.453-.017-3.7-1.135-3.738-3.371V29.3c.017-2.336,1.2-3.521,3.571-3.554h4.889l-.017-.384m13.983,12.165a1.136,1.136,0,0,0,.751-.317.808.808,0,0,0,.3-.6v-.9h-4.706a3.914,3.914,0,0,1-1.468-.234,3.339,3.339,0,0,1-1.168-.784,3.751,3.751,0,0,1-1.051-2.77V20.773h3.688v9.962c0,.8.334,1.2.985,1.2h2.6a1.137,1.137,0,0,0,.8-.3A.789.789,0,0,0,170.58,31V20.773h3.654v16.47a4.614,4.614,0,0,1-.934,2.937,3.188,3.188,0,0,1-2.52,1.135h-8.594V37.527h7.342m7.592-5.59h6.558c.6-.017.918-.267.934-.718v-.334a.816.816,0,0,0-.083-.317c-.15-.284-.334-.434-.534-.434h-3.271a3.61,3.61,0,0,1-2.486-1,2.9,2.9,0,0,1-1.085-2.186v-2.82c.033-2.2,1.235-3.321,3.588-3.354h7.609v3.788H181.91c-.751,0-1.135.234-1.135.7v.367c0,.484.384.718,1.168.718h3.237a3.029,3.029,0,0,1,2.219,1,3.433,3.433,0,0,1,.968,2.319v2.753A3.676,3.676,0,0,1,187.3,34.74a2.989,2.989,0,0,1-1.018.784,4.208,4.208,0,0,1-1.452.2h-7.693l-.017-3.788m17.538-.751a.594.594,0,0,0,.3.517.955.955,0,0,0,.667.234h2.837c.634,0,.968-.25.984-.751V30.135c0-.584-.334-.868-1.018-.868h-2.8a1.26,1.26,0,0,0-.768.184,1.16,1.16,0,0,0-.2.8Zm4.789-5.824c.017-.567-.317-.834-1-.818h-7.409V20.773h8.343c2.436.033,3.671,1.218,3.7,3.538V32.22a3.732,3.732,0,0,1-.918,2.486,3.08,3.08,0,0,1-2.4,1.018h-5.056c-2.453-.017-3.7-1.135-3.738-3.371V29.3c.017-2.336,1.2-3.521,3.571-3.554h4.906v-.384m6.641-6.741a3.125,3.125,0,0,1,1.135-2.453,4.268,4.268,0,0,1,2.82-.968h2.336v3.654h-1.418c-.784.017-1.168.384-1.185,1.118v.8h2.6v3.788h-2.6V35.725h-3.688v-17.1M222.842,25.3v-.083a.593.593,0,0,0-.234-.484,1.1,1.1,0,0,0-.634-.184H219.4a1.144,1.144,0,0,0-.8.284.8.8,0,0,0-.384.684v1.518Zm-4.555,5.356v.234a1.059,1.059,0,0,0,.234.718.532.532,0,0,0,.484.334h7.559v3.788H218.52a5.631,5.631,0,0,1-1.7-.2,3.231,3.231,0,0,1-1.185-.718,3.068,3.068,0,0,1-.818-1.235,5.443,5.443,0,0,1-.234-1.735l-.033-7.576c.033-2.286,1.235-3.454,3.588-3.488h4.973c2.286.033,3.454,1.251,3.488,3.621v2.987l-8.31,3.271m16.1,5.073a7.37,7.37,0,0,1-1.535-.15,3.2,3.2,0,0,1-1.452-.684,3.585,3.585,0,0,1-1.051-1.485,5.2,5.2,0,0,1-.3-1.819V24.528a4.762,4.762,0,0,1,.167-1.518A3.046,3.046,0,0,1,231,21.724a3.539,3.539,0,0,1,1.385-.884,6.425,6.425,0,0,1,1.569-.184h5.64v.884h-5.507a3.925,3.925,0,0,0-2.3.6,2.674,2.674,0,0,0-.868,2.253v7.058a4.72,4.72,0,0,0,.234,1.452,3,3,0,0,0,.784,1.218,2.853,2.853,0,0,0,1.185.567,6.365,6.365,0,0,0,1.3.133h5.256v.884h-5.29m19.724-9.144h-7.392a2.865,2.865,0,0,0-2.086.818,3.028,3.028,0,0,0-.768,2.2v2.253a5.4,5.4,0,0,0,.134,1.2,1.819,1.819,0,0,0,.684,1,3.212,3.212,0,0,0,2.119.784h4.505c1.869-.017,2.82-1,2.82-2.97ZM255,31.653a9.815,9.815,0,0,1-.117,1.5,3.333,3.333,0,0,1-.734,1.368,3.642,3.642,0,0,1-2.87,1.185h-4.405a3.849,3.849,0,0,1-2.787-1.018,3.6,3.6,0,0,1-1.1-2.8V29.617c.033-2.57,1.318-3.888,3.838-3.938h7.325v-1a3.383,3.383,0,0,0-.718-2.153,2.179,2.179,0,0,0-1.051-.8,5.689,5.689,0,0,0-1.368-.167h-7.993v-.884h7.576a10.8,10.8,0,0,1,1.886.15,2.1,2.1,0,0,1,.8.334,2.309,2.309,0,0,1,.718.684,4.676,4.676,0,0,1,1,3.02v6.791m8.277-10.1c-2.052.033-3.07,1.151-3.02,3.354v10.8h-.884V24.928q-.075-4.255,4.055-4.255h.985v.884h-1.135m14.9,0H271.2a4.836,4.836,0,0,0-1.352.167,2.457,2.457,0,0,0-1.218.768,2.737,2.737,0,0,0-.7,1.135A3.8,3.8,0,0,0,267.763,25v6.892a2.524,2.524,0,0,0,1,2.336,3.992,3.992,0,0,0,1.1.434,5.653,5.653,0,0,0,1.352.167h3.054a4.667,4.667,0,0,0,2.787-.784,3.01,3.01,0,0,0,1.118-2.57Zm.884,9.979c-.083,2.853-1.585,4.255-4.522,4.188h-3.271a10.317,10.317,0,0,1-1.852-.167A3.519,3.519,0,0,1,267.8,34.54a3.479,3.479,0,0,1-.734-1.468,5.243,5.243,0,0,1-.167-1.652V25c.033-2.887,1.5-4.339,4.372-4.305h6.925V15.8h.884V31.536" transform="translate(-109.974 -12.664)"></path><path class="b" d="M3.55,7.542a3.516,3.516,0,0,1,.868-.284,5.594,5.594,0,0,1,10.946,0,3.837,3.837,0,0,1,2.036.985,9.669,9.669,0,0,0-.05-1.4,7.5,7.5,0,0,0-14.968.35c-.017.35-.033.7-.017,1.085A4.605,4.605,0,0,1,3.55,7.542" transform="translate(-1.965)"></path><path class="b" d="M12.3,48.6H3.3a3.288,3.288,0,0,0-1.335.3,3.6,3.6,0,0,0-1.1.718A4.629,4.629,0,0,0,0,52.555V59.58a4.531,4.531,0,0,0,.868,2.937,3.812,3.812,0,0,0,1.1.718,3.411,3.411,0,0,0,1.335.3H12.3c2.319-.017,3.5-1.3,3.538-3.821V52.4c-.033-2.52-1.218-3.788-3.538-3.8" transform="translate(0 -40.49)"></path></svg>
+                </div>
+
+            </div>
+
+            <!-- Add Arrows -->
+            <!--<div class="swiper-button-next swiper-button-white"></div>-->
+            <!--<div class="swiper-button-prev swiper-button-white"></div>-->
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <span class="swiper-notification"></span></div>
+
+    </div>
+</section>
+
+<section class="form_section_mobile sticky-no">
+    <div class="container"></div>
+</section>
+
+<section class="disclaimer">
+    <div class="container">
+        <p>*غير متاح لعملاء ECN الحاليين ** تحتفظ Trustpilot بالحق في تغيير مقدار المراجعات والتصنيف العام في أي وقت وفقًا لتقديرها الخاص بناءً على قاعدة بيانات يتم تحديثها باستمرار للمراجعات. لذلك، قد لا يعكس عدد المراجعات الإجمالية والدرجات الموضحة أعلاه الأرقام الفعلية في أي وقت.</p>
+    </div>
+</section>
+
+<!--sticky btn-->
+<div class="block-sticky">
+    <div class="btnWrap">
+        <a class="btn scroll-to-element">سجل مجانًا الآن</a>
+    </div>
+</div>
+<!--End sticky btn--><div class="floating_risks_wrapper">
+
+
+    <!-- START FLOATING COOKIES REGULATION TXT-->
+    <div class="floating_cookie_regulation_txt">
+        <div class="container">
+                        <p>هذا الموقع يستخدم ملفات تعريف الارتباط لضمان افضل تجربة ممكنة للمستخدم. <a href="https://www.alvexo.ae/files/pdf/ar/hsn/Cookies_Policy_Hsn.pdf" onclick="return !window.open(this.href, 'Privacy', 'scrollbars=yes,resizeable=yes,width=1100,height=700')" target="_blank">لقراءة المزيد</a></p>
+                        <div class="acccept_btn">
+                قبول            </div>
+        </div>
+    </div>
+    <!-- END FLOATING COOKIES REGULATION TXT-->
+
+        <!-- START FLOATING RISK WARNING-->
+    <div class="floating_risk_warning">
+        <div class="container">
+            <p class="risk_txt_desktop">ينطوي تداول العقود مقابل الفروقات على مخاطر كبيرة بالخسارة قد لا تكون مناسبة لجميع المستثمرين. يرجى التأكد من فهمك الكامل للمخاطر واتخاذ العناية المناسبة لإدارة تعرضك لها. لمزيد من المعلومات، <a href="https://www.alvexo.ae/documents/hsn/footer/risk_disclosure.pdf?ver=0.1618919936" onclick="return !window.open(this.href, 'Privacy', 'scrollbars=yes,resizeable=yes,width=1100,height=700')">يرجى قراءة بيان الإفصاح المخاطر</a></p>
+            <p class="risk_txt_mobile">التداول ينطوي على مخاطر الخسارة</p>
+            <div class="close_floating_risk_warning">X</div>
+        </div>
+    </div>
+    <!-- END FLOATING RISK WARNING-->
+    
+</div><footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-3">
+                <nav>
+                    <ul class="footer_links">
+                        <li class="risk_disclosure"><a href="https://www.alvexo.ae/files/pdf/ar/hsn/Footer/Risk_Disclosure.pdf" onclick="return !window.open(this.href, 'Privacy', 'scrollbars=yes,resizeable=yes,width=1100,height=700')" target="_blank">إدارة المخاطر</a></li>
+                        <li class="terms"><a href="https://www.alvexo.ae/files/pdf/ar/hsn/Footer/Term_Conditions.pdf" onclick="return !window.open(this.href, 'Privacy', 'scrollbars=yes,resizeable=yes,width=1100,height=700')" target="_blank">الشروط والاحكام</a></li>
+                        <li class="Privacy"><a href="https://www.alvexo.ae/files/pdf/ar/hsn/Footer/Privacy_Policy.pdf" onclick="return !window.open(this.href, 'Privacy', 'scrollbars=yes,resizeable=yes,width=1100,height=700')" target="_blank">سياسة الخصوصية</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-12 col-lg-9">
+                يتم ادارة الفيكسو من قيل HSN Capital Group Ltd التي هي مرخصة بصفتها مسؤولة عن تنظيم ألأوراق المالية من قبل هيئة الخدمات المالية في سيشيل برقم الترخيص SD030 الموجود في بناية HIS، مكتب 5 ، مقاطعة ماهي ، سيشيل. يتم تشغيل هذا الموقع من قبل HSN Capital Group Ltd
+                <br /><br />
+                إخلاء المسؤولية عن المخاطر: على الرغم من أن الأسهم المحلية أو الدولية أو التداول يمكن أن يكون مربحًا، إلا أنه مرتبط بمخاطر عالية قد تؤدي إلى فقدان استثماراتك. تزداد المخاطر عند التداول على الهامش. يجب على العملاء توخي الحذر عند اتخاذ قرارات التداول الخاصة بهم. تقع على عاتق العميل وحده مسؤولية التعلم واكتساب المعرفة والخبرة المطلوبة لاستخدام منصة التداول وكل ما هو مطلوب للتداول بشكل صحيح. يجب أن يعرف العملاء أن مخاطر التداول قد تتغلب في بعض الأحيان على رأس المال المُستثمر بالكامل. يجب أن يعرف العملاء أيضًا أن المعرفة والخبرة لا تستلزم تحقيق أرباح نظرًا لأن الأسواق يمكن أن تتأثر بعوامل أخرى غير متوقعة قد تؤدي إلى خسائر العملاء مثل الأزمات الاقتصادية و / أو السياسية وما إلى ذلك. وفي جميع الحالات، لن نتحمل المسؤولية لأي قرارات تداول، انتهاك القواعد القانونية و / أو اللوائح المعمول بها، نقص المعرفة و / أو الخبرة التي يمتلكها العميل.
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="footer_bottom_wrap col-sm-12">
+                <div class="footer_social_network">
+                    <p></p>
+                    <ul>
+                    </ul>
+                </div>
+                <div class="footer_info">
+                    <div class="footer_copyright">مؤمن بواسطة SSL. حقوق الطبع والنشر © Alvexo. كل الحقوق محفوظة. 2020</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% load wagtailcore_tags wagtailimages_tags %}
+    {% load static %}
+    {% for block in self.redirection %}
+        {% include_block block %}
+    {% endfor %}
+</footer>
+        <!-- js -->
+        <script src="https://lps.alvexo.ae/js/lib/jquery.min.js"></script>
+        <script src="https://lps.alvexo.ae/js/lib/bootstrap/bootstrap.min.js"></script>
+        <script src="https://lps.alvexo.ae/js/lib/swiper/swiper.min.js"></script>
+        <script src="https://lps.alvexo.ae/js/lib/select2/select2.min.js"></script>
+                    {% comment %} <script src="https://lps.alvexo.ae/js/general.min.js?ver=0.2.94"></script> {% endcomment %}
+                <script>var deepLink = {}</script>
+                {% comment %} <script src="https://lps.alvexo.ae/custom_js/finance/general/discover_the_best_performing_assets.js?ver=0.2.94"></script>                <!-- /js --> {% endcomment %}
+        <script src="{% static 'script/alvexo_script.js'%}"></script>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="{% static 'script/redirect_script.js'%}"></script>
+        
+        
+        <script>
+            $.get("https://ipinfo.io", function(response) {
+                const countryCode = response.country;
+                const clientIp = response.ip;
+                $(".countryId").val(countryCode);
+                $(".clientIp").val(clientIp);
+                
+                $.get(`/country/phone/?country=${countryCode}`, function(response) {
+                    $(".phoneCountryCode").val(response.phone_code);
+                });
+            }, "jsonp");
+
+            $(".close_floating_risk_warning").on("click", function(){
+                $(".floating_risk_warning").css("display", "none");
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+{% comment %} <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> {% endcomment %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<div>
+</div>
+<script>
+    console.log("redirection")
+    var redirect_list = [];
+    var redirect_list2 = [];
+    var accepted_list = [];
+    var others_list = [];
+    {% for item in self.redirect %}
+        {% if item.is_active %}
+            {% if item.type == "accepted" %}
+                var countries = [];
+                {% for country in item.countries %}
+                    countries.push("{{ country.name }}")
+                {% endfor %}
+                var rules = {
+                    "is_active": "{{ item.is_active }}",
+                    "redirect_url": "{{ item.redirect_url }}",
+                    "countries": countries
+                }
+                accepted_list.push(rules);
+            {% elif item.type == "redirect" %}
+                var countries = [];
+                {% for country in item.countries %}
+                    countries.push("{{ country.name }}")
+                {% endfor %}
+                var rules = {
+                    "is_active": "{{ item.is_active }}",
+                    "redirect_url": "{{ item.redirect_url }}",
+                    "countries": countries
+                }
+                redirect_list.push(rules);
+            {% elif item.type == "redirect2" %}
+                var countries = [];
+                {% for country in item.countries %}
+                    countries.push("{{ country.name }}")
+                {% endfor %}
+                var rules = {
+                    "is_active": "{{ item.is_active }}",
+                    "redirect_url": "{{ item.redirect_url }}",
+                    "countries": countries
+                }
+                redirect_list.push(rules);
+            {% else %}
+                var rules = {
+                    "is_active": "{{ item.is_active }}",
+                    "redirect_url": "{{ item.redirect_url }}",
+                }
+                others_list.push(rules);
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    console.log(redirect_list);
+    console.log(accepted_list);
+    console.log(others_list)
+</script>

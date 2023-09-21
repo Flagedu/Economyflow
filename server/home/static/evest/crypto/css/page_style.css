@@ -1,0 +1,554 @@
+#titletop span{
+        font-family: 'Gotham Medium'!important;
+    }
+
+@media (max-width: 767px) {
+    
+    #video > div > div > div.col-md-4.col-sm-12.col-xs-12 > video{
+        margin-left: 13px !important;
+    width: 100%;
+    }
+    #section-3 > div:nth-child(2)>.col-md-4 img{
+        width:250px !important;
+    }
+    #section-3 > div:nth-child(2)>.col-md-4 p{
+            font-size: 16px !important;
+    width: 127px !important;
+    margin-top: -34px !important;
+    }
+    #section-3 > div:nth-child(1) > div > h1 > strong{
+        font-size:24px;
+    }
+    #video{
+        height:auto !important;
+    }
+    .signBar{
+        display:none;
+    }
+    
+    .fixedbtn{
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    text-align: center !important;
+    padding: 10px !important;
+    margin: 0 !important;
+    z-index: 10000;
+    width: 100%!important;
+    border-radius:0px !important;
+        
+    }
+    
+    #titletop p{
+    font-size: 31px !important;
+    font-weight: bold;
+    }
+    
+    .whyEvest{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction:column;
+    }
+    
+    .goldm img{
+    width: 100%;
+    margin-bottom: 27px;
+    margin-right: 29px;
+    margin-top: 16px;
+    object-fit: cover;
+    object-position: 6px 2px;
+    }
+    
+    .col-md-7 .titlepoints{
+        text-align:center;
+        
+    }
+    
+    #section-2{
+        margin-top:0px !important;
+    }
+    
+    .topicm {
+        display:block;
+        background-color:#022b3b;
+        border-radius:8px;
+        text-align: center;
+        padding:20px;
+        box-shadow: 0 0 3px black;
+        font-size: 13px!important;
+        margin-top: -29px;
+    }
+    .topicm span{
+        font-size: 13px!important;
+    }
+    
+    .topicm strong{
+        font-size: 17px!important;
+        font-weight: normal;
+        
+    }
+    
+    .topicm span {
+        font-family: 'Gotham Medium'!important;
+        font-size:17px;
+    }
+    
+    .topic1{
+        display:none;
+    }
+    
+    #section-1 .col-md-4 {
+        max-width: 480px;
+    }
+    #section-2 .col-md-4{
+        float:right;
+        width:100%;
+    }
+    #section-3 .col-md-4 {
+        width:100%;
+    }
+
+    #subtitle{
+        display:none;
+    }
+    
+    .titlepoints{
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'GE SS Two Medium';
+        padding-bottom:10px;
+    }
+    
+    #pointstext .fa-circle{
+        color: #64faee;
+        margin-left: 10px;
+        font-size: 12px;
+        float: right;
+        margin-top: 12px;
+    }
+    
+    #pointstext .words{
+font-family: "GE SS Two Medium";
+    float: right;
+    font-size: 12px;
+    margin-top: -10px;
+    direction: rtl;
+    }
+    
+    #pointstext span{
+        font-family: 'Gotham Medium'!important;
+        font-weight:bold;
+        font-size: 13px !important;
+    }
+    
+    #section-2 span{
+        font-family: 'Gotham Medium'!important;
+    }
+    
+        .signBar{
+        display:none;
+    }
+    
+    .r1{
+        padding-left: 30px;
+    }
+    .r2{
+        margin-right:0px;
+    }
+    #payment-form .col-xs-4 {
+    float: left;
+        
+    }
+    .col-xs-8 {
+    width: 66.6%;
+        float:right;
+    }
+    
+    .llist {
+        list-style: none;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        display:block !important;
+    }
+    
+    #header > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > div.row > div.col-md-7
+    {
+            margin-top: 22px !important;
+            padding-right: 23px !important;
+    }
+    
+    #header > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > div.row{
+    line-height: 31px!important;
+    }
+    
+    #section-1 img{
+        padding:25px;
+    }
+
+    .whyEvest > img {
+        width:180px !important;
+    }
+    #section-22{
+        margin-top:0 !important;
+    }
+    
+    #section-22 p{
+        font-size:11px !important;
+    } 
+    
+    body > div.footer-dark > footer > div > div > div > p:nth-child(1) {
+        font-size:8px !important;
+    }
+    #titletop > p:nth-child(2){
+        font-size:10px!important;
+    }
+    #video > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right{
+        text-align:center;
+    }
+    #video > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > span.topict
+    {
+    padding: 22px !important;
+    font-size: 25px;
+    direction: rtl;
+    padding-left: 35px !important;
+    }
+    #video > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > span.textt
+    {
+        font-size:17px;
+    }
+    #video > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > p{
+        font-size:11px!important;
+    }
+    #video > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > p span {
+        font-size:11px!important;
+    }
+    .videot{
+            margin-left: 24px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    #video > div > div > div.col-md-4.col-sm-12.col-xs-12 > video{
+        margin-left:0 !important;
+    }
+    .container {
+            padding-right: 100px !important;
+            padding-left: 125px !important;
+            margin-left: auto !important;
+    }
+    .signBar{
+        display:none ;
+    }
+    
+     .topicm {
+        display:block;
+        background-color:#022b3b;
+        border-radius:8px;
+        text-align: center;
+        padding:20px;
+        box-shadow: 0 0 3px black;
+        font-size: 17px!important;
+    }
+    #titletop p{
+    font-size: 42px;
+    font-weight: bold;
+    }
+    .titlepoints{
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'GE SS Two Medium';
+        padding-bottom:10px;
+        text-align:center;
+    }
+    .container #subtitle{
+        display:none;
+    }
+    .goldm img{
+        margin-top: 16px;
+        width: 100% !important;
+        margin-right: 100px;
+        object-fit:cover;
+        object-position:0px 1px;
+    }
+    .whyEvest{
+        display:flex;
+        padding:0px !important;
+        justify-content:center;
+    }
+    #video{
+        height:auto !important;
+    }
+    
+    #section-2 .col-md-4{
+        float:right;
+        width:50%;
+    }
+    #section-2 span{
+       font-family: 'Gotham Medium'!important; 
+    }
+    
+    .fixedbtn{
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    text-align: center !important;
+    padding: 10px !important;
+    margin: 0 !important;
+    z-index: 10000;
+    width: 100%!important;
+    border-radius:0px !important;
+    }
+        #payment-form .col-xs-4 {
+    float: left;
+    width:16%;
+    }
+    .col-xs-8 {
+    width: 84%;
+        float:right;
+    }
+    .r1{
+        padding-left:30px;
+    }
+    #pointstext .fa-circle{
+        color: #64faee !important;
+        margin-left: 10px;
+        font-size: 12px;
+        float: right;
+        margin-top: 12px;
+    }
+    #pointstext .words{
+    font-family: "GE SS Two Medium";
+    float: right;
+    font-size: 15px;
+    margin-top: -14px;
+    direction: rtl;
+    }
+    #pointstext span{
+        font-family: 'Gotham Medium'!important;
+        font-weight:bold;
+        font-size: 15px !important;
+    }
+    #header > div > div > div.col-md-4.col-sm-12.col-xs-12.signup{
+        margin-top:8% !important;
+    }
+    #header > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > div.row > div.col-md-7{
+            margin-top: 18px !important;
+            padding-right: 21px !important;
+            margin-left: -41px !important;
+    }
+    #video > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > span.topict{
+    padding: 0;
+    float: right;
+    font-weight: bold;
+    font-size: 32px;
+    }
+    #video > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > span.textt
+    {
+        font-size: 18px !important;
+    }
+    
+}
+
+/* styling for 1024 because of the big subtitle*/
+@media (max-width : 1024px){
+    #subtitle{
+        font-size:16px !important;
+    }
+}
+
+/* Styling for ipad pro and desktop*/    
+@media (min-width: 1000px){
+    #section-3{
+        padding-bottom:5%;
+    }
+    #video > div > div > div.col-md-4.col-sm-12.col-xs-12 > video{
+        margin-left:-38% !important;
+    }
+    #header > div > div > div.col-md-4.col-sm-12.col-xs-12.signup {
+    margin-top: 0 !important;
+}
+    #header > div > div{
+        width:72%;
+    }
+    .container{
+            padding-right: 0px !important;
+    padding-left: 0 !important;
+    margin-left: auto !important;
+    }
+    
+    .fixedbtn{
+        display:none !important;
+    }
+    
+    .downloadit{
+        font-size:80px;
+    }
+    #titletop p{
+    color: #fff;
+    font-size: 45px !important;
+    font-weight: inherit;
+    }
+    
+    
+    .bigImg{
+    width: 594px;
+    margin-top: -72px;
+    margin-right: 25px;
+    margin-left: -24px;
+    }
+    .goldm img{
+        display:none;
+    }
+    .topicm{
+        display:none;
+    }
+    
+    .signBar{
+    font-family: 'GE SS Two Medium';
+    background: #49a7a7;
+    color: rgb(255,255,255);
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    z-index:9;
+    cursor:pointer;
+    display:none;
+    }
+    
+    .container #subtitle{
+        display:block;
+    }
+    .titlepoints{
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'GE SS Two Medium';
+        padding-bottom:10px;
+        text-align:right;
+        
+    }
+    .whyEvest{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    }
+    
+    #section-1 h1{
+        font-size:50px;
+    }
+    
+    #section-2 h1{
+        font-size:50px;
+    }
+    #titletop p{
+        font-size:43px;
+    }
+    #section-2 span{
+       font-family: 'Gotham Medium'!important; 
+    }
+    #auth {
+        
+        font-size:20px;
+        font-weight:normal;
+        color:#64faee;
+    }
+    #auth span{
+       color:#fff;
+    }
+    #subtitle{
+        font-size:25px !important;
+        color:#64faee;
+        font-family: "GE SS Two Medium";
+        margin-top:88px;
+        margin-right:7px;
+    }
+    #subtitle span{
+        font-family: 'Gotham Medium'!important;
+    }
+    #pointstext{
+        padding-top:50px;
+    }
+    #pointstext .titlepoints{
+        font-size:43px;
+        font-family: "GE SS Two Medium";
+        padding-bottom: 20px;
+    }
+    #pointstext li{
+        color: #64faee;
+        margin-left: 10px;
+        font-size: 21px;
+        float: right;
+        margin-top: 12px;
+    }
+    #pointstext span{
+        font-family: 'Gotham Medium'!important;
+        color:#fff;
+        font-weight: bold;
+        font-size: 20px !important;
+    }
+    #pointstext .fa-circle{
+        color: #64faee;
+        margin-left: 10px;
+        font-size: 12px;
+        float: right;
+        margin-top: 12px;
+    }
+    #pointstext .words{
+        font-family: "GE SS Two Medium";
+    float: right;
+    font-size: 22px;
+    margin: -4px;
+    }
+    #section-1 .col-md-4 {
+        max-width: 370px;
+    }
+    
+    #section-3 .col-md-4 {
+        width:33.33%;
+    }
+    .r1{
+        padding-left: 15px !important;
+    }
+    .r2{
+        margin-right:-10px !important;
+    }
+    #payment-form .col-xs-4 {
+    float: left;
+    width:33% !important;
+    }
+    .col-xs-8 {
+    width: 67% !important;
+        float:right;
+    }
+    #header > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > div.row > div.col-md-7
+    {
+            margin-top: -32px !important;
+    padding-right: 25px !important;
+    }
+        #video .topict {
+        font-size:50px;
+    }
+    #video .textt {
+        font-size:29px;
+    }
+    #video .col-md-4{
+        width: 300px;
+    }
+}
+
+@media (min-width : 1024px)and (max-width:1599px){
+    #header > div > div {
+    width: 95%;
+    }
+    .bigImg {
+    width: 490px;
+    margin-top: -18px;
+    margin-right: 25px;
+    margin-left: -24px;
+}
+}

@@ -1,0 +1,1431 @@
+* {
+    outline: 0!important
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
+
+::-webkit-scrollbar-track {
+    background: #f6f5f5
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ccc
+}
+
+a {
+    color: #333a40;
+    text-decoration: none!important
+}
+
+li,
+p {
+    line-height: 2em;
+    margin-bottom: 5px
+}
+
+body {
+    overflow-y: scroll!important;
+    color: #333a40
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    touch-action: manipulation
+}
+
+header {
+    padding-right: 0!important;
+    z-index: 999999!important
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.6em
+}
+
+.fixed-theme {
+    background-attachment: fixed
+}
+
+.logo {
+    width: 110px
+}
+
+.bg-dark {
+    background-color: #333a40!important
+}
+
+.bg-light {
+    background-color: #f0f1f1!important
+}
+
+.btn,
+.form-control {
+    resize: none;
+    line-height: 1.8em
+}
+
+.btn-md,
+.nav-link {
+    padding: .35rem .9rem;
+    font-size: .85rem
+}
+
+.navbar ul>li.active {
+    background: #cd2124
+}
+
+.raster-overlay {
+    background-image: url(../../../pub/imgs/raster.png);
+    opacity: .5
+}
+
+.overlay {
+    background-color: rgba(52, 58, 64, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0
+}
+
+.overlay-light {
+    background-color: rgba(52, 58, 64, .1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0
+}
+
+.overlay-2 {
+    background-color: rgba(47, 53, 59, .8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0
+}
+
+.jumbotron {
+    position: relative
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover,
+.dropdown-menu li:hover {
+    background-color: #adadad
+}
+
+.bg-gray,
+.gray-bg {
+    background: #ebebeb
+}
+
+.gray-light {
+    color: #b3b3b3!important
+}
+
+.py-6 {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.main p {
+    line-height: 1.7em
+}
+
+.hidden {
+    display: none!important
+}
+
+.border-dashed,
+.dashed-border {
+    border-bottom: 1px dashed;
+    color: inherit
+}
+
+.border-radius {
+    border-radius: 5px
+}
+
+.erorrs-bg input {
+    border-radius: 0;
+    border: 1px solid #cd2124
+}
+
+.danger-border {
+    border: 1px solid #cd2124
+}
+
+.btn-outline-primary {
+    color: #cd2124;
+    border-color: #cd2124
+}
+
+.transition {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.jumbotron {
+    padding: 5rem 0
+}
+
+.jumbotron-md {
+    padding: 4rem 0
+}
+
+.jumbotron-sm {
+    padding: 3rem 0
+}
+
+.jumbotron-xs {
+    padding: 1.5rem 0
+}
+
+.help-block {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    text-transform: lowercase
+}
+
+.has-error,
+.help-block {
+    color: #cd2124
+}
+
+.has-error .custom-file-label,
+.has-error .input-group-text,
+.has-error input,
+.has-error select,
+.has-error textarea {
+    border-color: #cd2124;
+    background: rgba(205, 33, 36, .2)
+}
+
+.bg-secondery {
+    background-color: #333a40!important
+}
+
+.border-none {
+    border: none!important
+}
+
+.alert {
+    resize: none;
+    font-size: 15px;
+    line-height: 1.8em;
+    padding: .475rem .75rem
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #cd2124;
+    border-color: #cd2124
+}
+
+.dashed-ul>li:after {
+    content: "|";
+    padding-right: 10px;
+    padding-left: 10px
+}
+
+hr {
+    border-top: 1px solid rgba(235, 235, 235, .2)
+}
+
+.w-30 {
+    width: 30%!important
+}
+
+.w-70 {
+    width: 70%!important
+}
+
+.table-responsive {
+    overflow-x: hidden
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb
+}
+
+.display-5 {
+    font-size: 3rem
+}
+
+table {
+    background: rgba(255, 255, 255, .5)
+}
+
+.jumbotron-2 {
+    padding: 9rem 0;
+    position: relative
+}
+
+.jumbotron-3 {
+    padding: 13rem 0;
+    position: relative
+}
+
+.alert-dismissible .close {
+    padding: .45rem 1.25rem
+}
+
+.table-responsive>.table-bordered {
+    border: 1px solid #dee2e6
+}
+
+.border-r {
+    border-right: 1px solid #dee2e6
+}
+
+.border-l {
+    border-left: 1px solid #dee2e6
+}
+
+.border-t {
+    border-top: 1px solid #dee2e6
+}
+
+.cover-banner {
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: cover;
+    background-position: center
+}
+
+.pakistan-campaign-banner-3 {
+    background-image: url(../imgs/pakistan/banner_3.png)
+}
+
+.pakistan-campaign-banner-4 {
+    background-image: url(../imgs/pakistan/banner_4.png)
+}
+
+.iraq-campaign-contact-requeste-banner {
+    background-image: url(../imgs/iraq/banner_4_.png)
+}
+
+.bg-danger-transparent {
+    background-color: rgba(205, 33, 36, .7)!important
+}
+
+.dubai-campaign-last-banner {
+    background-image: url(../imgs/dubai/last_section.png)
+}
+
+.saudi-arabia-campaign-last-banner {
+    background-image: url(../imgs/saudi-arabia/last_section.png)
+}
+
+.australia-campaign-banner-1 {
+    background-image: url(../imgs/australia/australia-top-banner.png)
+}
+
+.australia-campaign-banner-3 {
+    background-image: url(../imgs/australia/banner_3.png)
+}
+
+.australia-campaign-banner-4 {
+    background-image: url(../imgs/australia/banner_4.png)
+}
+
+.australia-campaign-banner-5 {
+    background-image: url(../imgs/australia/banner_5.png)
+}
+
+.listing-campaign-banner-1 {
+    background-image: url(../imgs/listing/banner_01.png)
+}
+
+.listing-campaign-banner-2 {
+    background-image: url(../imgs/listing/banner_02.png)
+}
+
+.listing-campaign-banner-3 {
+    background-image: url(../imgs/listing/banner_03.png)
+}
+
+.contest-banner {
+    background-image: url(../imgs/contest/banner.png)
+}
+
+.bg-contest-s3 {
+    background-image: url(../imgs/contest/section-3.png)
+}
+
+.bg-texture {
+    background-image: url(../imgs/contest/texture.png)
+}
+
+.ingot-contest-banner {
+    background-image: url(../imgs/contest/banner_01.png)
+}
+
+.taboola-banner {
+    background-image: url(../imgs/taboola/banner.png)
+}
+
+.new-campaign-banner {
+    background-image: url(../imgs/taboola/banner.png)
+}
+
+.bg-dark-gradient-x {
+    background: #fff;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .69) 50%, rgba(255, 255, 255, 0) 100%)
+}
+
+.bg-dark-gradient-y {
+    background: #7a2e33;
+    background: linear-gradient(0deg, #7a2e33 0, #000 41%)
+}
+
+.ingot-contest-bg-2 {
+    background-image: url(../imgs/contest/banner_02.png)
+}
+
+.open-app-steps .app-step .step {
+    height: 70px;
+    width: 70px;
+    line-height: 69px;
+    font-size: 25px;
+    overflow: hidden
+}
+
+.open-app-steps .app-step:before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 90px
+}
+
+.open-app-steps .app-step {
+    display: inline-block;
+    position: relative
+}
+
+.open-app-steps .arrow:before {
+    position: absolute;
+    top: 25%;
+    width: 21vh;
+    font-family: LineAwesome;
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    font-size: 35px
+}
+
+.none {
+    display: none
+}
+
+.jumbotron-2 {
+    padding: 8rem 0
+}
+
+.check-circle-ul li:before {
+    content: "\f00c";
+    font-family: LineAwesome;
+    display: inline-block;
+    width: 1.3em;
+    color: #cd2124;
+    font-weight: 700;
+    font-size: 1.4rem
+}
+
+.line-title::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 3.5px;
+    width: 25%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #cd2124, rgba(255, 0, 0, 0));
+    background-size: 100%;
+    background-position: left
+}
+
+.line-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px
+}
+
+.hl-1 {
+    line-height: 1rem
+}
+
+.bg-gradient-r {
+    background-image: linear-gradient(to right, #cd2124, rgba(255, 0, 0, 0))
+}
+
+.bg-gradient-x {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #cd2124, rgba(255, 0, 0, 0))
+}
+
+.btn.disabled,
+.btn:disabled {
+    pointer-events: none
+}
+
+.campaign-register-banner {
+    background-image: url(../imgs/register/banner.png)
+}
+
+.campaign-lb-banner {
+    background-image: url(../imgs/lb/bg-1.png)
+}
+
+.card {
+    box-shadow: 0 0 3px 0 #e8eaeb
+}
+
+.campaign-register-footer {
+    background-image: url(../imgs/register/regulation-banner.jpg)
+}
+
+.spinner {
+    display: inline-block;
+    -webkit-animation: spin 1s linear infinite;
+    -o-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite
+}
+
+.custom-control-label {
+    line-height: 1.8em
+}
+
+.cover-fixed {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center
+}
+
+.table-width {
+    table-layout: fixed;
+    word-wrap: break-word
+}
+
+.reward-bg {
+    background-image: url(../imgs/contest/reward.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px
+}
+
+.shield-bg {
+    background-image: url(../imgs/contest/shield.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60px
+}
+
+.mb-6 {
+    margin-bottom: 7rem!important
+}
+
+.mt-6 {
+    margin-top: 7rem!important
+}
+
+.badge {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -32.4px;
+    left: -55.7px;
+    font-size: 18px;
+    z-index: 9999;
+    display: block
+}
+
+.check-circular-ul li:before {
+    content: "\f058";
+    font-family: LineAwesome;
+    display: inline-block;
+    width: 1.3em;
+    color: #cd2124;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 1rem
+}
+
+.column-lg-count-2 {
+    column-count: 2
+}
+
+.w-150 {
+    width: 150px!important
+}
+
+.light-line-title::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 12%;
+    background-color: #fff;
+    background-size: 100%;
+    background-position: left
+}
+
+.light-line-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px
+}
+
+.overlay-raster-overlay {
+    background-image: url(../../../pub/imgs/raster.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0
+}
+
+.dark-transparency {
+    background: rgba(51, 58, 64, .7)
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%)
+}
+
+.instrumant-shadow {
+    box-shadow: 0 5px 40px rgba(51, 58, 64, .1);
+    border-radius: 4px
+}
+
+.danger-line-title::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 25%;
+    background-color: #cd2124;
+    background-size: 100%;
+    background-position: left
+}
+
+.danger-line-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px
+}
+
+span.icon {
+    width: 50px;
+    display: inline-block
+}
+
+.custom-card .card-header .card-title {
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.custom-card .card-header {
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-bottom: none
+}
+
+.custom-card .table td,
+.custom-card .table th {
+    padding: 1.25rem .75rem;
+    font-size: 12px;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-weight: 700
+}
+
+.custom-card .table td {
+    border-top: 1px solid #dee2e6
+}
+
+.custom-card .table thead th {
+    text-transform: uppercase;
+    color: #adb0b3;
+    border: none
+}
+
+.custom-card .table thead tr {
+    box-shadow: 0 5px 40px rgba(51, 58, 64, .1)
+}
+
+.card {
+    box-shadow: 0 5px 40px rgba(51, 58, 64, .1)
+}
+
+.min-height {
+    min-height: 160px
+}
+
+.bg-dark {
+    background: #333a40!important
+}
+
+.bg-light-gradient {
+    background: #f1f1f1;
+    background: linear-gradient(0deg, rgb(251 251 251) 48%, rgba(255, 255, 255, .7651435574229692) 100%)
+}
+
+.bg-zero-3 {
+    background-image: url(../imgs/zero-commission/zero_bg.png)
+}
+
+.bg-zero-5 {
+    background-image: url(../imgs/zero-commission/why_ingot_bg.png)
+}
+
+.marker-danger ::marker {
+    color: #cd2124;
+    font-size: 1.2em
+}
+
+.marker-white ::marker {
+    color: #fff;
+    font-size: 1.2em
+}
+
+.marker-danger-rounded {
+    list-style: none;
+    counter-reset: my-awesome-counter
+}
+
+.marker-danger-rounded li {
+    counter-increment: my-awesome-counter
+}
+
+.marker-danger-rounded ::before {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #cd2124;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 5px;
+    content: counter(my-awesome-counter);
+    width: 1.3em;
+    height: 1.3em
+}
+
+.jumbotron-xl {
+    padding: 15rem 0
+}
+
+.row-eq-height>div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.full-height,
+.full-height-top {
+    height: calc(100vh - 80px)
+}
+
+.carousel-caption {
+    padding-bottom: 50px;
+    bottom: 70px
+}
+
+.carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%
+}
+
+.full-view .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.full-view .carousel-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5)
+}
+
+.md-small {
+    font-size: 75%
+}
+
+.xs-small {
+    font-size: 65%
+}
+
+.rounded-pill {
+    border-radius: 2.75rem
+}
+
+.bg-zero2-s2 {
+    background-image: url(../imgs/zero-commission/zero2_s2.png)
+}
+
+.dark-hover:hover {
+    background: #333a40
+}
+
+.dark-hover:hover * {
+    color: #fff
+}
+
+a .dark-hover:hover {
+    color: #333a40
+}
+
+.dark-border-bottom {
+    border-bottom: 3px solid #333a40
+}
+
+.step .line {
+    position: relative
+}
+
+.step .line:before {
+    position: absolute;
+    content: "";
+    border: 1px dashed #cd2124;
+    width: calc(100% + 30px);
+    border-bottom: none;
+    top: 5px
+}
+
+.step {
+    display: inline-block;
+    position: relative
+}
+
+.notify:after {
+    position: absolute;
+    content: " ";
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background: #cd2124;
+    box-shadow: 0 0 1px 3px rgba(205, 33, 36, .5)
+}
+
+.red-filter:hover {
+    filter: sepia(100%) saturate(100);
+    -webkit-filter: sepia(100%) saturate(100)
+}
+
+.white-filte:hover img {
+    filter: brightness(0) invert(1)
+}
+
+.bg-tesla {
+    background-image: url(../imgs/zero-commission/tesla_bg_banner.png)
+}
+
+.btn-box-shadow {
+    box-shadow: 0 0 20px 2px #888
+}
+
+.circular-hover {
+    width: 65px;
+    height: 65px;
+    background: #cd2124;
+    border-radius: 50%
+}
+
+.dark-filter {
+    filter: grayscale(1) invert(1)
+}
+
+.cover-banner-2 {
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: cover;
+    background-position: center;
+    background: #333a40
+}
+
+.table .thead-danger th {
+    color: #fff;
+    background-color: #cf2129;
+    border-color: #cf2129
+}
+
+.bg-red-notches {
+    background-image: url(../imgs/booster-account/red-notches.png)
+}
+
+.booster-account-banner-3 {
+    background-image: url(../imgs/booster-account/bg-section-3.png)
+}
+
+.vietnam-iphone-top-banner {
+    background-image: url(../imgs/vietnam/iphone.png)
+}
+
+.vietnam-test-and-win-top-banner {
+    background-image: url(../imgs/vietnam/test-and-win.png)
+}
+
+.bg-bonus-dark-cover {
+    background-image: url(https://www.ingotbrokers.com/templates/campaign/default/imgs/bonus/gray-background.png)
+}
+
+.bg-bonus-dollar {
+    background-image: url(../imgs/bonus/dollar-background.png)
+}
+
+.md-size {
+    font-size: 1.1em
+}
+
+.ul-numeric-circle {
+    background: #cd2124;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    text-align: center;
+    color: #ffff;
+    border-radius: 50%;
+    margin-right: 10px
+}
+
+.numeric-list {
+    counter-reset: order-counter
+}
+
+.numeric-list dt {
+    position: relative;
+    font-weight: 400
+}
+
+.numeric-list dt:before {
+    content: counter(order-counter);
+    counter-increment: order-counter;
+    position: absolute;
+    top: 9px;
+    font-size: 16px;
+    background: #cd2124;
+    color: #fff;
+    width: 24px;
+    text-align: center;
+    border-radius: 50%
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2.25rem + 6px)
+}
+
+.line-height-1 {
+    line-height: 1rem
+}
+
+.font-small-1 {
+    font-size: .7rem
+}
+
+.font-small-2 {
+    font-size: .8rem
+}
+
+.font-small-3 {
+    font-size: .9rem
+}
+
+.font-medium-1 {
+    font-size: 1.1rem
+}
+
+.font-medium-2 {
+    font-size: 1.2rem
+}
+
+.font-medium-3 {
+    font-size: 1.3rem
+}
+
+.font-medium-4 {
+    font-size: 1.4rem
+}
+
+.font-medium-5 {
+    font-size: 1.5rem
+}
+
+.font-large-1 {
+    font-size: 2rem
+}
+
+.font-large-2 {
+    font-size: 3rem
+}
+
+.font-large-3 {
+    font-size: 4rem
+}
+
+.font-large-4 {
+    font-size: 5rem
+}
+
+.font-large-5 {
+    font-size: 6rem
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%)
+}
+
+@keyframes pulse-red {
+    0% {
+        transform: scale(.95);
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, .7)
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 82, 82, 0)
+    }
+    100% {
+        transform: scale(.95);
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0)
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.btn-trade {
+    background: #cd2124;
+    border-radius: 50px;
+    color: #fff;
+    width: 150px;
+    font-size: 16px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, .24), 0 15px 12px rgba(0, 0, 0, .22)
+}
+
+@media (max-width:768px) {
+    .wizard>.steps>ul {
+        margin-bottom: 20px
+    }
+    .wizard>.steps>ul>li {
+        display: block;
+        float: left;
+        width: 50%
+    }
+    .wizard>.steps>ul>li>a {
+        margin-bottom: 0
+    }
+    .wizard>.steps>ul>li:first-child:before {
+        content: ''
+    }
+    .wizard>.steps>ul>li:last-child:after {
+        content: '';
+        background-color: #333a40
+    }
+    .wizard.vertical>.steps {
+        width: 15%
+    }
+    .mb-6 {
+        margin-bottom: 5rem!important
+    }
+    .mt-6 {
+        margin-top: 5rem!important
+    }
+    .column-lg-count-2 {
+        column-count: 1
+    }
+    .carousel-item {
+        height: auto
+    }
+}
+
+@media (max-width:480px) {
+    .wizard>.steps>ul>li {
+        width: 100%
+    }
+    .wizard>.steps>ul>li.current:after {
+        background-color: #333a40
+    }
+    .wizard.vertical>.steps {
+        width: 20%
+    }
+    .mb-6 {
+        margin-bottom: 4rem!important
+    }
+    .mt-6 {
+        margin-top: 4rem!important
+    }
+}
+
+@media (max-width:1199px) {
+    .logo {
+        width: 100px
+    }
+    .jumbotron {
+        padding: 4rem 0
+    }
+    .jumbotron-2 {
+        padding: 8rem 0;
+        position: relative
+    }
+    .jumbotron-3 {
+        padding: 10rem 0;
+        position: relative
+    }
+    .h1,
+    h1 {
+        font-size: 2.3rem
+    }
+    .h2,
+    h2 {
+        font-size: 1.8rem
+    }
+    .h3,
+    h3 {
+        font-size: 1.6rem
+    }
+    .h4,
+    h4 {
+        font-size: 1.4rem
+    }
+    .display-5 {
+        font-size: 2.5rem
+    }
+    .display-4 {
+        font-size: 3rem
+    }
+    .display-3 {
+        font-size: 3.7rem
+    }
+    .mb-5,
+    .my-5 {
+        margin-bottom: 2.8rem!important
+    }
+    .mb-6 {
+        margin-bottom: 3rem!important
+    }
+    .mt-6 {
+        margin-top: 3rem!important
+    }
+    .jumbotron-xl {
+        padding: 12rem 0
+    }
+}
+
+@media (max-width:991px) {
+    .full-height-top {
+        height: auto
+    }
+    .vertical-align {
+        top: auto;
+        transform: none;
+        -webkit-transform: none
+    }
+    .fixed-top {
+        position: relative
+    }
+    .jumbotron {
+        padding: 3rem 0
+    }
+    .jumbotron-xs {
+        padding: 1.4rem 0
+    }
+    .logo {
+        width: 90px
+    }
+    .mini-menu {
+        display: none!important
+    }
+    .table-width {
+        table-layout: auto
+    }
+    .h1,
+    h1 {
+        font-size: 2rem
+    }
+    .h2,
+    h2 {
+        font-size: 1.6rem
+    }
+    .h3,
+    h3 {
+        font-size: 1.4rem
+    }
+    .h4,
+    h4 {
+        font-size: 1.2rem
+    }
+    .display-5 {
+        font-size: 2.2rem
+    }
+    .display-3 {
+        font-size: 3.2rem
+    }
+    .display-4 {
+        font-size: 2.7rem
+    }
+    .small,
+    small {
+        font-size: 75%!important;
+        line-height: 2em
+    }
+    .pb-4,
+    .py-4 {
+        padding-bottom: 1.2rem!important
+    }
+    .pt-4,
+    .py-4 {
+        padding-top: 1.2rem!important
+    }
+    .pt-5,
+    .py-5 {
+        padding-top: 2.5rem!important
+    }
+    .pb-5,
+    .py-5 {
+        padding-bottom: 2.5rem!important
+    }
+    .mb-5,
+    .my-5 {
+        margin-bottom: 2.6rem!important
+    }
+    .table-responsive {
+        overflow-x: auto
+    }
+    .jumbotron-2 {
+        padding: 6rem 0;
+        position: relative
+    }
+    .jumbotron-3 {
+        padding: 8rem 0;
+        position: relative
+    }
+    .pakistan-campaign-banner-2 {
+        background-image: none!important
+    }
+    .iraq-services .img-fluid {
+        width: 80px
+    }
+    .px-5 {
+        padding-left: 1.5rem!important;
+        padding-right: 1.5rem!important
+    }
+    .open-app-steps .arrow:before {
+        position: absolute;
+        top: 25%;
+        width: 13vh;
+        font-family: LineAwesome;
+        display: inline-block;
+        color: #fff;
+        font-weight: 700;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+        font-size: 35px
+    }
+    .jumbotron-xl {
+        padding: 10rem 0
+    }
+    .carousel-caption {
+        padding-bottom: 30px;
+        bottom: 50px
+    }
+    .step .line:before {
+        display: none
+    }
+    .notify:after {
+        display: none
+    }
+    .vietnam-test-and-win-top-banner {
+        background: #ddd
+    }
+    .bg-red-notches {
+        background: #333a40
+    }
+    .full-height-top {
+        height: auto
+    }
+}
+
+@media (max-width:767px) {
+    .logo {
+        width: 85px
+    }
+    .h1,
+    h1 {
+        font-size: 1.8rem
+    }
+    .h2,
+    h2 {
+        font-size: 1.4rem
+    }
+    .h3,
+    h3 {
+        font-size: 1.25rem
+    }
+    .h4,
+    h4 {
+        font-size: 1.1rem
+    }
+    .h5,
+    h5 {
+        font-size: 1rem
+    }
+    .display-3 {
+        font-size: 2rem
+    }
+    .display-4 {
+        font-size: 1.8rem
+    }
+    .display-5 {
+        font-size: 2rem
+    }
+    .pt-5,
+    .py-5 {
+        padding-top: 2rem!important
+    }
+    .pb-5,
+    .py-5 {
+        padding-bottom: 2rem!important
+    }
+    .mb-5,
+    .my-5 {
+        margin-bottom: 2.4rem!important
+    }
+    .jumbotron-2 {
+        padding: 4rem 0;
+        position: relative
+    }
+    .jumbotron-3 {
+        padding: 6rem 0;
+        position: relative
+    }
+    .pakistan-campaign-banner-2 {
+        background-image: none!important
+    }
+    .border-r {
+        border-right: none
+    }
+    .border-l {
+        border-left: none
+    }
+    .border-t {
+        border-top: none
+    }
+    .iraq-services .list-inline-item {
+        width: 40%
+    }
+    .px-5 {
+        padding-left: 1rem!important;
+        padding-right: 1rem!important
+    }
+    .australia-campaign-banner-4 {
+        background: #d5d9db
+    }
+    .open-app-steps .arrow:before {
+        display: none
+    }
+    .jumbotron-xl {
+        padding: 6rem 0
+    }
+    .zero-commission-banner {
+        background: 0 0
+    }
+}
+
+@media (max-width:400px) {
+    .d-xxs-none {
+        display: none
+    }
+    .mb-5,
+    .my-5 {
+        margin-bottom: 2.2rem!important
+    }
+    .h1,
+    h1 {
+        font-size: 1.6rem
+    }
+    .h2,
+    h2 {
+        font-size: 1.2rem
+    }
+    .h3,
+    h3 {
+        font-size: 1rem
+    }
+    .display-3 {
+        font-size: 1.7rem
+    }
+    .display-4 {
+        font-size: 1.5rem
+    }
+    .display-5 {
+        font-size: 1.2rem
+    }
+    .iraq-services .list-inline-item {
+        width: 100%
+    }
+    .px-5 {
+        padding-left: .5rem!important;
+        padding-right: .5rem!important
+    }
+    .jumbotron-xl {
+        padding: 4rem 0
+    }
+}

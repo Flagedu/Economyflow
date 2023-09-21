@@ -1,0 +1,582 @@
+{% load static %}
+{% load cache %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        {% include "home/tagmanager_head.html" %}
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://www.ingotbrokers.com/storage/uploads/$2y$10$K7Sv0NVvxdfnAKPA7hOZsO0Yw3SWJQJfJxzeNEEHuaaw0eOb2.4C6.ico"/>
+<!-- SITE TAGS -->
+<title>INGOT Broker Limited</title>
+<link rel="canonical" href="https://www.ingotbrokers.com/ar/campaign/bonus-campaign"/>
+<meta name="apple-mobile-web-app-title" content="INGOT Broker Limited ">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="csrf-token" content="U0ZrSaIb6JfPMYLFYNMeSIAGxxDcLchqxne0uPDn">
+<meta name="base-url" content="https://www.ingotbrokers.com">
+<meta name="base-url" content="https://www.ingotbrokers.com">
+<meta name="content-language" content="ar">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!-- GOOGLE TAGS -->
+
+<meta property="og:title" content="INGOT Broker Limited" />
+<meta property="og:keywords" content="" />
+<meta property="og:description" content="" />
+<meta property="og:" content="INGOT Broker Limited"/>
+<meta property="og:image" content="https://www.ingotbrokers.com/templates/pub/imgs/fb.jpg" />
+<!-- TWITTER TAGS -->
+<meta name="twitter:title" content="INGOT Broker Limited" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image" content="https://www.ingotbrokers.com/templates/pub/imgs/fb.jpg" />
+<meta name="twitter:site" content="INGOT Broker Limited" />
+<!-- OTHER TAGS -->
+<meta name="rights" content="INGOT Broker Limited"/>
+<meta name="author" content="INGOT Broker Limited"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" type="text/css" href="https://www.ingotbrokers.com/templates/pub/css/fonts/ar-font-family.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'ingot/camp1/css/rtl-theme.min.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'ingot/camp1/css/theme.min.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'ingot/camp1/css/c-plugins.min.css' %}"/>
+        <script src="https://www.ingotbrokers.com/templates/pub/js/jquery.min.js"></script>
+
+
+            <!-- Global site tag (gtag.js) - Google Ads: 959055623 -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=AW-959055623"></script>
+            <script>
+            function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-373424027/NaN8CIWQy5ECEJv_h7IB',
+                'event_callback': callback
+            });
+            return false;
+            }
+            </script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-959055623');
+            </script>
+
+
+            
+            </head>
+    <body>
+
+    <noscript>
+        <img class="d-none" src="https://www.facebook.com/tr?id=512660702647732&ev=PageView&noscript=1" alt="facebook"/>
+    </noscript>
+    <noscript><img height="1" width="1" class="d-none" src="https://q.quora.com/_/ad/582c60209b9f47cc93bd74b7dcbe9c98/pixel?tag=ViewContent&noscript=1" loading="lazy" alt=""/></noscript>
+
+                <header class="header box-shadow">
+    <div class="main-menu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark font-weight-bold p-0 px-3 m-0">
+            <div class="container">
+                <a class="navbar-brand logo py-3 mr-0" href="https://www.ingotbrokers.com">
+                                            <img class="img-fluid" src="https://www.ingotbrokers.com/storage/uploads/$2y$10$pQKSfFIxiQAe.CNrTEXeOen8dekqG3vVcjVyANgKebVx8NoDET0m.png" alt="إنجوت بروكرز">
+                                    </a>
+                <button class="navbar-toggler navbar-toggler-right collapsed position-relative p-0" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>
+        <div class="site-content" id="app">
+            
+    <section id="register-form" class="jumbotron mb-0 rounded-0 bg-bonus-banner cover-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 align-self-center mb-4 mb-lg-0">
+                    <div class="text-white">
+                        <h1 class="h2 font-weight-bold text-uppercase mb-0 line-height-1">بقيمة 100 دولار أمريكي</h1>
+                        <h2 class="display-3 font-weight-bold"> بونص!</h2>
+                        <p class="font-medium-3"> تداول معنا واحصل على بونص قدره 100 دولار أمريكي كرصيد في حسابك. </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 align-self-center">
+                    <h5 class="font-weight-bold text-center bg-dark text-white mb-0 py-3">احصل على البونص الآن<h5>
+                    <div class="bg-light p-4">
+                        <form id="register_form" class="ajax_form" method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="_token" value="U0ZrSaIb6JfPMYLFYNMeSIAGxxDcLchqxne0uPDn">
+                            <input type="hidden" name="campaign_name" value="bonus-campaign" />
+
+                            <input type="hidden" name="referral" value="10">
+                            <input type="hidden" name="referral_value" value="bonus-campaign">
+    
+                            <div class="form-group row">
+                                <div class="col-6">
+                                    <input type="text" class="form-control" name="firstName" placeholder="الاسم الأول">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" name="lastName" placeholder="الاسم الأخير">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-12">
+                                    <input type="email" class="form-control" name="email" placeholder="البريد الاكتروني" >
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-12">
+                                    <select name="country" class="form-control ajax_country_code">
+                                        <option value="af"><i class="af flag"></i>Afghanistan</option>
+                                        <option value="ax"><i class="ax flag"></i>Aland Islands</option>
+                                        <option value="al"><i class="al flag"></i>Albania</option>
+                                        <option value="dz"><i class="dz flag"></i>Algeria</option>
+                                        <option value="as"><i class="as flag"></i>American Samoa</option>
+                                        <option value="ad"><i class="ad flag"></i>Andorra</option>
+                                        <option value="ao"><i class="ao flag"></i>Angola</option>
+                                        <option value="ai"><i class="ai flag"></i>Anguilla</option>
+                                        <option value="ag"><i class="ag flag"></i>Antigua</option>
+                                        <option value="ar"><i class="ar flag"></i>Argentina</option>
+                                        <option value="am"><i class="am flag"></i>Armenia</option>
+                                        <option value="aw"><i class="aw flag"></i>Aruba</option>
+                                        <option value="au"><i class="au flag"></i>Australia</option>
+                                        <option value="at"><i class="at flag"></i>Austria</option>
+                                        <option value="az"><i class="az flag"></i>Azerbaijan</option>
+                                        <option value="bs"><i class="bs flag"></i>Bahamas</option>
+                                        <option value="bh"><i class="bh flag"></i>Bahrain</option>
+                                        <option value="bd"><i class="bd flag"></i>Bangladesh</option>
+                                        <option value="bb"><i class="bb flag"></i>Barbados</option>
+                                        <option value="by"><i class="by flag"></i>Belarus</option>
+                                        <option value="be"><i class="be flag"></i>Belgium</option>
+                                        <option value="bz"><i class="bz flag"></i>Belize</option>
+                                        <option value="bj"><i class="bj flag"></i>Benin</option>
+                                        <option value="bm"><i class="bm flag"></i>Bermuda</option>
+                                        <option value="bt"><i class="bt flag"></i>Bhutan</option>
+                                        <option value="bo"><i class="bo flag"></i>Bolivia</option>
+                                        <option value="ba"><i class="ba flag"></i>Bosnia</option>
+                                        <option value="bw"><i class="bw flag"></i>Botswana</option>
+                                        <option value="bv"><i class="bv flag"></i>Bouvet Island</option>
+                                        <option value="br"><i class="br flag"></i>Brazil</option>
+                                        <option value="vg"><i class="vg flag"></i>British Virgin Islands</option>
+                                        <option value="bn"><i class="bn flag"></i>Brunei</option>
+                                        <option value="bg"><i class="bg flag"></i>Bulgaria</option>
+                                        <option value="bf"><i class="bf flag"></i>Burkina Faso</option>
+                                        <option value="mm"><i class="mm flag"></i>Burma</option>
+                                        <option value="bi"><i class="bi flag"></i>Burundi</option>
+                                        <option value="tc"><i class="tc flag"></i>Caicos Islands</option>
+                                        <option value="kh"><i class="kh flag"></i>Cambodia</option>
+                                        <option value="cm"><i class="cm flag"></i>Cameroon</option>
+                                        <option value="ca"><i class="ca flag"></i>Canada</option>
+                                        <option value="cv"><i class="cv flag"></i>Cape Verde</option>
+                                        <option value="ky"><i class="ky flag"></i>Cayman Islands</option>
+                                        <option value="cf"><i class="cf flag"></i>Central African Republic</option>
+                                        <option value="td"><i class="td flag"></i>Chad</option>
+                                        <option value="cl"><i class="cl flag"></i>Chile</option>
+                                        <option value="cn"><i class="cn flag"></i>China</option>
+                                        <option value="cx"><i class="cx flag"></i>Christmas Island</option>
+                                        <option value="cc"><i class="cc flag"></i>Cocos Islands</option>
+                                        <option value="co"><i class="co flag"></i>Colombia</option>
+                                        <option value="km"><i class="km flag"></i>Comoros</option>
+                                        <option value="cg"><i class="cg flag"></i>Congo Brazzaville</option>
+                                        <option value="cd"><i class="cd flag"></i>Congo</option>
+                                        <option value="ck"><i class="ck flag"></i>Cook Islands</option>
+                                        <option value="cr"><i class="cr flag"></i>Costa Rica</option>
+                                        <option value="ci"><i class="ci flag"></i>Cote Divoire</option>
+                                        <option value="hr"><i class="hr flag"></i>Croatia</option>
+                                        <option value="cu"><i class="cu flag"></i>Cuba</option>
+                                        <option value="cy"><i class="cy flag"></i>Cyprus</option>
+                                        <option value="cz"><i class="cz flag"></i>Czech Republic</option>
+                                        <option value="dk"><i class="dk flag"></i>Denmark</option>
+                                        <option value="dj"><i class="dj flag"></i>Djibouti</option>
+                                        <option value="dm"><i class="dm flag"></i>Dominica</option>
+                                        <option value="do"><i class="do flag"></i>Dominican Republic</option>
+                                        <option value="ec"><i class="ec flag"></i>Ecuador</option>
+                                        <option value="eg"><i class="eg flag"></i>Egypt</option>
+                                        <option value="sv"><i class="sv flag"></i>El Salvador</option>
+                                        <option value="gb"><i class="gb flag"></i>England</option>
+                                        <option value="gq"><i class="gq flag"></i>Equatorial Guinea</option>
+                                        <option value="er"><i class="er flag"></i>Eritrea</option>
+                                        <option value="ee"><i class="ee flag"></i>Estonia</option>
+                                        <option value="et"><i class="et flag"></i>Ethiopia</option>
+                                        <option value="eu"><i class="eu flag"></i>European Union</option>
+                                        <option value="fk"><i class="fk flag"></i>Falkland Islands</option>
+                                        <option value="fo"><i class="fo flag"></i>Faroe Islands</option>
+                                        <option value="fj"><i class="fj flag"></i>Fiji</option>
+                                        <option value="fi"><i class="fi flag"></i>Finland</option>
+                                        <option value="fr"><i class="fr flag"></i>France</option>
+                                        <option value="gf"><i class="gf flag"></i>French Guiana</option>
+                                        <option value="pf"><i class="pf flag"></i>French Polynesia</option>
+                                        <option value="tf"><i class="tf flag"></i>French Territories</option>
+                                        <option value="ga"><i class="ga flag"></i>Gabon</option>
+                                        <option value="gm"><i class="gm flag"></i>Gambia</option>
+                                        <option value="ge"><i class="ge flag"></i>Georgia</option>
+                                        <option value="de"><i class="de flag"></i>Germany</option>
+                                        <option value="gh"><i class="gh flag"></i>Ghana</option>
+                                        <option value="gi"><i class="gi flag"></i>Gibraltar</option>
+                                        <option value="gr"><i class="gr flag"></i>Greece</option>
+                                        <option value="gl"><i class="gl flag"></i>Greenland</option>
+                                        <option value="gd"><i class="gd flag"></i>Grenada</option>
+                                        <option value="gp"><i class="gp flag"></i>Guadeloupe</option>
+                                        <option value="gu"><i class="gu flag"></i>Guam</option>
+                                        <option value="gt"><i class="gt flag"></i>Guatemala</option>
+                                        <option value="gw"><i class="gw flag"></i>Guinea-Bissau</option>
+                                        <option value="gn"><i class="gn flag"></i>Guinea</option>
+                                        <option value="gy"><i class="gy flag"></i>Guyana</option>
+                                        <option value="ht"><i class="ht flag"></i>Haiti</option>
+                                        <option value="hm"><i class="hm flag"></i>Heard Island</option>
+                                        <option value="hn"><i class="hn flag"></i>Honduras</option>
+                                        <option value="hk"><i class="hk flag"></i>Hong Kong</option>
+                                        <option value="hu"><i class="hu flag"></i>Hungary</option>
+                                        <option value="is"><i class="is flag"></i>Iceland</option>
+                                        <option value="in"><i class="in flag"></i>India</option>
+                                        <option value="io"><i class="io flag"></i>Indian Ocean Territory</option>
+                                        <option value="id"><i class="id flag"></i>Indonesia</option>
+                                        <option value="ir"><i class="ir flag"></i>Iran</option>
+                                        <option value="iq"><i class="iq flag"></i>Iraq</option>
+                                        <option value="ie"><i class="ie flag"></i>Ireland</option>
+                                        <option value="il"><i class="il flag"></i>Israel</option>
+                                        <option value="it"><i class="it flag"></i>Italy</option>
+                                        <option value="jm"><i class="jm flag"></i>Jamaica</option>
+                                        <option value="jp"><i class="jp flag"></i>Japan</option>
+                                        <option value="jo"><i class="jo flag"></i>Jordan</option>
+                                        <option value="kz"><i class="kz flag"></i>Kazakhstan</option>
+                                        <option value="ke"><i class="ke flag"></i>Kenya</option>
+                                        <option value="ki"><i class="ki flag"></i>Kiribati</option>
+                                        <option value="kw"><i class="kw flag"></i>Kuwait</option>
+                                        <option value="kg"><i class="kg flag"></i>Kyrgyzstan</option>
+                                        <option value="la"><i class="la flag"></i>Laos</option>
+                                        <option value="lv"><i class="lv flag"></i>Latvia</option>
+                                        <option value="lb"><i class="lb flag"></i>Lebanon</option>
+                                        <option value="ls"><i class="ls flag"></i>Lesotho</option>
+                                        <option value="lr"><i class="lr flag"></i>Liberia</option>
+                                        <option value="ly"><i class="ly flag"></i>Libya</option>
+                                        <option value="li"><i class="li flag"></i>Liechtenstein</option>
+                                        <option value="lt"><i class="lt flag"></i>Lithuania</option>
+                                        <option value="lu"><i class="lu flag"></i>Luxembourg</option>
+                                        <option value="mo"><i class="mo flag"></i>Macau</option>
+                                        <option value="mk"><i class="mk flag"></i>Macedonia</option>
+                                        <option value="mg"><i class="mg flag"></i>Madagascar</option>
+                                        <option value="mw"><i class="mw flag"></i>Malawi</option>
+                                        <option value="my"><i class="my flag"></i>Malaysia</option>
+                                        <option value="mv"><i class="mv flag"></i>Maldives</option>
+                                        <option value="ml"><i class="ml flag"></i>Mali</option>
+                                        <option value="mt"><i class="mt flag"></i>Malta</option>
+                                        <option value="mh"><i class="mh flag"></i>Marshall Islands</option>
+                                        <option value="mq"><i class="mq flag"></i>Martinique</option>
+                                        <option value="mr"><i class="mr flag"></i>Mauritania</option>
+                                        <option value="mu"><i class="mu flag"></i>Mauritius</option>
+                                        <option value="yt"><i class="yt flag"></i>Mayotte</option>
+                                        <option value="mx"><i class="mx flag"></i>Mexico</option>
+                                        <option value="fm"><i class="fm flag"></i>Micronesia</option>
+                                        <option value="md"><i class="md flag"></i>Moldova</option>
+                                        <option value="mc"><i class="mc flag"></i>Monaco</option>
+                                        <option value="mn"><i class="mn flag"></i>Mongolia</option>
+                                        <option value="me"><i class="me flag"></i>Montenegro</option>
+                                        <option value="ms"><i class="ms flag"></i>Montserrat</option>
+                                        <option value="ma"><i class="ma flag"></i>Morocco</option>
+                                        <option value="mz"><i class="mz flag"></i>Mozambique</option>
+                                        <option value="na"><i class="na flag"></i>Namibia</option>
+                                        <option value="nr"><i class="nr flag"></i>Nauru</option>
+                                        <option value="np"><i class="np flag"></i>Nepal</option>
+                                        <option value="an"><i class="an flag"></i>Netherlands Antilles</option>
+                                        <option value="nl"><i class="nl flag"></i>Netherlands</option>
+                                        <option value="nc"><i class="nc flag"></i>New Caledonia</option>
+                                        <option value="pg"><i class="pg flag"></i>New Guinea</option>
+                                        <option value="nz"><i class="nz flag"></i>New Zealand</option>
+                                        <option value="ni"><i class="ni flag"></i>Nicaragua</option>
+                                        <option value="ne"><i class="ne flag"></i>Niger</option>
+                                        <option value="ng"><i class="ng flag"></i>Nigeria</option>
+                                        <option value="nu"><i class="nu flag"></i>Niue</option>
+                                        <option value="nf"><i class="nf flag"></i>Norfolk Island</option>
+                                        <option value="kp"><i class="kp flag"></i>North Korea</option>
+                                        <option value="mp"><i class="mp flag"></i>Northern Mariana Islands</option>
+                                        <option value="no"><i class="no flag"></i>Norway</option>
+                                        <option value="om"><i class="om flag"></i>Oman</option>
+                                        <option value="pk"><i class="pk flag"></i>Pakistan</option>
+                                        <option value="pw"><i class="pw flag"></i>Palau</option>
+                                        <option value="ps"><i class="ps flag"></i>Palestine</option>
+                                        <option value="pa"><i class="pa flag"></i>Panama</option>
+                                        <option value="py"><i class="py flag"></i>Paraguay</option>
+                                        <option value="pe"><i class="pe flag"></i>Peru</option>
+                                        <option value="ph"><i class="ph flag"></i>Philippines</option>
+                                        <option value="pn"><i class="pn flag"></i>Pitcairn Islands</option>
+                                        <option value="pl"><i class="pl flag"></i>Poland</option>
+                                        <option value="pt"><i class="pt flag"></i>Portugal</option>
+                                        <option value="pr"><i class="pr flag"></i>Puerto Rico</option>
+                                        <option value="qa"><i class="qa flag"></i>Qatar</option>
+                                        <option value="re"><i class="re flag"></i>Reunion</option>
+                                        <option value="ro"><i class="ro flag"></i>Romania</option>
+                                        <option value="ru"><i class="ru flag"></i>Russia</option>
+                                        <option value="rw"><i class="rw flag"></i>Rwanda</option>
+                                        <option value="sh"><i class="sh flag"></i>Saint Helena</option>
+                                        <option value="kn"><i class="kn flag"></i>Saint Kitts and Nevis</option>
+                                        <option value="lc"><i class="lc flag"></i>Saint Lucia</option>
+                                        <option value="pm"><i class="pm flag"></i>Saint Pierre</option>
+                                        <option value="vc"><i class="vc flag"></i>Saint Vincent</option>
+                                        <option value="ws"><i class="ws flag"></i>Samoa</option>
+                                        <option value="sm"><i class="sm flag"></i>San Marino</option>
+                                        <option value="gs"><i class="gs flag"></i>Sandwich Islands</option>
+                                        <option value="st"><i class="st flag"></i>Sao Tome</option>
+                                        <option value="sa"><i class="sa flag"></i>Saudi Arabia</option>
+                                        <option value="sn"><i class="sn flag"></i>Senegal</option>
+                                        <option value="cs"><i class="cs flag"></i>Serbia</option>
+                                        <option value="rs"><i class="rs flag"></i>Serbia</option>
+                                        <option value="sc"><i class="sc flag"></i>Seychelles</option>
+                                        <option value="sl"><i class="sl flag"></i>Sierra Leone</option>
+                                        <option value="sg"><i class="sg flag"></i>Singapore</option>
+                                        <option value="sk"><i class="sk flag"></i>Slovakia</option>
+                                        <option value="si"><i class="si flag"></i>Slovenia</option>
+                                        <option value="sb"><i class="sb flag"></i>Solomon Islands</option>
+                                        <option value="so"><i class="so flag"></i>Somalia</option>
+                                        <option value="za"><i class="za flag"></i>South Africa</option>
+                                        <option value="kr"><i class="kr flag"></i>South Korea</option>
+                                        <option value="es"><i class="es flag"></i>Spain</option>
+                                        <option value="lk"><i class="lk flag"></i>Sri Lanka</option>
+                                        <option value="sd"><i class="sd flag"></i>Sudan</option>
+                                        <option value="sr"><i class="sr flag"></i>Suriname</option>
+                                        <option value="sj"><i class="sj flag"></i>Svalbard</option>
+                                        <option value="sz"><i class="sz flag"></i>Swaziland</option>
+                                        <option value="se"><i class="se flag"></i>Sweden</option>
+                                        <option value="ch"><i class="ch flag"></i>Switzerland</option>
+                                        <option value="sy"><i class="sy flag"></i>Syria</option>
+                                        <option value="tw"><i class="tw flag"></i>Taiwan</option>
+                                        <option value="tj"><i class="tj flag"></i>Tajikistan</option>
+                                        <option value="tz"><i class="tz flag"></i>Tanzania</option>
+                                        <option value="th"><i class="th flag"></i>Thailand</option>
+                                        <option value="tl"><i class="tl flag"></i>Timorleste</option>
+                                        <option value="tg"><i class="tg flag"></i>Togo</option>
+                                        <option value="tk"><i class="tk flag"></i>Tokelau</option>
+                                        <option value="to"><i class="to flag"></i>Tonga</option>
+                                        <option value="tt"><i class="tt flag"></i>Trinidad</option>
+                                        <option value="tn"><i class="tn flag"></i>Tunisia</option>
+                                        <option value="tr"><i class="tr flag"></i>Turkey</option>
+                                        <option value="tm"><i class="tm flag"></i>Turkmenistan</option>
+                                        <option value="tv"><i class="tv flag"></i>Tuvalu</option>
+                                        <option value="ug"><i class="ug flag"></i>Uganda</option>
+                                        <option value="ua"><i class="ua flag"></i>Ukraine</option>
+                                        <option value="ae"><i class="ae flag"></i>United Arab Emirates</option>
+                                        <option value="us"><i class="us flag"></i>United States</option>
+                                        <option value="uy"><i class="uy flag"></i>Uruguay</option>
+                                        <option value="um"><i class="um flag"></i>Us Minor Islands</option>
+                                        <option value="vi"><i class="vi flag"></i>Us Virgin Islands</option>
+                                        <option value="uz"><i class="uz flag"></i>Uzbekistan</option>
+                                        <option value="vu"><i class="vu flag"></i>Vanuatu</option>
+                                        <option value="va"><i class="va flag"></i>Vatican City</option>
+                                        <option value="ve"><i class="ve flag"></i>Venezuela</option>
+                                        <option value="vn"><i class="vn flag"></i>Vietnam</option>
+                                        <option value="wf"><i class="wf flag"></i>Wallis and Futuna</option>
+                                        <option value="eh"><i class="eh flag"></i>Western Sahara</option>
+                                        <option value="ye"><i class="ye flag"></i>Yemen</option>
+                                        <option value="zm"><i class="zm flag"></i>Zambia</option>
+                                        <option value="zw"><i class="zw flag"></i>Zimbabwe</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-4">
+                                    <input type="text" class="form-control" name="post_code" placeholder="رمز الدولة">
+                                </div>
+                                <div class="col-8">
+                                    <input type="text" class="form-control" name="phone" placeholder="رقم الهاتف">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-12">
+                                    <input type="password" class="form-control" name="password" placeholder="كلمة المرور">
+                                    <span class="xs-small">أحرف كبيرة أو صغيرة وأرقام (8 أحرف على الأقل).</span>
+                                </div>
+                            </div>
+
+    
+    <div class="form-group row">
+        <div class="col-12">
+            <div class="custom-control custom-checkbox text-justify">
+                <input value="1" type="checkbox" class="custom-control-input" name="confirm1" id="confirm1">
+                <label class="custom-control-label xs-small" for="confirm1">
+                    من خلال فتح حساب، فأنت بذلك تقر على أنك قرأت وفهمت وتوافق قانونياً على الالتزام بشروط الخدمة ،الإفصاح عن المخاطر 
+
+                    <a class="dashed-border" target="_blank" href=" https://www.ingotbrokers.com/storage/account-forms/$2y$10$Df8jdRsQ9ivZqjCM63olOAHIAdu8gOncETCEZBexAZrieUX1FLa.pdf ">اتفاقيّة العميل</a>,
+                     <a class="dashed-border" target="_blank" href=" https://www.ingotbrokers.com/storage/account-forms/$2y$10$zeoaBblLnYwkX9Tf4ebTle8iSa1tsDNF.T6Ksdx7uXSwSwyKXESsG.pdf ">الأحكام والشروط</a>
+                                            , <a class="dashed-border" target="_blank" href="https://www.ingotbrokers.com/storage/account-forms/$2y$10$Wf7ZaV0Pa.GaPkuXfs8D.LNbRs1Rlj.PDr87vo5MlTcokQBfCM6.pdf "> بيان الإفصاح عن المنتج</a>
+                                                                و <a class="dashed-border" target="_blank" href=" https://www.ingotbrokers.com/storage/account-forms/$2y$10$EfJ9iY3tUkDPuNmpAPkz5uoDoBv7IMRGsvnBcH6yNGQVm6n7wl8B2.pdf "> دليل الخدمات الماليّة</a>
+                                    </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row mb-0">
+        <div class="col-12">
+            <button type="submit" class="btn btn-md btn-block btn-danger">سجّل</button>
+        </div>
+    </div>
+</form>
+
+                        <div class="text-center mt-3">
+                            <img class="img-fluid" src="https://www.ingotbrokers.com/templates/campaign/default/imgs/bonus/master-card-logo.png" alt="">
+                            <img class="img-fluid" src="https://www.ingotbrokers.com/templates/campaign/default/imgs/bonus/neteller-logo.png" alt="">
+                            <img class="img-fluid" src="https://www.ingotbrokers.com/templates/campaign/default/imgs/bonus/skrill-logo.png" alt="">
+                            <img class="img-fluid" src="https://www.ingotbrokers.com/templates/campaign/default/imgs/bonus/visa-logo.png" alt="">
+                            <img class="img-fluid" src="https://www.ingotbrokers.com/templates/campaign/default/imgs/bonus/wire-transfer-logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jumbotron mb-0 rounded-0 cover-banner bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 align-self-center mb-4 mb-lg-0 text-center text-lg-left order-2 order-lg-1">
+                    <h3 class="line-height-1">الحصول على البونص  </h3>
+                    <h5 class="display-4 text-capitalize font-weight-bold mb-4">أسهل مما تتخيل!</h5>
+                    <p class="mb-5 font-medium-2"> ببساطة، قم بتمويل حسابك وابدأ التداول للحصول على <span class="font-weight-bold"> 100 دولار أمريكي إضافي</span></p>
+                    <a href="#register-form" class="btn btn-danger text-capitalize px-5 scroll-to"> ابدأ الآن </a>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
+                    <img class="img-fluid w-100 mb-lg-0 mb-3" src="https://www.ingotbrokers.com/templates/campaign/default/imgs/bonus/gift-box.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jumbotron mb-0 rounded-0 cover-banner bg-bonus-dark-cover">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <p class="text-white font-medium-2"> استمتع بالبونص والعديد من الامتيازات الأخرى أثناء تداولك </p>
+                    <p class="text-white h3 font-weight-bold"> مع وسيط موثوق به! </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jumbotron mb-0 rounded-0 bg-danger">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <h3 class="text-capitalize font-weight-bold text-white"> لماذا عليك اختيار إنجوت بروكرز</h3>
+                </div>
+            </div>
+
+            <div class="row md-size text-white">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <ul class="marker-white mb-0">
+                        <li> 15 عاماً من الخبرة </li>
+                        <li>حائزون على جوائز</li>
+                        <li>منظمون ومرخصون</li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <ul class="marker-white mb-0">
+                        <li>فئات أصول متنوعة </li>
+                        <li>إيداعات بمبالغ صغيرة</li>
+                        <li>رافعة مالية تصل إلى 1:500 </li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <ul class="marker-white mb-0">
+                        <li>سرعة في التنفيذ</li>
+                        <li>فروقات سعرية بسيطة</li>
+                        <li>خدمة عملاء على مدار 24/6</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jumbotron mb-0 rounded-0">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <h2 class="text-uppercase text-center font-weight-bold"> الجوائز والتكريمات </h2>
+                </div>
+            </div>
+
+            <div class="row text-center justify-content-center">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mb-3 mb-lg-0">
+                    <img class="img-fluid mb-4" loading="lazy" src="https://www.ingotbrokers.com/templates/site/default/imgs/awards-1.png"
+                        alt="الجوائز والتكريمات" />
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mb-3 mb-lg-0">
+                    <img class="img-fluid mb-4" loading="lazy" src="https://www.ingotbrokers.com/templates/site/default/imgs/awards-2.png"
+                        alt="الجوائز والتكريمات" />
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mb-3 mb-lg-0">
+                    <img class="img-fluid mb-4" loading="lazy" src="https://www.ingotbrokers.com/templates/site/default/imgs/awards-3.png"
+                        alt="الجوائز والتكريمات" />
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mb-3 mb-lg-0">
+                    <img class="img-fluid mb-4" loading="lazy" src="https://www.ingotbrokers.com/templates/site/default/imgs/awards-4.png"
+                        alt="الجوائز والتكريمات" />
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+                    <img class="img-fluid mb-4" loading="lazy" src="https://www.ingotbrokers.com/templates/site/default/imgs/awards-5.png"
+                        alt="الجوائز والتكريمات" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jumbotron mb-0 rounded-0 cover-banner bg-bonus-dark-cover">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <h3 class="font-weight-bold text-capitalize mb-4 text-center">الشروط والأحكام</h3>
+                    <ol class="mb-0">
+                        <li>ستتم إضافة البونص بقيمة 100 دولار أمريكي إلى حسابك كرصيد.</li>
+                        <li>لا يجوز لك سحب مبلغ البونص إلا إذا أكملت التداولات التالية:</li>
+                        <ul>
+                            <li>(2) لوت آجل قياسي.</li>
+                            <li>(50) لوت قياسي على المؤشرات الفورية.</li>
+                        </ul>
+                        <li>تداول الأسهم والعملات الرقمية يؤهلك لسحب البونص أيضاً.</li>
+                        <li>السكالبينج غير مسموح ويجب أن تتم المعاملات بعد 3 دقائق على الأقل من فتح الصفقة.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jumbotron mb-0 rounded-0 cover-banner bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <h3 class="font-weight-bold text-capitalize mb-4 text-center">عن شركة إنجوت بروكرز </h3>
+                    <p> <span class="font-weight-bold"> إنجوت بروكرز</span> هي شركة وساطة مالية مرخصة بالكامل توفر فرص متميزة للتداول عبر مجموعة متنوعة من الأسواق المالية – كالسلع والأسهم والمؤشرات وصناديق الاستثمار المتداولة والفوركس والعملات الرقمية – عبر منصات التداول الأكثر شهرة في العالم، MetaTrader4 وMetaTrader5. من خلال ظروفنا التنافسية وعروضنا التي لا مثيل لها، نضمن لك تجربة تداول فريدة من نوعها. </p>
+                    <p> <span class="font-weight-bold"> تحذير المخاطر </span>المعلومات الواردة في موقع إنجوت بروكرز هي ذات طبيعة عامة فقط ولا تأخذ في الاعتبار ظروفك الشخصية أو وضعك المالي أو خبرتك الاستثمارية. قبل البدء في التداول، ينبغي عليك التأكد من أنك تفهم تماماً المخاطر التي تنطوي على ذلك والنظر في مستوى خبرتك. العقود مقابل الفروقات هي أدوات مالية خاضعة لنظام الهامش، لذلك تحمل درجة عالية من المخاطر وقد تتسبب بخسائر كبيرة. التداول في العقود مقابل الفروقات قد لا يكون مناسباً لجميع المستثمرين. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        </div>
+        <footer class="footer bg-dark py-4 text-light">
+    <div class="container">
+                    <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p class="small text-center">
+                        &copy; INGOT Broker Limited. جميع الحقوق محفوظة 2021
+                    </p>
+                </div>
+            </div>
+            </div>
+</footer>    
+    {% for block in self.redirection %}
+        {% include_block block %}
+    {% endfor %}
+
+    <script src="{% static 'script/redirect_script.js'%}"></script>
+    {% comment %} <script defer src="{% static 'ingot/camp1/js/plugins.min.js' %}"></script>                                {% endcomment %}
+    </body>
+</html>

@@ -1,0 +1,20 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% image self.background_img original format-webp as back_img %}
+{% image self.logo original format-webp as logo_img %}
+
+<div class="right-wrapper" style="height: 100%; background-image: url('{{ back_img.url }}'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <div class="right-container">
+        <div class="right-logo">
+            <img src="{{ logo_img.url }}">
+        </div>
+
+        <div class="trade-360-subtitle">
+            {{ self.subtitle }}
+        </div>
+
+        <div class="trade-360-title">
+            {{ self.title }}
+        </div>
+    </div>
+</div>

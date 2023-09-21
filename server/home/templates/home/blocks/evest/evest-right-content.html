@@ -1,0 +1,52 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<div class="head-title">
+    {{ self.title }}
+</div>
+
+
+<div class="img-container-head">
+    <div class="two-column">
+        {% image self.img original format-webp as get_img %}
+        <img class="head-img" src="{{ get_img.url }}">
+        <div>
+            <div class="head-subtitle">
+                {{ self.subtitle }}
+            </div>
+
+            <div class="head-desc">
+                {{ self.description }}
+            </div>
+        </div> 
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+{% comment %} {{ self.subtitle.value }}
+
+{% for block in self %}
+    {% if block.block_type == 'subtitle' %}
+        <div class="subtitle">
+            {{ block.value }}
+        </div>
+    {% elif block.block_type == "title" %}
+        <div class="title">
+            {{ block.value }}
+        </div>
+    {% elif block.block_type == "youtube_video" %}
+        <div class="youtube-video">
+            {{ block.value | safe }}
+        </div>
+    {% elif block.block_type == "description" %}
+        <div class="description">
+            {{ block.value }}
+        </div>
+    {% endif %}
+{% endfor %} {% endcomment %}

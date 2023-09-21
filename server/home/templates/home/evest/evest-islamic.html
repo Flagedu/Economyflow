@@ -1,0 +1,453 @@
+{% load static %}
+{% load cache %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<!DOCTYPE html>
+<html lang="ar">
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    {% include "home/tagmanager_head.html" %}
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title> حساب إسلامي</title>
+<meta name="description" content=" حساب إسلامي">
+<link rel="icon" type="image/png" sizes="86x85" href="{% static 'evest/islamic/assets/img/evestLogo.png'%}">
+<link rel="stylesheet" href="{% static 'evest/islamic/assets/bootstrap/css/bootstrap1.min.css'%}">
+<link rel="stylesheet" href="{% static 'evest/islamic/assets/fonts/fontawesome-all.min.css'%}">
+<link rel="stylesheet" href="{% static 'evest/islamic/assets/fonts/font-awesome.min.css'%}">
+<link rel="stylesheet" href="{% static 'evest/islamic/assets/fonts/fontawesome5-overrides.min.css'%}">
+<link rel="stylesheet" href="{% static 'evest/islamic/assets/css/Bootstrap-Payment-Form.css'%}">
+<link rel="stylesheet" href="{% static 'evest/islamic/assets/css/Brands.css'%}">
+<link rel="stylesheet" href="{% static 'evest/islamic/assets/css/Footer-Dark.css'%}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="{% static 'evest/islamic/assets/build/css/intlTelInput.css'%}">
+<link rel="stylesheet" href="{% static 'evest/islamic/assets/css/styles.css'%}">
+</head>
+<style>
+
+
+@media (max-width: 767px) {
+    #header > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > p.topic1 > strong{
+        font-size: 21px !important;
+    }
+    #header .pull-right p {
+        font-size:25px;
+    }
+    .goldm {
+        display: block!important;
+        width: 500px;
+        right: 140px;
+        position: relative;
+        top: -200px;
+    }
+    .goldm img{
+        width: 85%;
+    margin-right: 40px;
+    }
+    .col-lg-8 p {
+        font-size:45px;
+    }
+    .topic1 strong{
+        font-size: 37px!important;
+        font-weight: normal;
+        line-height: 1.2;
+    }
+    .topic1{
+        margin: 0;
+        margin-top: -255px!important;
+        position: relative;
+    }
+    .col-lg-8 strong{
+        font-size:25px;
+    }
+    .col-md-7 p{
+        font-size:14px!important;
+    }
+    .col-md-7 span {
+        font-family: 'Gotham Medium'!important;
+    }
+    #section-1 .col-md-4 {
+        max-width: 480px;
+            height: 200px;
+    }
+    #section-1 {
+        margin-bottom: 35px
+    }
+    #section-2 .col-md-4{
+        float:right;
+        width:100%;
+    }
+    #section-3 .col-md-4 {
+        width:100%;
+    }
+    #video .topict {
+        font-size:28px;
+    }
+    #video .textt {
+        font-size:17px;
+    }
+    #payment-form .col-xs-4 {
+        float: right;
+    }
+}
+@media (min-width: 767px) {
+    #header > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > p:nth-child(1) {
+        font-size:45px !important;
+    }
+    .goldm img{
+        width: 111%;
+    margin-right: 37px;
+    margin-left: -145px !important;
+    margin-top: -352px;
+    }
+    #section-2 .col-md-4{
+        float:right;
+        width:50%;
+    }
+    #header > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > p.topic1
+    {
+            margin-top: -92px !important;
+    font-size: 30px;
+    }
+    #section-1 > div > div{
+        margin-bottom:200px;
+    }
+    #section-1 > div > div > div:nth-child(2) > div > img
+    {
+        margin-top:-51px;
+    }
+    #section-1 > div > div > div:nth-child(3) > div > img
+    {
+            margin-top: 22px;
+    }
+    #section-1 > div > div > div:nth-child(4) > div > img
+    {
+        margin-top: 100px;
+    }
+}
+@media (min-width: 1000px){
+    #section-1 > div > div > div > div  img{
+        margin-top:0px !important;
+        margin-bottom:0px !important;
+    }
+    
+    #header > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > p.topic1{
+            margin-top: 0px !important;
+    font-size: 30px;
+    }
+    
+    .goldm img{
+        display:none;
+    }
+    
+    #header > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > div.row > div.col-md-5.hidden-xs.hidden-sm > img
+    {
+            width: 625px !important;
+    margin-top: -340px !important;
+    margin-left: -189px !important;
+    margin-bottom: -53px !important;
+    }
+    
+    .pull-right {
+       letter-spacing: 0.2px;
+    }
+    .col-lg-8 p {
+        font-size:45px;
+    }
+    .topic1 strong{
+        font-size: 21px;
+        font-weight: normal;
+    }
+    .col-md-7 span {
+        font-family: 'Gotham Medium'!important;
+    }
+    .col-md-7 p{
+        font-size:15px;
+    }
+    #section-1 .col-md-4 {
+        max-width: 370px;
+    }
+    #section-1 {
+        margin-bottom: 200px
+    }
+    #video .topict {
+        font-size:50px;
+    }
+    #video .textt {
+        font-size:29px;
+    }
+    #video .col-md-4{
+        width: 300px;
+    }
+    #section-3 .col-md-4 {
+        width:33.33%%;
+    }
+    
+}
+
+@media (max-width:1024px){
+    #header > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > p:nth-child(1){
+        font-size: 30px !important;
+    }
+    #header > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > div.row > div.col-md-5.hidden-xs.hidden-sm > img{
+            width: 604px !important;
+    margin-top: -270px !important;
+    margin-left: -189px !important;
+    margin-bottom: -53px !important;
+    }
+    #section-1 > div > div > div > div  img{
+        margin-top:0px !important;
+        margin-bottom:0px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-4 {
+        float: right!important;
+    }
+    .col-md-5 {
+        float:left;
+    }
+    #payment-form .col-xs-4 {
+        float: right;
+    }
+    #payment-form .col-md-6 {
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+</style>
+<style>
+    .error_msg{
+        color: red;
+        font-size: 15px;
+        padding: 10px;
+    }
+</style>
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTMX5FL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div id="header">
+<div style="background: url(https://lpevest.com/islamic_v1_af/assets/img/back.png);height: auto;padding: 55px 0px;padding-bottom: 0px;background-size: cover;">
+<div class="container">
+<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-right pull-right">
+<p style="color: #fff;"><strong>احصل على حساب إسلامي حلال</strong><span style="color:#fff;font-weight: bold;"><br>
+مع إيڤست لتداول عقود<br>
+(CFDs) الفروقات
+</span></p>
+</p>
+<div class="goldm"><img src="{% static 'evest/islamic/assets/img/lera.png'%}"></div>
+</p>
+<p class="topic1" style="color:#64faee;margin-top:60px;">
+<strong><span style="float:revert;font-family:'gotham medium'!important;"> 100% </span> أسواق عالمية بدون أي فوائد ربوية </strong>
+<br>
+</p>
+<div class="row" style="height:120px;line-height: 35px;">
+<div class="col-md-5 hidden-xs hidden-sm"><img src="{% static 'evest/islamic/assets/img/lera.png'%}" style="width: 625px;margin-top: -363px;margin-left: -191px;"></div>
+<div class="col-md-7" style="margin-bottom: 50px;margin-top:20px;">
+<ul class="list-unstyled text-right" style="color: rgb(255,255,255);font-size: 18px;">
+ <li style="margin: 20px 0px;float:right;clear:right;margin:0;"><i class="fas fa-circle" style="color: #64faee;margin-left: 10px;font-size: 12px;"></i></li><p style="float:right;font-weight:normal;"><span class="float:right;">+500</span> أدوات مالية متاحة للتداول</p><br></li>
+<li style="margin: 20px 0px;float:right;clear:right;margin:0;"><i class="fas fa-circle" style="color: #64faee;margin-left: 10px;font-size: 12px;"></i></li><p style="float:right;font-weight:normal;"><span class="float:right;">100%</span> تنفيذ فوري ودقّة عالية </p><br></li>
+<li style="margin: 20px 0px;float:right;clear:right;margin:0;"><i class="fas fa-circle" style="color: #64faee;margin-left: 10px;font-size: 12px;"></i></li><p style="float:right;font-weight:normal;"> بونص ترحيبي </p><br></li>
+</ul></div>
+</div>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12" style="text-align: center;background: #f9f9f9;border-radius: 5px;margin: 0px;padding: 30px 20px;margin-bottom: 60px;"><img src="{% static 'evest/islamic/assets/img/logo.png'%}">
+<h4 style="color: #49a7a7;font-weight: lighter;font-style: normal;"> سجّل الآن واحصل على شروط مميزة عند التداول باستخدام حساب إيڤست الإسلامي</h4>
+<form id="payment-form" style="margin-top: 30px;" method="POST">
+{% csrf_token %}
+<span id="errorText"></span>
+<div class="row">
+<div class="col-md-6 col-xs-12" style="padding-left: 15px;">
+<div class="form-group" style="margin-bottom: 5px;">
+<div class="input-group">
+<div class="input-group-addon" style="background: rgb(255,255,255);">
+<span><i class="fa fa-user-o"></i></span></div>
+<input id="firstName" name="firstName" class="form-control input-lg" type="text" required minlength="2" placeholder="الاسم" style="filter: contrast(113%) saturate(0%);border-right-width: 1px;border-left-width: 0px;text-align: right;font-size: 12px;"></div>
+</div>
+</div>
+<div class="col-md-6 col-xs-12" style="padding-left: 15px;">
+<div class="form-group" style="margin-bottom: 5px;">
+<div class="input-group">
+<div class="input-group-addon" style="background: rgb(255,255,255);">
+<span><i class="fa fa-user-o"></i></span></div>
+<input id="lastName" name="lastName" class="form-control input-lg" type="text" required minlength="2" placeholder="اسم العائلة" style="filter: contrast(113%) saturate(0%);border-right-width: 1px;border-left-width: 0px;text-align: right;font-size: 12px;"></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 col-xs-12">
+<div class="form-group" style="margin-bottom: 5px;">
+<div class="input-group">
+<div class="input-group-addon" style="background: rgb(255,255,255);"><span>
+<i class="fa fa-envelope-o"></i></span></div>
+<input name="email" id="email" class="form-control input-lg" type="email" required class="focus-func ltr" placeholder="البريد الالكتروني" style="filter: contrast(113%) saturate(0%);border-right-width: 1px;border-left-width: 0px;text-align: right;font-size: 12px;"></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-8 col-sm-8 col-xs-8" style="     float: right;
+    margin-left: -27px;
+    width: 74.666%;">
+ <div class="form-group" style="margin-bottom: 5px;">
+<div class="input-group">
+<div class="input-group-addon" style="background: rgb(255,255,255);">
+<span><i class="fa fa-mobile-phone"></i></span></div>
+<input id="phoneNumber" name="phonenumber" class="form-control input-lg" type="tel" required="required" placeholder="الهاتف" style="filter: contrast(113%) saturate(0%);border-right-width: 1px;border-left-width: 0px;text-align: right;font-size: 12px;"></div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-4" style="padding-right: 17px;">
+<div class="form-group" style="margin-bottom: 5px;line-height: 2;background-color: #fff;
+                                height: 46px;
+                                border-radius: 5px;
+                                border: 1px solid #ccc;
+                                margin-top: 1px;">
+<div class="input-group">
+<input type="tel" class="hidden form-control input-lg" id="phone" name="phone" style="border-right-width: 0px;" />
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-xs-12" style="display: none;">
+<div class="form-group">
+<div class="input-group">
+<div class="input-group-addon" style="background: rgb(255,255,255);"><span><i class="fa fa-key"></i></span></div><input hidden class="form-control" type="password" placeholder="تأكيد كلمة السر" style="filter: contrast(113%) saturate(0%);border-right-width: 1px;border-left-width: 0px;text-align: right;font-size: 12px;height: 46px;"></div>
+</div>
+</div>
+<div class="col-md-6 col-xs-12" style="display: none;">
+<div class="form-group">
+<div class="input-group">
+<div class="input-group-addon" style="background: rgb(255,255,255);"><span><i class="fa fa-key"></i></span></div> <input hidden id="password" type="password" name="password" rel="gp" data-size="10" data-character-set="a-z,A-Z,0-9"></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 col-xs-12" style="padding-left: 5px;text-align: right;margin-bottom: 5px;"><span style="text-align: right;margin-right: 0px;">بالضغط على زر التسجيل انت توافق&nbsp;على&nbsp;<a href="https://mena.evest.com/wp-content/uploads/2020/11/AR-MagicPath_TERMS-AND-CONDITIONS.pdf">شروط الاستخدام&nbsp;</a>و&nbsp;<a href="https://mena.evest.com/wp-content/uploads/2020/11/AR-MagicPath__Privacy-Policy.pdf">سياسة الخصوصية&nbsp;</a></span></div>
+<div class="col-md-12 col-xs-12" style="padding-left: 5px;text-align: right;margin-bottom: 5px;"><span style="text-align: right;margin-right: 6px;">ارغب في تلقي الرسائل التسويقية</span><input type="checkbox" name="promotions" checked></div>
+<div class="col-md-12 col-xs-12 error_msg" style="padding-left: 5px;text-align: right;margin-bottom: 5px;font-size:12px;">
+    {% if err_msg %}
+        {{ err_msg }}
+    {% endif %}
+</div>
+</div>
+<div>
+<input hidden id="areaCode" name="areaCode" placeholder="areaCode" type="text" value="">
+<input hidden id="countryCode" name="country" placeholder="countryCode" type="text" value="">
+<input hidden id="fullPhone" name="fullPhone" placeholder="fullPhone" type="text" value="">
+<input hidden id="source" name="source" placeholder="source" type="text">
+<input hidden id="sponsorF" name="sponsorF" placeholder="sponsorF" type="text" value="No">
+</div>
+<div class="row">
+<div class="col-md-12 col-sm-12 col-xs-12" style="padding-left: 5px;">
+<div class="form-group">
+<button class="btn btn-default btn-lg text-center reg-btn" data-bs-hover-animate="pulse" value="submit" type="submit" name="submit" style="width: 247px;color: rgb(255,255,255);font-weight: normal;text-align: center;border-radius: 20px;background: #49a7a7;font-size: 30px;padding: 7px 16px;font-style: normal;margin-bottom: 0px;margin-top: 15px;border-width: 0px;border-color: rgb(255,255,255);">سجّل الآن</button></div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="section-1">
+<div style="padding-top: 50px;">
+<div class="container">
+<div class="row">
+<div class="col-md-12" style="text-align: center;">
+<h1 style="margin: 20px 0px;color: #022b3b;font-size: 55px;font-weight: bold;"><strong>لماذا إيڤست؟</strong><br></h1>
+</div>
+</div>
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+<div style="text-align: center;height: 111px;"><img src="{% static 'evest/islamic/assets/img/Untitled-1_03.jpg'%}" style="width: 300px;    height: 260px;"></div>
+</div>
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+<div style="text-align: center;height: 111px;"><img src="{% static 'evest/islamic/assets/img/Untitled-1_02.jpg'%}" style="width:300px;    height: 260px;"></div>
+</div>
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+<div style="text-align: center;height: 111px;"><img src="{% static 'evest/islamic/assets/img/Untitled-1_01.jpg'%}" style="width: 300px;    height: 260px;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="section-4">
+<div style="padding-top: 50px;padding-bottom: 50px;background:url(assets/img/bg-vid.jpg);">
+<div class="container">
+<div class="row" style="">
+<div class="col-md-6 hidden-xs hidden-sm" style="text-align: center;float:left;"><img class="img-responsive" src="{% static 'evest/islamic/assets/img/phone-img-large-ar.png'%}" style="width: 480px;margin: 0px auto;margin-top: -108px;margin-right: 245px;"></div>
+<div class="col-md-6 col-sm-12" style="text-align: center;"><button class="btn btn-default btn-lg text-center reg-btn reg-btn-bottom" data-bs-hover-animate="pulse" type="button" style="width: 307px;color: rgb(255,255,255);font-weight: normal;text-align: center;border-radius: 50px;background: #49a7a7;border-width: 0px;font-size: 28px;padding: 7px 16px;font-style: normal;margin-bottom: 15px;">اضغط هنا للتسجيل</button>
+<ul class="list-inline vcenter" style="margin-bottom: 0px;margin-left: 0px;margin-top: 15px;">
+<li><img src="{% static 'evest/islamic/assets/img/icon.png'%}" style="width: 60px;margin-right: 15px;padding-bottom: 12px;"></li>
+<li style="width: 246px;font-size: 40px;margin: 0px;text-align: center;padding: 0px;font-weight: normal;color: #022b3b;"><strong>حمّل التطبيق</strong></li>
+</ul>
+<ul class="list-inline" style="margin-top: 20px;">
+<li><img src="{% static 'evest/islamic/assets/img/appStore.png'%}" style="padding-right: 15px;border-right: 1px solid #49a7a7;width: 90px;"></li>
+<li><img src="{% static 'evest/islamic/assets/img/Google%20play.png'%}" style="border-color: #49a7a7;border-right-width: 1px;border-right-style: solid;padding-right: 15px;width: 90px;"></a></li>
+</ul>
+</div>
+</div>
+ </div>
+</div>
+</div>
+<div class="brands"><a href="#" style="padding: 20px 0px;background: #49a7a7;"> <img src="{% static 'evest/islamic/assets/img/wire-transfare.png'%}" style="margin: 10px 40px;"><img src="{% static 'evest/islamic/assets/img/american-express.png'%}" style="margin: 10px 40px;"><img src="{% static 'evest/islamic/assets/img/Layer%201315.png'%}" style="margin: 10px 40px;"><img src="{% static 'evest/islamic/assets/img/mastercard-7-logo-png-transparent.png'%}" style="margin: 10px 40px;"><img src="{% static 'evest/islamic/assets/img/18134.png'%}" style="margin: 10px 40px;"><img src="{% static 'evest/islamic/assets/img/Skrill-and-Moneybookers-transparent-png-logo.png'%}" style="margin: 10px 40px;"><img src="{% static 'evest/islamic/assets/img/Neteller_logo_logotype.png'%}" style="margin: 10px 40px;"></a>
+</div>
+<div class="footer-dark" style="background: rgb(0,0,0);">
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-md-12 ar-dir" style="text-align: right;">
+<p style="font-size: 14px;font-family: 'gotham medium'!important;">
+ينطوي تداول العقود مقابل الفروقات على مخاطر وبالتالي فإن تداول هذه الأدوات المالية يتطلّب معرفة وفهم لها وللمخاطر المترتبة على التداول بالإضافة لفهم أن هذه المخاطر غير مناسبة للجميع. يحتوي التّداول بالرافعة المالية على مخاطر قد تصل إلى خسارة إجمالي الأموال المستثمرة خلال فترة زمنية قصيرة نسبياً.
+<br><br>تحصّل evest عوائدها بشكلٍ أساسي من خلال فروقات الأسعار بين سعر البيع والشّراء. بإمكانك التّحقق من الرسوم والنفقات المرتبطة بالتّداول من خلال <a href="https://mena.evest.com/إبدا-التداول/رسوم-افيست/?lang=ar#/" target="_blank"> الضغط هنا</a>.
+<br><br>evest هي علامة تجارية مملوكة بالكامل وتتم إدارتها من قبل شركة اتريافايننشيل المحدودة (Atriafinancial LTD) وهي شركة مسجّلة في فانواتو من قبل لجنة الخدمات المالية فانواتو (VFSC) .
+<br><br>إن التفويض الممنوح من قبل VFSC لتشغيل منصة تداول لا يشكّل تأكيداً فيما يخص جودة التّداول أو أدوات التداول المقدمة على المنصة أو أدنى تأكيد بأن الاستثمار آمن أوة موصىً به. عنوان المكتب هو: 1276 ،بناية جوفانت، طريق كومول، بورتفيال، جمهورية فانواتو.
+<br><br>
+لمزيد من المعلومات يرجى التواصل معنا عبر البريد الإلكترونيلمزيد من المعلوماتلمزيد من المعلومات يرجى التواصل معنا عبر البريد الإلكتروني <a href="https://lpevest.com/cdn-cgi/l/email-protection#47343237372835330722312234336924282a"><span class="__cf_email__" data-cfemail="a8dbddd8d8c7dadce8cddecddbdc86cbc7c5">[email&#160;protected]</span></a> أو عن طريق الرقم المجاني في الإمارات العربية المتّحدة <a href="tel:+97180003111248" style="direction:ltr; unicode-bidi: embed;">971-800-0311-1248</a> أو الرقم المجاني في المملكة العربية السعودية <a href="tel:+9668008501019" style="direction:ltr; unicode-bidi: embed;">966-8008-501-019</a> أو في قبرص على الرّقم <a href="tel:+35722090134" style="direction:ltr; unicode-bidi: embed;">357-2209-0134</a>
+<p>حقوق النشر © 2021 جميع الحقوق محفوظة</p>
+</p>
+</div>
+</footer>
+</div>
+</div>
+</div>
+{% load wagtailcore_tags wagtailimages_tags %}
+{% for block in self.redirection %}
+    {% include_block block %}
+{% endfor %}
+
+<script>
+    var country_code_server = "{{ country_code }}";
+</script>
+
+<script data-cfasync="false" src="https://lpevest.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+<script src="{% static 'evest/islamic/assets/bootstrap/js/bootstrap.min.js'%}"></script>
+<script src="{% static 'evest/islamic/js/bs-init.js'%}"></script>
+<script src="{% static 'evest/islamic/js/jquery.ccpicker.js'%}"></script>
+<script src="{% static 'evest/islamic/js/intlTelInput.js'%}"></script>
+<script src="{% static 'evest/islamic/js/main.js'%}"></script>
+<script src="{% static 'evest/islamic/js/email.js'%}"></script>
+<script src="{% static 'evest/islamic/js/utils.js'%}"></script>
+<script src="{% static 'evest/islamic/js/first-name.js'%}"></script>
+<script src="{% static 'evest/islamic/js/last-name.js'%}"></script>
+<script src="{% static 'evest/islamic/js/password.js'%}"></script>
+<script src="{% static 'script/redirect_script.js'%}"></script>
+
+<script>
+
+</script>
+</body>
+<style>.error{ display:none;}</style>
+<!-- Mirrored from lpevest.com/islamic_v1_af/?partner_id=c1a486dd6c8f128d0be36f669aa221fe&referal_id=35075_400432&affiliate_id=35075&src=&Aff_id=35075&Banner_id=Islamic%20v1&clc_id=&crtv=link&chan=&Lp_id=5900&Banner_si=Unavailable&kyw= by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Jul 2021 11:21:34 GMT -->
+</html>

@@ -1,0 +1,632 @@
+{% load static %}
+{% load cache %}
+
+<!DOCTYPE html>
+<html lang="ar">
+
+<!-- Mirrored from lpevest.com/tesla_v1_af/?partner_id=c1a486dd6c8f128d0be36f669aa221fe&referal_id=35075_399032_list&affiliate_id=35075&src=&Aff_id=35075&Banner_id=tesla_v1&clc_id=list&crtv=link&chan=&Lp_id=5903&Banner_si=Unavailable&kyw= by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 May 2021 20:07:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    {% include "home/tagmanager_head.html" %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>إيڤست - تداول تيسلا الآن</title>
+<meta name="description" content=" ابدأ تداول سهم  تيسلا اليوم مع إيڤست ، وسيط منظم مرخص له تراخيص عالمية ذات سمعة ممتازة مختلفة يمكنه مساعدتك في تداول سهم  تيسلا بالإضافة إلى أسهم عالمية أخرى.">
+<link rel="icon" type="image/png" sizes="86x85" href="{% static 'evest/ef06/assets/img/evestLogo.png' %}">
+<link rel="icon" type="image/png" sizes="86x85" href="{% static 'evest/ef06/assets/img/evestLogo.png' %}">
+<link rel="icon" type="image/png" sizes="86x85" href="{% static 'evest/ef06/assets/img/evestLogo.png' %}">
+<link rel="icon" type="image/png" sizes="86x85" href="{% static 'evest/ef06/assets/img/evestLogo.png' %}">
+<link rel="icon" type="image/png" sizes="86x85" href="{% static 'evest/ef06/assets/img/evestLogo.png' %}">
+<link rel="stylesheet" href="{% static 'evest/ef06/assets/bootstrap/css/bootstrap1.min.css' %}">
+<link rel="stylesheet" href="{% static 'evest/ef06/assets/fonts/fontawesome-all.min.css' %}">
+<link rel="stylesheet" href="{% static 'evest/ef06/assets/fonts/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'evest/ef06/assets/fonts/fontawesome5-overrides.min.css' %}">
+<link rel="stylesheet" href="{% static 'evest/ef06/assets/css/Bootstrap-Payment-Form.css' %}">
+<link rel="stylesheet" href="{% static 'evest/ef06/assets/css/Brands.css' %}">
+<link rel="stylesheet" href="{% static 'evest/ef06/assets/css/Footer-Dark.css' %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="{% static 'evest/ef06/assets/build/css/intlTelInput.css' %}">
+<link rel="stylesheet" href="{% static 'evest/ef06/assets/css/styles.css' %}">
+
+</head>
+<style>
+@media (max-width: 767px) {
+    #payment-form > div:nth-child(1) > div.col-md-6.col-xs-12.r1 > div{
+        margin-left:16px;
+    }
+    .col-sm-8{
+        float:right;
+        width:66.666% !important;
+    }
+    #titletop p{
+    font-size: 21px !important;
+    font-weight: bold;
+    }
+    #auth{
+        color:#fff;
+    }
+    #auth span{
+        color: #64faee;
+        
+    }
+    .topicm {
+        display:block;
+        background-color:#022b3b;
+        border-radius:8px;
+        text-align: center;
+        padding:20px;
+        box-shadow: 0 0 3px black;
+        font-size: 17px!important;
+    }
+    .topicm strong{
+        font-size: 17px!important;
+        font-weight: normal;
+        
+    }
+    .topicm span {
+        font-family: 'Gotham Medium'!important;
+        font-size:17px;
+    }
+    .topic1{
+        display:none;
+    }
+    #section-1 .col-md-4 {
+        max-width: 480px;
+    }
+    #section-2 .col-md-4{
+        float:right;
+        width:100%;
+    }
+    #section-3 .col-md-4 {
+        width:100%;
+    }
+    #video{
+        height: 366px!important;
+        background-position: center;
+    }
+    #video .topict {
+        font-size: 23px;
+        text-align: center;
+        padding-right: 0!important;
+        margin: 0;
+        padding-left: 0!important;
+        width: 100%;
+        max-width: 480px;
+        float: right;
+        color:#65fcf1!important;
+    }
+    #video .textt {
+    font-size: 17px;
+    width: 100%;
+    color: #fff!important;
+    max-width: 343px!important;
+    float: right!important;
+    height: 180px;
+    padding: 0!important;
+    }
+    #video .textt span{
+        max-width: 328px;
+        text-align: justify;
+        width: 100%;
+        color:#fff!important;
+        font-size: 13px;
+    padding-top: 31px !important;
+    }
+    #subtitle{
+        display:none;
+    }
+    .titlepoints{
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'GE SS Two Medium';
+        padding-bottom:10px;
+    }
+    #pointstext .fa-circle{
+        color: #64faee;
+        margin-left: 10px;
+        font-size: 12px;
+        float: right;
+        margin-top: 12px;
+    }
+    #pointstext .words{
+        font-family: "GE SS Two Medium";
+        float: right;
+        font-size: 25px;
+        padding-left: 5px;
+    }
+    #pointstext span{
+        font-family: 'Gotham Medium'!important;
+        font-weight:bold;
+    }
+    #section-2 span{
+        font-family: 'Gotham Medium'!important;
+    }
+}
+@media (min-width: 767px) {
+    #header > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right
+    {
+            margin-bottom: 35px;
+    }
+    #titletop{
+        font-size:48px;
+    }
+    #auth {
+        
+        font-size:29px;
+        font-weight:normal;
+        color:#64faee;
+    }
+    #auth span{
+       color:#fff;
+    }
+    #header > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > div.row > div.col-md-5.hidden-xs.hidden-sm > img{
+        display:block !important;
+    }
+    .goldm img{
+            width: 50%;
+    margin-right: 185px;
+    }
+    .topicm {
+        display:none;
+    }
+    #section-2 .col-md-4{
+        float:right;
+        width:50%;
+    }
+    #section-2 span{
+       font-family: 'Gotham Medium'!important; 
+    }
+        #subtitle{
+            font-size: 28px;
+    color: #64faee;
+    font-family: "GE SS Two Medium";
+    margin-top: -31px;
+    }
+    #subtitle span{
+        font-family: 'Gotham Medium'!important;
+    }
+    #pointstext{
+        padding-top:50px;
+    }
+    #pointstext .titlepoints{
+        text-align: center;
+    font-size: 40px;
+    font-family: "GE SS Two Medium";
+    padding-bottom: 18px;
+    margin-top: -30px;
+    }
+    #pointstext li{
+        color: #64faee;
+        margin-left: 10px;
+        font-size: 12px;
+        float: right;
+        margin-top: 12px;
+    }
+    #pointstext span{
+        font-family: 'Gotham Medium'!important;
+        color:#fff;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    #pointstext .fa-circle{
+        color: #64faee;
+        margin-left: 10px;
+        font-size: 12px;
+        float: right;
+        margin-top: 12px;
+    }
+    #pointstext .words{
+        font-family: "GE SS Two Medium";
+        float: right;
+        font-size: 25px;
+        padding-left: 5px;
+    }
+    .col-sm-8{
+        float:right;
+        width:66.666% !important;
+    }
+    #payment-form > div:nth-child(1) > div.col-md-6.col-xs-12.r1 > div{
+            margin-left: 14px;
+    }
+    #video > div > div > div{
+            text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    }
+    .topict{
+        font-size:45px;
+    }
+    .textt1
+    {
+            padding-top: 27px!important;
+    font-size: 20px;
+    padding-bottom: 41px !important;
+    }
+
+    
+}
+@media (min-width: 1000px){
+    .goldm img{
+        display:none;
+    }
+    #titletop p{
+        font-size:43px;
+    }
+    #section-2 span{
+       font-family: 'Gotham Medium'!important; 
+    }
+    #auth {
+        
+        font-size:20px;
+        font-weight:normal;
+        color:#64faee;
+    }
+    #auth span{
+       color:#fff;
+    }
+    #subtitle{
+        font-size:23px;
+        color:#64faee;
+        font-family: "GE SS Two Medium";
+        margin-top:60px;
+    }
+    #subtitle span{
+        font-family: 'Gotham Medium'!important;
+    }
+    #pointstext{
+        padding-top:50px;
+    }
+    #pointstext .titlepoints{
+        font-size:43px;
+        font-family: "GE SS Two Medium";
+        padding-bottom: 20px;
+        text-align: right;
+    }
+    #pointstext li{
+        color: #64faee;
+        margin-left: 10px;
+        font-size: 12px;
+        float: right;
+        margin-top: 12px;
+    }
+    #pointstext span{
+        font-family: 'Gotham Medium'!important;
+        color:#fff;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    #pointstext .fa-circle{
+        color: #64faee;
+        margin-left: 10px;
+        font-size: 12px;
+        float: right;
+        margin-top: 12px;
+    }
+    #pointstext .words{
+        font-family: "GE SS Two Medium";
+        float: right;
+        font-size: 25px;
+        padding-left: 5px;
+    }
+    #section-1 .col-md-4 {
+        max-width: 370px;
+    }
+    #video .col-lg-8 {
+        width:100%;
+        text-align:center;
+    }
+    #video .topict {
+        font-size: 75px;
+        color: #64faee;
+        width: 100%;
+        margin-top: -32px;
+        float: right;
+    }
+    #video .textt {
+        font-size:29px;
+        color: #fff;
+    }
+    #video .textt1{
+        padding-left:0!important;
+        padding-bottom: 68px !important;
+    }
+    #video .col-md-4{
+        width: 300px;
+    }
+    #section-3 .col-md-4 {
+        width:33.33%%;
+    }
+    
+}
+
+@media (max-width:1024px){
+    #subtitle{
+        font-size:19px !important;
+    }
+    #titletop p{
+        font-size:40px ;
+    }
+    #header > div > div > div.col-lg-8.col-md-8.col-sm-12.col-xs-12.text-right.pull-right > div.row > div.col-md-5.hidden-xs.hidden-sm > img{
+            width: 361px !important;
+    margin-top: -217px !important;
+    margin-left: -59px !important;
+}
+    }
+}
+</style>
+<style>
+    .error_msg{
+        color: red;
+        font-size: 15px;
+        padding: 10px;
+    }
+</style>
+<body>
+
+<div id="header">
+<div style="background: url('{% static "evest/ef06/assets/img/Evest-BG.jpg" %}');height: auto;padding: 55px 0px;padding-bottom: 0px;">
+<div class="container">
+<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-right pull-right">
+<div id="titletop">
+<p style="color: #fff;">لن نتوقّف حتى تصبح كل سيارة"<span style="color:#fff;"> <br>"على الطّريق كهربائية</span></p></div>
+<div id="auth">{ <span> إيلون ماسك</span> }</div>
+<div class="goldm"><img src="{% static 'evest/ef06/assets/img/linksss%200.png' %}"></div>
+<p class="topicm" style="color:#fff;"><strong>احصل على حساب مجاني وتملّك </strong><br>
+سهم تيسلا <span> %100 </span> - بعمولة <span>%0</span>
+</p>
+<div id="subtitle">
+احصل على حساب مجاني وتملّك<br>
+سهم تيسلا <span> %100 </span> - بعمولة <span>%0</span>
+</div>
+<div class="row" style="height:120px;line-height: 35px;">
+<div class="col-md-5 hidden-xs hidden-sm"><img src="{% static 'evest/ef06/assets/img/linksss%200.png' %}" style="width: 450px;margin-top: -195px;margin-left: -50px;"></div>
+<div class="col-md-7" style="margin-bottom: 50px;margin-top:20px;">
+<ul class="list-unstyled text-right" style="color: rgb(255,255,255);font-size: 18px;">
+<div id="pointstext">
+<div class="titlepoints"> سهم تيسلا</div>
+<i class="fas fa-circle"></i>
+<div class="words"> نمو</div><span>400%</span>
+</div>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12" style="text-align: center;background: #f9f9f9;border-radius: 5px;margin: 0px;padding: 30px 20px;margin-bottom: 60px;"><img src="{% static 'evest/ef06/assets/img/logo.png' %}">
+<h3 style="color: #49a7a7;font-weight: lighter;font-style: normal;">سجّل الآن مجاناً وابدأ التداول</h3>
+<form id="payment-form" style="margin-top: 30px;" method="POST">
+    {% csrf_token %}
+<div class="row">
+ <div class="col-md-6 col-xs-12 r1">
+<div class="form-group" style="margin-bottom: 5px;">
+<div class="input-group" style="margin-left:-15px;">
+<div class="input-group-addon" style="background: rgb(255,255,255);"><span><i class="fa fa-user-o"></i></span></div><input id="firstName" name="firstName" class="form-control input-lg" type="text" required minlength="2" placeholder="الاسم" style="filter: contrast(113%) saturate(0%);border-right-width: 1px;border-left-width: 0px;text-align: right;font-size: 12px;"></div>
+</div>
+</div>
+<div class="col-md-6 col-xs-12" style="padding-left: 15px;">
+<div class="form-group" style="margin-bottom: 5px;">
+<div class="input-group r2">
+<div class="input-group-addon" style="background: rgb(255,255,255);"><span><i class="fa fa-user-o"></i></span></div><input id="lastName" name="lastName" class="form-control input-lg" type="text" required minlength="2" placeholder="اسم العائلة" style="filter: contrast(113%) saturate(0%);border-right-width: 1px;border-left-width: 0px;text-align: right;font-size: 12px;"></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 col-xs-12">
+<div class="form-group" style="margin-bottom: 5px;">
+<div class="input-group">
+<div class="input-group-addon" style="background: rgb(255,255,255);"><span><i class="fa fa-envelope-o"></i></span></div><input name="email" id="email" class="form-control input-lg" type="email" required class="focus-func ltr" placeholder="البريد الالكتروني" style="filter: contrast(113%) saturate(0%);border-right-width: 1px;border-left-width: 0px;text-align: right;font-size: 12px;"></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-8 col-sm-8 col-xs-8">
+<div class="form-group" style="margin-bottom: 5px;margin-left: -24px;">
+<div class="input-group">
+<div class="input-group-addon" style="background: rgb(255,255,255);"><span><i class="fa fa-mobile-phone"></i></span></div><input id="phoneNumber" name="phonenumber" class="form-control input-lg" type="tel" required="required" placeholder="الهاتف" style="filter: contrast(113%) saturate(0%);border-right-width: 1px;border-left-width: 0px;text-align: right;font-size: 12px;"></div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-4">
+<div class="form-group" style="margin-bottom: 5px;line-height: 2;background-color: #fff;
+                                height: 46px;
+                                border-radius: 5px;
+                                border: 1px solid #ccc;">
+<div class="input-group"><input type="tel" class="hidden form-control input-lg" id="phone" name="phone" style="border-right-width: 0px;" />
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-xs-12" style="display: none;">
+<div class="form-group">
+<div class="input-group">
+<div class="input-group-addon" style="background: rgb(255,255,255);"><span><i class="fa fa-key"></i></span></div><input hidden class="form-control" type="password" value="nstu1234" placeholder="تأكيد كلمة السر" style="filter: contrast(113%) saturate(0%);border-right-width: 1px;border-left-width: 0px;text-align: right;font-size: 12px;height: 46px;"></div>
+</div>
+</div>
+<div class="col-md-6 col-xs-12" style="display: none;">
+<div class="form-group">
+<div class="input-group">
+<div class="input-group-addon" style="background: rgb(255,255,255);"><span><i class="fa fa-key"></i></span></div> <input hidden id="password" type="password" name="password" value="nstu1234" rel="gp" data-size="10" data-character-set="a-z,A-Z,0-9"></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 col-xs-12" style="padding-left: 5px;text-align: right;margin-bottom: 5px;font-size:12px;"><span style="text-align: right;margin-right: 0px;">بالضغط على زر التسجيل انت توافق&nbsp;على&nbsp;<a href="https://mena.evest.com/wp-content/uploads/2020/11/AR-MagicPath_TERMS-AND-CONDITIONS.pdf">شروط الاستخدام&nbsp;</a>و&nbsp;<a href="https://mena.evest.com/wp-content/uploads/2020/11/AR-MagicPath__Privacy-Policy.pdf">سياسة الخصوصية&nbsp;</a></span></div>
+<div class="col-md-12 col-xs-12" style="padding-left: 5px;text-align: right;margin-bottom: 5px;font-size:11px;"><span style="text-align: right;margin-right: 6px;">ارغب في تلقي الرسائل التسويقية</span><input type="checkbox" name="promotions" checked></div>
+<div class="col-md-12 col-xs-12 error_msg" style="padding-left: 5px;text-align: right;margin-bottom: 5px;font-size:12px;">
+    {% if err_msg %}
+        {{ err_msg }}
+    {% endif %}
+</div>
+</div>
+<div>
+<input hidden id="areaCode" name="areaCode" placeholder="areaCode" type="text" value="">
+<input hidden id="countryCode" name="country" placeholder="countryCode" type="text" value="">
+<input hidden id="fullPhone" name="fullPhone" placeholder="fullPhone" type="text" value="">
+<input hidden id="source" name="source" placeholder="source" type="text">
+<input hidden id="sponsorF" name="sponsorF" placeholder="sponsorF" type="text" value="No">
+</div>
+<div class="row">
+<div class="col-md-12 col-sm-12 col-xs-12" style="padding-left: 5px;">
+<div class="form-group">
+<button class="btn btn-default btn-lg text-center reg-btn" data-bs-hover-animate="pulse" value="submit" type="submit" name="submit" style="width: 247px;color: rgb(255,255,255);font-weight: normal;text-align: center;border-radius: 20px;background: #49a7a7;font-size: 30px;padding: 7px 16px;font-style: normal;margin-bottom: 0px;margin-top: 15px;border-width: 0px;border-color: rgb(255,255,255);">سجّل الآن</button></div>
+</div>
+</div>
+<span id="errorText" class="" style="padding: 4px;font-size: 10px;font-weight: bolder;"></span>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="section-1">
+<div style="padding-top: 50px;padding-bottom: 50px;margin-bottom: 40px;">
+<div class="container">
+<div class="row">
+<div class="col-md-12" style="text-align: center;">
+<h1 style="margin: 20px 0px;color: #022b3b;font-size: 55px;font-weight: bold;"><strong>لماذا إيڤست؟</strong><br></h1>
+</div>
+</div>
+<div class="row" style="margin: 0px;margin-right: 0px;margin-left: 0px;">
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+<div style="text-align: center;height: 111px;"><img src="{% static 'evest/ef06/assets/img/Untitled-1_03.png' %}" style="width: 250px;"></div>
+</div>
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+<div style="text-align: center;height: 111px;"><img src="{% static 'evest/ef06/assets/img/Untitled-1_02.png' %}" style="width: 250px;"></div>
+</div>
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+<div style="text-align: center;height: 111px;"><img src="{% static 'evest/ef06/assets/img/Untitled-1_01.png' %}" style="width: 250px;"></div>
+</div>
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+<div style="text-align: center;height: 131px;"><img src="{% static 'evest/ef06/assets/img/Untitled-1_06.jpg' %}" style="width: 250px;"></div>
+</div>
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+<div style="text-align: center;height: 131px;"><img src="{% static 'evest/ef06/assets/img/Untitled-1_07.png' %}" style="width:250px;"></div>
+</div>
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+<div style="text-align: center;height: 131px;"><img src="{% static 'evest/ef06/assets/img/Untitled-1_06.png' %}" style="width: 250px;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="video" style="background: url('{% static "evest/ef06/assets/img/tesla-bg.jpg" %}');height:500px;background-size: cover;margin-top:40px;
+    background-position: center;">
+<div class="container">
+<div class="row" style="width:100%;">
+<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-right pull-right">
+<span class="topict" style="padding:50px;font-weight:bold;">أهم ما يميّز إيڤست</span>
+<span class="textt" style="float:right;padding:55px;padding-top:0;padding-bottom:26px;direction: rtl;background: url('{% static "evest/ef06/assets/img/co1.png" %}');background-position: left 7px;background-repeat: no-repeat;background-size: 50px;">
+<span class="textt1" style="float:right;padding:55px;padding-top:0;padding-bottom:26px;direction: rtl;background: url('{% static "evest/ef06/assets/img/co.png" %}');background-position: right 7px;background-repeat: no-repeat;background-size: 50px;">في إيڤست، ستحصل على كافة البيانات و الأدوات اللازمة لتستطيع من خلالها تداول سهم تيسلا و الإستفادة من تحركاته السعريّة الصاروخية هذه السنة.</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="section-2" class="container">
+<div class="row" style="margin: 0px;margin-right: 0px;margin-left: 0px;">
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+<div style="text-align: center;height: 111px;"><img src="{% static 'evest/ef06/assets/img/slisa.jpg' %}" style="width: 270px;"></div>
+<p style="font-size: 17px;text-align: center;color: #022b3b;font-weight: normal;margin: 0px auto;width:100%;margin-top:66px;direction: rtl;">أنتقال سريع ومرن عبر زوايا الموقع<br>منصة متقدمة وسهلة الأستخدام<br>دعم مباشر متعدد اللغات <span>24/7</span></br>
+</p>
+</div>
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+<div style="text-align: center;height: 111px;"><img src="{% static 'evest/ef06/assets/img/shaf.jpg' %}" style="width:270px;"></div>
+<p style="font-size: 17px;text-align: center;color: #022b3b;font-weight: normal;margin: 0px auto;width:100%;margin-top:66px;direction: rtl;">الشفافية المطلقة<br>
+بيانات واقعية <span>%100</span><br>
+بيانات صادقة وموثوقة <span>%100</span>
+</p>
+</div>
+</div>
+</div>
+
+<div id="section-3" class="container">
+<div class="row">
+<div class="col-md-12" style="text-align: center;">
+<h1 style="margin: 20px 0px;color: #022b3b;font-size: 55px;font-weight: bold;"><strong>لماذا عليك تداول الأسهم <br>مع إيڤست؟</strong><br></h1>
+</div>
+</div>
+<div class="row" style="margin: 0px;margin-right: 0px;margin-left: 0px;">
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+<div style="text-align: center;height: 111px;"><img src="{% static 'evest/ef06/assets/img/Untitled-2_03.jpg' %}" style="width: 280px;"></div>
+</div>
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+<div style="text-align: center;height: 111px;"><img src="{% static 'evest/ef06/assets/img/Untitled-2_02.png' %}" style="width:280px;"></div>
+</div>
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+<div style="text-align: center;height: 111px;"><img src="{% static 'evest/ef06/assets/img/Untitled-2_01.png' %}" style="width: 280px;"></div>
+</div>
+<div class="col-md-4" style="text-align: center;margin: 30px 0px;">
+</div>
+</div>
+</div>
+
+<div id="section-4">
+<div style="padding-top: 50px;padding-bottom: 50px;background:url('{% static "evest/ef06/assets/img/bg-vid.jpg" %}');">
+<div class="container">
+<div class="row" style="">
+<div class="col-md-6 hidden-xs hidden-sm" style="text-align: center;float:left;"><img class="img-responsive" src="{% static 'evest/ef06/assets/img/phone-img-large-ar.png' %}" style="width: 480px;margin: 0px auto;margin-top: -108px;margin-right: 245px;"></div>
+<div class="col-md-6 col-sm-12" style="text-align: center;"><button class="btn btn-default btn-lg text-center reg-btn reg-btn-bottom" data-bs-hover-animate="pulse" type="button" style="width: 307px;color: rgb(255,255,255);font-weight: normal;text-align: center;border-radius: 50px;background: #49a7a7;border-width: 0px;font-size: 28px;padding: 7px 16px;font-style: normal;margin-bottom: 15px;">اضغط هنا للتسجيل</button>
+<ul class="list-inline vcenter" style="margin-bottom: 0px;margin-left: 0px;margin-top: 15px;">
+<li><img src="{% static 'evest/ef06/assets/img/icon.png' %}" style="width: 60px;margin-right: 15px;padding-bottom: 12px;"></li>
+<li style="width: 246px;font-size: 40px;margin: 0px;text-align: center;padding: 0px;font-weight: normal;color: #022b3b;"><strong>حمّل التطبيق</strong></li>
+</ul>
+<ul class="list-inline" style="margin-top: 20px;">
+<li><img src="{% static 'evest/ef06/assets/img/appStore.png' %}" style="padding-right: 15px;border-right: 1px solid #49a7a7;width: 90px;"></li>
+<li><img src="{% static 'evest/ef06/assets/img/Google%20play.png' %}" style="border-color: #49a7a7;border-right-width: 1px;border-right-style: solid;padding-right: 15px;width: 90px;"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="brands"><a href="#" style="padding: 20px 0px;background: #49a7a7;"> <img src="{% static 'evest/ef06/assets/img/wire-transfare.png' %}" style="margin: 10px 40px;"><img src="{% static 'evest/ef06/assets/img/american-express.png' %}" style="margin: 10px 40px;"><img src="{% static 'evest/ef06/assets/img/Layer%201315.png' %}" style="margin: 10px 40px;"><img src="{% static 'evest/ef06/assets/img/mastercard-7-logo-png-transparent.png' %}" style="margin: 10px 40px;"><img src="{% static 'evest/ef06/assets/img/18134.png' %}" style="margin: 10px 40px;"><img src="{% static 'evest/ef06/assets/img/Skrill-and-Moneybookers-transparent-png-logo.png' %}" style="margin: 10px 40px;"><img src="{% static 'evest/ef06/assets/img/Neteller_logo_logotype.png' %}" style="margin: 10px 40px;"></a>
+</div>
+<div class="footer-dark" style="background: rgb(0,0,0);">
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-md-12 ar-dir" style="text-align: right;">
+<p style="font-size: 14px;font-family: 'gotham medium'!important;">
+ينطوي تداول العقود مقابل الفروقات على مخاطر وبالتالي فإن تداول هذه الأدوات المالية يتطلّب معرفة وفهم لها وللمخاطر المترتبة على التداول بالإضافة لفهم أن هذه المخاطر غير مناسبة للجميع. يحتوي التّداول بالرافعة المالية على مخاطر قد تصل إلى خسارة إجمالي الأموال المستثمرة خلال فترة زمنية قصيرة نسبياً.
+<br><br>تحصّل evest عوائدها بشكلٍ أساسي من خلال فروقات الأسعار بين سعر البيع والشّراء. بإمكانك التّحقق من الرسوم والنفقات المرتبطة بالتّداول من خلال <a href="https://mena.evest.com/إبدا-التداول/رسوم-افيست/?lang=ar#/" target="_blank"> الضغط هنا</a>.
+<br><br>evest هي علامة تجارية مملوكة بالكامل وتتم إدارتها من قبل شركة اتريافايننشيل المحدودة (Atriafinancial LTD) وهي شركة مسجّلة في فانواتو من قبل لجنة الخدمات المالية فانواتو (VFSC) .
+<br><br>إن التفويض الممنوح من قبل VFSC لتشغيل منصة تداول لا يشكّل تأكيداً فيما يخص جودة التّداول أو أدوات التداول المقدمة على المنصة أو أدنى تأكيد بأن الاستثمار آمن أوة موصىً به. عنوان المكتب هو: 1276 ،بناية جوفانت، طريق كومول، بورتفيال، جمهورية فانواتو.
+<br><br>
+لمزيد من المعلومات يرجى التواصل معنا عبر البريد الإلكترونيلمزيد من المعلوماتلمزيد من المعلومات يرجى التواصل معنا عبر البريد الإلكتروني <a href="https://lpevest.com/cdn-cgi/l/email-protection#c3b0b6b3b3acb1b783a6b5a6b0b7eda0acae"><span class="__cf_email__" data-cfemail="60131510100f12142005160513144e030f0d">[email&#160;protected]</span></a> أو عن طريق الرقم المجاني في الإمارات العربية المتّحدة <a href="tel:+97180003111248" style="direction:ltr; unicode-bidi: embed;">971-800-0311-1248</a> أو الرقم المجاني في المملكة العربية السعودية <a href="tel:+9668008501019" style="direction:ltr; unicode-bidi: embed;">966-8008-501-019</a> أو في قبرص على الرّقم <a href="tel:+35722090134" style="direction:ltr; unicode-bidi: embed;">357-2209-0134</a>
+<p>حقوق النشر © 2021 جميع الحقوق محفوظة</p>
+</p>
+</div>
+</footer>
+</div>
+</div>
+</div>
+
+{% load wagtailcore_tags wagtailimages_tags %}
+{% for block in self.redirection %}
+    {% include_block block %}
+{% endfor %}
+
+<script>
+    var country_code_server = "{{ country_code }}";
+</script>
+
+{% comment %} <script data-cfasync="false" src="https://lpevest.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script> {% endcomment %}
+<script src="{% static 'evest/ef06/assets/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'evest/ef06/js/bs-init.js' %}"></script>
+<script src="{% static 'evest/ef06/js/jquery.ccpicker.js' %}"></script>
+<script src="{% static 'evest/ef06/js/intlTelInput.js' %}"></script>
+<script src="{% static 'evest/ef06/js/main.js' %}"></script>
+{% comment %} <script src="{% static 'evest/ef06/js/email.js' %}"></script> {% endcomment %}
+<script src="{% static 'evest/ef06/js/utils.js' %}"></script>
+<script src="{% static 'evest/ef06/js/first-name.js' %}"></script>
+<script src="{% static 'evest/ef06/js/last-name.js' %}"></script>
+<script src="{% static 'evest/ef06/js/password.js' %}"></script>
+<script src="{% static 'script/redirect_script.js'%}"></script>
+</body>
+<style>.error{ display:none;}</style>
+
+<!-- Mirrored from lpevest.com/tesla_v1_af/?partner_id=c1a486dd6c8f128d0be36f669aa221fe&referal_id=35075_399032_list&affiliate_id=35075&src=&Aff_id=35075&Banner_id=tesla_v1&clc_id=list&crtv=link&chan=&Lp_id=5903&Banner_si=Unavailable&kyw= by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 May 2021 20:08:11 GMT -->
+</html>

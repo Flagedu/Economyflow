@@ -1,0 +1,43 @@
+<html>
+  {% load static %}
+  <head>
+    <title>Redirect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <style>
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+      .main-text{
+        max-width: 800px;
+        color: grey;
+        font-size: 40px;
+      }
+      img{
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="main-text">يجرى فحص متصفحك..يبدو ان هذا العرض لا يشمل منطقتك الجغرافية سيتم تحويلك الى عرض اخر يعمل فى بلدك !</h1>
+      <img src="{% static 'img/loading-gif.gif' %}" />
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+      function redirection(){
+        const red_url = "{{ request.GET.red_url }}";
+        location.href = red_url;
+      }
+
+      setTimeout(function(){ 
+        redirection();
+       }, 5000);
+    </script> 
+  </body>
+</html>

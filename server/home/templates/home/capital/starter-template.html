@@ -1,0 +1,944 @@
+{% load static %}
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<!-- Mirrored from capital.com/ar/testregform1 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Mar 2022 11:00:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    {% include "home/tagmanager_head.html" %}
+    {% comment %} <script>
+    var c0,v;
+    function gId(){
+        return "xyxxyxxx-xxxx-xxxx-yxxx-xxxxyxxxyxyx".replace(/[xy]/g, function (c) {
+            var r = Math.random() * 16 | 0, v = c === "x" ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+    };
+    function cookieGet(f,h){
+        return (v = document.cookie.match(new RegExp("(?:^|; )" + f + "=" + (h ? "([\-a-zA-Z0-9]+)" : "([^;]*)") ))) ? decodeURIComponent(v[1]) : null;
+    };
+    function cookieSet(f,v,t){
+                document.cookie = f + "=" + encodeURIComponent(v) + "; SameSite=None; Secure; expires=" + (t || "Thu, 01 Jan 2030 00:00:01 UTC") + "; path=/; domain=.capital.com;";
+            };
+    function getSID(){
+        return cookieGet('__cp_sid', 1);
+    };
+    function removeCookieSessionId() {
+        document.cookie = "__cp_sid=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        document.cookie = "__cp_at=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    };
+    cookieSet("__cp_sid", "", "Thu, 01 Jan 1970 00:00:00 UTC");
+    try{
+        v = window.localStorage.getItem("deviceProperties2");
+        c0 = v ? (JSON.parse(v)).installationId : false;
+    }catch(e){};
+    var tSID=cookieGet('__cp_tsid', 1),
+        deviceId=c0 || cookieGet('__cp_deviceId') ||  cookieGet('uid') || "3m1n4zri-o2d9-95fe-vb48-09qt6bgsv3j0" || gId();
+    cookieSet('uid', deviceId);
+    cookieSet('__cp_deviceId', deviceId);
+
+    var deviceOS="Windows",deviceType="desktop",
+    tSID=cookieGet('__cp_tsid', 1),
+    devicePr="uu",
+    enURL = 'https://capital.com.by/',
+    pURL = 'https://api.backend-capital.com/proxy',
+    ppURL = 'https://payment.backend-capital.com/payment',
+    lnProp = 'ar',
+    wsURL = 'wss://api.backend-capital.com/proxy/connect|wss://api-2.backend-capital.com/proxy/connect',
+    uCountry = 'bd',
+    appVersion = 'com.capital.website:1.1.8.web.03/17.15:57',
+    appBuild = 'e3362ed71a34e0ee57c5',
+    snAppIdFb = '360773217625622',
+    countries_map={},cpXHRo,cpXHRs;
+
+    window.pageReadyFN = [];
+
+    var logged,uEm,uN;
+    function loginTry(a){
+        var sid = getSID();
+        if(sid && window.XMLHttpRequest){
+            var r = new XMLHttpRequest();
+            r.open('GET.html', pURL + '/ums/user/v1/' + (a ? a : 'profile'), false);
+            r.setRequestHeader('Session-Token', sid);
+            r.setRequestHeader('Device-Id', deviceId);
+            r.setRequestHeader('App-Version', appVersion);
+            function pLg() {
+                if (r.status === 200) {
+                    logged = true;
+                    if(r.responseText){
+                        var x,d=JSON.parse(r.responseText),l='user-logged';
+                        (x=document.getElementById('wphWrap')) && x.classList.add(l);
+                        document.body.classList.add(l);
+                        uEm = d.email;
+                        uN = d.firstName + " " + d.lastName;
+                    }
+                } else {
+                    document.cookie = "__cp_sid=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                }
+            };
+            r.onload = pLg;
+            try{
+                r.send();
+            } catch(e){
+                try{
+                    var r = new XMLHttpRequest();
+                    r.open('GET.html', '/proxy/ums/user/v1/' + (a ? a : 'profile'), false);
+                    r.setRequestHeader('Session-Token', sid);
+                    r.setRequestHeader('Device-Id', deviceId);
+                    r.setRequestHeader('App-Version', appVersion);
+                    r.onload = pLg;
+                    r.send();
+                } catch(e) {
+                    document.cookie = "__cp_sid=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                }
+            }
+        }
+
+        var webP = new Image();
+        webP.onload = webP.onerror = function () {
+             document.body.classList.add(webP.height == 1 ? 'webp' : 'no-webp');
+        };
+        webP.src = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoCAAEAAQAcJaQAA3AA/v3AgAA=';
+    };
+
+    if(window.XMLHttpRequest){
+        cpXHRo = window.XMLHttpRequest.prototype.open;
+        cpXHRs = window.XMLHttpRequest.prototype.send;
+        if(!tSID){
+            tSID = gId();
+            var xr0;xr0 = new XMLHttpRequest();xr0.open('GET.html', '/service?mode=tsid&tsid=' + tSID + '&d=' + deviceId , true);
+            xr0.onload = function() {
+                if (xr0.status === 200 && xr0.responseText) {
+                    cookieSet('__cp_tsid', tSID);
+                }
+            };
+            xr0.send();
+        };
+        var xr;
+        xr = new XMLHttpRequest();
+        xr.open('GET.html', '/service?mode=tk&d=' + deviceId + "&did=" + "", true);
+        xr.send();
+    }
+</script> {% endcomment %}
+
+    {% comment %} <script>
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5BLNS36');</script> {% endcomment %}
+<meta name="google-signin-client_id" content="454579592242-gnbnhkk834jh482n40b71q2nm0hfrvjj.apps.googleusercontent.com">
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://capital.com/img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://capital.com/img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://capital.com/img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://capital.com/img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://capital.com/img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://capital.com/img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://capital.com/img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://capital.com/img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://capital.com/img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.gif">
+<link rel="icon" type="image/png" sizes="32x32" href="https://capital.com/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://capital.com/img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://capital.com/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://capital.com/img/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">    <meta charset="utf-8">
+    <title>ابدأ التداول | Capital.com</title>
+    <meta name="description" content="انضم إلى تطبيق الاستثمار الافضل للأشخاص الأذكياء. افتح حسابًا ، وقم بأول إيداع لك ، واحصل على آخر تحديثات سوق الأسهم وابدأ التداول معنا.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta name="robots" content="noindex"/>
+    <link rel="stylesheet" href="https://capital.com/css/mainfull.css?v=2.0.44">
+    <link rel="stylesheet" href="https://capital.com/css/flags.css?v=2.0.44"   media="none" onload="if(media!='all')media='all'">
+    <link rel="canonical" href='https://capital.com/trading/signup'>
+    <base >
+    <style>
+        .registration-form-wrapper {overflow: hidden; padding-bottom: 65px;}
+    </style>
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@capitalcom">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://capital.com/">
+    <meta property="fb:app_id" content="360773217625622" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://capital.com/ar/testregform1" />
+    <meta property="og:image" content="https://capital.com/" />
+    <meta property="og:image:height" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:description" content="" />
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="https://capital.com/">
+
+</head>
+<body>
+
+<div class="bg-for-page investingMode">
+    <div class="step-overlay"></div>
+    <div class="registration-form-wrapper">
+
+        <div class="registration-main-area" id="wrap" style="flex-direction: column; align-items: center;">
+            <div class="regHead">
+                <div class="registration-inner-area regHead-area">
+                    <a href="https://capital.com/" class="logo-invert">capital.com</a>s
+                    <div class="lang-change langbtn">
+                        <span class="flag-min flag-min--ab"></span>
+                        <span class="lang-name">	العَرَبِيَّة</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="valid-error global hidden" id="err_c" >
+                <em class="sprite sprite-warning"></em>
+                <div class="valid-error-title">خطأ في الإتصال</div>
+                <p>للأسف ، لم يتم إرسال طلبك بسبب خطأ في الاتصال.</p>
+                <a href="#" class="connection-error-link">الرجاء المحاولة مرة اخرى</a>
+            </div>
+
+            <div class="registration-header investing-head">
+                                <div class="registration-progress">
+                    <div class="progressbar" id="progressBar"></div>
+                </div>
+                <div class="registration-close" id="bt_close"></div>
+            </div>
+
+            <form id="wsignup" method="post">
+                {% csrf_token %}
+                <div class="registration-inner-area">
+
+                    <p class="text-center reg-desc">هل لديك حساب؟ <a href="http://capital.com/trading/login"  class="ln-auto loginBtn">تسجيل دخول</a></p>
+                    
+
+                    <div class="valid-error hidden s_error">
+                        <em class="sprite sprite-warning"></em>
+                        <div class="valid-error-title errTitle"></div>
+                        <p class="errDescr"></p>
+                    </div>
+                    <div class="form-group">
+                        <div class="control-outline control-outline--input">
+                            <label class="label-form">عنوان البريد الكتروني</label>
+                            <div class="control-form" id="wsignup-email"> <!-- error -->
+                                <span class="clear-field"></span>
+                                <input 
+                                    type="email" 
+                                    class="field-form" 
+                                    placeholder="" 
+                                    autocorrect="off" 
+                                    autocapitalize="off" 
+                                    autocomplete="email" 
+                                    name="username">
+                                <div class="control-hint-wrapper">
+                                    <div class="control-hint">
+                                        <span class="control-hint-arrow"></span>
+                                        <p>يرجى إدخال بريد الكتروني صالح</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-outline control-outline--input">
+                            <label class="label-form">كلمة المرور</label>
+                            <div class="control-form" id="wsignup-pass">
+                                <span class="clear-field"></span>
+                                <input 
+                                    type="password" 
+                                    class="field-form" 
+                                    placeholder=""  
+                                    maxlength="100" 
+                                    autocorrect="off" 
+                                    autocapitalize="off" 
+                                    autocomplete="current-password"  
+                                    name="password"
+                                >
+                                <em class="sprite4 sprite4-pass-show pass-ico pass-ico--reg s2_eye" ></em>
+                            </div>
+                            <ul class="password-list password-list--new">
+                                <li class="tale"></li>
+                                <li id="s2_ok0">8 رموز كحد ادنى</li>
+                                <li id="s2_ok1">رقم واحد على الأقل</li>
+                                <li id="s2_ok2">حرف صغير واحد على الأقل</li>
+                                <li id="s2_ok3">حرف كبير واحد على الأقل</li>
+                                <li id="s2_ok4">رمز واحد على الأقل</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                                        <div class=" reg-desc">عند إنشاء حساب ، فأنا أقبل <a href='http://capital.com/privacy-policy' target='_blank'> بسياسة الخصوصية </a></div>
+                    <br>
+                    <div class="reg-button-toolbar centered">
+                        <button class="button-main s2_btn">
+                                                        تابع
+                                                    </button>
+                        <span class="hidden">أو اضغط على ENTER</span>
+                    </div>
+
+                    
+                    <br>
+                    {% comment %} <div class="rw-first-old">
+                                                <div class="rw_change_txt hidden" data-id="CYSEC"><span>عقود الفروقات هي أدوات معقدة وتنطوي على مخاطر عالية قد تؤدي الى خسارة سريعة للأموال بسبب الرافعة المالية.</span><span class=text-accord> <span class = txt-bold> 79.17٪ من حسابات مستثمري التجزئة تخسر المال عند تداول عقود الفروقات مع هذا المزود. </span> يجب أن تفكر فيما إذا كنت تفهم كيفية عمل عقود الفروقات وما إذا كنت تستطيع تحمل مخاطر عالية قد تؤدي الى خسارة اموالك.</span></span></div>
+                        <div class="rw_change_txt hidden" data-id="NBRB">إن عقود  الفروقات هي أدوات معقدة وتنطوي على مخاطر عالية قد ينتج عنها خسارة للأموال عند استخدام الرافعة المالية. يجب أن تفكر ملياً فيما إذا كنت تفهم كيفية عمل عقود الفروقات وما إذا كنت تستطيع تحمل مخاطر عالية قد تؤدي الى خسارة أموالك.</div>
+                        <div class="rw_change_txt hidden" data-id="ASIC">ان عقود الفروقات هي أدوات معقدة وتنطوي على مخاطر عالية قد تؤدي الى خسارة سريعة للأموال عند استخدام الرافعة المالية. يجب أن تفكر مليّاً فيما إذا كنت تفهم كيفية عمل عقود الفروقات ومدى استعدادك لتحمل المخاطر.</div>
+                        <div class="rw_change_txt hidden" data-id="FCA">رهانات فروق الأسعار والعقود مقابل الفروقات أدوات معقدة وتأتي مع خطر كبير بفقد المال بسرعة بسبب الرفع المالي.<strong>78.79% من حسابات مستثمري التجزئة تخسر أموالًا عند تداول رهانات فروق الأسعار و/أو العقود مقابل الفروقات مع هذا المُزوِّد .</strong> ينبغي لك أن تأخذ في اعتبارك ما إذا كنت قادرًا على تقبُّل مخاطر خسارة المال المرتفعة&quot;</div>
+                    </div> {% endcomment %}
+                </div>
+            </form>
+
+        </div>
+
+        <div class="registration-side-area "></div>
+        <div class="registration-main-slider ">
+            <div class="registration-main-slider__item first">
+                <div class="registration-main-slider__txt">
+                    <h2>لماذا Capital.com؟</h2>
+                    <p>دراسة الاتجاهات مع الرسوم البيانية القوية.</p>
+                </div>
+            </div>
+            <div class="registration-main-slider__item second">
+                <div class="registration-main-slider__txt">
+                    <h2>لماذا Capital.com؟</h2>
+                    <p>تطبيق واحد. أكثر من 6500 سوق.</p>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="registration-modal hidden" id="ph_spn">
+            <svg class="spinner" viewBox="0 0 50 50">
+                <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="2"></circle>
+            </svg>
+            <div class="registration-modal-title">Uploading your document</div>
+            <p>This should take a couple of seconds, depending on your network connectivity</p>
+        </div>
+    </div>
+    <div class="rw-regform">
+                <div class="rw_change_txt hidden" data-id="CYSEC"><span>عقود الفروقات هي أدوات معقدة وتنطوي على مخاطر عالية قد تؤدي الى خسارة سريعة للأموال بسبب الرافعة المالية.</span><span class=text-accord> <span class = txt-bold> 79.17٪ من حسابات مستثمري التجزئة تخسر المال عند تداول عقود الفروقات مع هذا المزود. </span> يجب أن تفكر فيما إذا كنت تفهم كيفية عمل عقود الفروقات وما إذا كنت تستطيع تحمل مخاطر عالية قد تؤدي الى خسارة اموالك.</span></span></div>
+        <div class="rw_change_txt hidden" data-id="NBRB">إن عقود  الفروقات هي أدوات معقدة وتنطوي على مخاطر عالية قد ينتج عنها خسارة للأموال عند استخدام الرافعة المالية. يجب أن تفكر ملياً فيما إذا كنت تفهم كيفية عمل عقود الفروقات وما إذا كنت تستطيع تحمل مخاطر عالية قد تؤدي الى خسارة أموالك.</div>
+        <div class="rw_change_txt hidden" data-id="ASIC">ان عقود الفروقات هي أدوات معقدة وتنطوي على مخاطر عالية قد تؤدي الى خسارة سريعة للأموال عند استخدام الرافعة المالية. يجب أن تفكر مليّاً فيما إذا كنت تفهم كيفية عمل عقود الفروقات ومدى استعدادك لتحمل المخاطر.</div>
+        <div class="rw_change_txt hidden" data-id="FCA">رهانات فروق الأسعار والعقود مقابل الفروقات أدوات معقدة وتأتي مع خطر كبير بفقد المال بسرعة بسبب الرفع المالي.<strong>78.79% من حسابات مستثمري التجزئة تخسر أموالًا عند تداول رهانات فروق الأسعار و/أو العقود مقابل الفروقات مع هذا المُزوِّد .</strong> ينبغي لك أن تأخذ في اعتبارك ما إذا كنت قادرًا على تقبُّل مخاطر خسارة المال المرتفعة&quot;</div>
+    </div>
+</div>
+
+<div class="overlay hidden js-langspp" >
+    <div class="modal modal-language">
+        <div class="close-button modal-close"></div>
+        <div class="modal-header">
+            <div class="modal-title text-center">اختار اللغة</div>
+        </div>
+        <div class="modal-content">
+            <div class="language-set">
+                                            <a href="https://capital.com/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--gb language-set_flag"></span>English
+                </a>
+                                                            <a href="testregform1.html"  class="ln-auto language-set_item active">
+                    <span class="flag-min flag-min--ab language-set_flag"></span>	العَرَبِيَّة
+                </a>
+                                                            <a href="https://capital.com/id/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--id language-set_flag"></span>Bahasa Indonesia
+                </a>
+                                                            <a href="https://capital.com/ms/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--my language-set_flag"></span>Bahasa Melayu
+                </a>
+                                                                                        <a href="https://capital.com/cs/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--cz language-set_flag"></span>Čeština
+                </a>
+                                                            <a href="https://capital.com/da/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--dk language-set_flag"></span>Dansk
+                </a>
+                                                            <a href="https://capital.com/de/anmelden"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--de language-set_flag"></span>Deutsch
+                </a>
+                                                                                        <a href="https://capital.com/el/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--gr language-set_flag"></span>ελληνικά
+                </a>
+                                                            <a href="https://capital.com/es/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--es language-set_flag"></span>Español
+                </a>
+                                                            <a href="https://capital.com/fr/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--fr language-set_flag"></span>Français
+                </a>
+                                                                                        <a href="https://capital.com/it/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--it language-set_flag"></span>Italiano
+                </a>
+                                                                                                                    <a href="https://capital.com/hu/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--hu language-set_flag"></span>Magyar
+                </a>
+                                                            <a href="https://capital.com/nl/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--nl language-set_flag"></span>Nederlands
+                </a>
+                                                            <a href="https://capital.com/pl/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--pl language-set_flag"></span>Polski
+                </a>
+                                                            <a href="https://capital.com/pt/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--pt language-set_flag"></span>Português
+                </a>
+                                                            <a href="https://capital.com/ro/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--ro language-set_flag"></span>Română
+                </a>
+                                                            <a href="https://capital.com/ru/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--ru language-set_flag"></span>Русский
+                </a>
+                                                                                                                    <a href="https://capital.com/fi/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--fi language-set_flag"></span>Suomi
+                </a>
+                                                            <a href="https://capital.com/sv/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--se language-set_flag"></span>Svenska
+                </a>
+                                                            <a href="https://capital.com/vi/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--vn language-set_flag"></span>Tiếng Việt
+                </a>
+                                                            <a href="https://capital.com/th/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--th language-set_flag"></span>ไทย
+                </a>
+                                                            <a href="https://capital.com/zh/testregform1"  class="ln-auto language-set_item ">
+                    <span class="flag-min flag-min--cn language-set_flag"></span>中文
+                </a>
+                                        </div>
+        </div>
+    </div>
+</div>
+
+<div class="global-search__overlay"></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://capital.com/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+{% comment %} <script>
+    var _ln={"sendlink_ph_empty":"Please fill in the field","sendlink_ph_err":"Incorrect format. Please enter the valid data","sendlink_ph_serr":"Please try again later","sendlink_em_empty":"Please fill in the field","sendlink_em_err":"Please enter a valid email","sendlink_em_serr":"Sorry, we are having technical issues. Please try again later.","js_read_more":"\u0627\u0642\u0631\u0623 \u0627\u0644\u0645\u0632\u064a\u062f","st_no_item":"No item matched","l_forgot_pass":"\u0646\u0633\u064a\u062a \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631\u061f","l_login_failed":"\u0641\u0634\u0644 \u0641\u064a \u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u062f\u062e\u0648\u0644","l_err_too_many_attempts":"\u0645\u062d\u0627\u0648\u0644\u0627\u062a \u062a\u0633\u062c\u064a\u0644 \u062f\u062e\u0648\u0644 \u0643\u062b\u064a\u0631\u0629 \u064a\u0631\u062c\u0649 \u0625\u0639\u0627\u062f\u0629 \u062a\u0639\u064a\u064a\u0646 \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631 \u0627\u0644\u062e\u0627\u0635\u0629 \u0628\u0643 \u0623\u0648 \u0627\u0644\u0645\u062d\u0627\u0648\u0644\u0629 \u0645\u0631\u0629 \u0623\u062e\u0631\u0649 \u0641\u064a \u0648\u0642\u062a \u0644\u0627\u062d\u0642.","l_pass_invalid":"\u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a \u0623\u0648 \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631 \u063a\u064a\u0631 \u0635\u0627\u0644\u062d\u0629.","l_err_password":"\u064a\u062c\u0628 \u0623\u0646 \u062a\u062d\u062a\u0648\u064a \u0643\u0644\u0645\u0629 \u0645\u0631\u0648\u0631\u0643 \u0639\u0644\u0649: - 8 \u0631\u0645\u0648\u0632 \u0639\u0644\u0649 \u0627\u0644\u0623\u0642\u0644 - \u0631\u0642\u0645 \u0648\u0627\u062d\u062f \u0639\u0644\u0649 \u0627\u0644\u0623\u0642\u0644 - \u062d\u0631\u0641 \u0648\u0627\u062d\u062f \u0639\u0644\u0649 \u0627\u0644\u0623\u0642\u0644","l_acc_locked":"\u062d\u0633\u0627\u0628\u0643 \u0645\u063a\u0644\u0642","l_err_acc_locked":"\u0639\u0630\u0631\u0627 \u060c \u0644\u0627 \u064a\u0645\u0643\u0646\u0643 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u0649 \u0627\u0644\u0645\u0646\u0635\u0629 \u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0627\u0644\u062d\u0627\u0644\u064a. \u064a\u0631\u062c\u0649 \u0627\u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0628\u0641\u0631\u064a\u0642 \u0627\u0644\u062f\u0639\u0645 \u0644\u062f\u064a\u0646\u0627 \u0639\u0644\u0649 support@capital.com","l_2fa_err_ttl":"\u0631\u0645\u0632 2FA \u063a\u064a\u0631 \u0635\u0627\u0644\u062d","l_2fa_err_txt":"\u064a\u0631\u062c\u0649 \u0627\u0644\u0645\u062d\u0627\u0648\u0644\u0629 \u0645\u0631\u0629 \u0623\u062e\u0631\u0649","l_acc_closed":"\u0627\u0646 \u062d\u0633\u0627\u0628\u0643 \u0645\u063a\u0644\u0642","l_err_acc_closed":"\u0639\u0630\u0631\u0627 \u060c \u0644\u0627 \u064a\u0645\u0643\u0646\u0643 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u0649 \u0627\u0644\u0645\u0646\u0635\u0629 \u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0627\u0644\u062d\u0627\u0644\u064a. \u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0645\u0639 \u0641\u0631\u064a\u0642 \u0627\u0644\u062f\u0639\u0645 \u0644\u062f\u064a\u0646\u0627 \u0639\u0644\u0649 support@capital.com","rg_cant_connect_fb":"\u0644\u0627 \u064a\u0645\u0643\u0646 \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u064a\u062c\u0628 \u0623\u0646 \u064a\u0643\u0648\u0646 \u062d\u0633\u0627\u0628 Facebook \u0627\u0644\u062e\u0627\u0635 \u0628\u0643 \u0639\u0646\u0648\u0627\u0646 \u0628\u0631\u064a\u062f \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a \u0645\u0631\u062a\u0628\u0637.","l_connection_error":"\u062e\u0637\u0623 \u0641\u064a \u0627\u0644\u0625\u062a\u0635\u0627\u0644","l_err_connection":"\u0644\u0644\u0623\u0633\u0641 \u060c \u0644\u0645 \u064a\u062a\u0645 \u0625\u0631\u0633\u0627\u0644 \u0637\u0644\u0628\u0643 \u0628\u0633\u0628\u0628 \u062e\u0637\u0623 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644 \u0628\u0627\u0644\u0634\u0628\u0643\u0629. \u062d\u0627\u0648\u0644 \u0645\u0631\u0629 \u0627\u062e\u0631\u0649","f_sent":"\u062a\u0645 \u0625\u0631\u0633\u0627\u0644 \u0628\u0631\u064a\u062f \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a \u0645\u0639 \u0645\u0632\u064a\u062f \u0645\u0646 \u0627\u0644\u0625\u0631\u0634\u0627\u062f\u0627\u062a \u0625\u0644\u0649 ##","api_too_many_ttl":"\u0645\u062d\u0627\u0648\u0644\u0627\u062a \u0643\u062b\u064a\u0631\u0629","api_too_many_txt":"\u062d\u0627\u0648\u0644 \u0645\u0631\u0629 \u0623\u062e\u0631\u0649 \u0628\u0639\u062f \u0639\u062f\u0629 \u062f\u0642\u0627\u0626\u0642","api_em_not_found_ttl":"\u0644\u0645 \u064a\u062a\u0645 \u0627\u0644\u0639\u062b\u0648\u0631 \u0639\u0644\u0649 \u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a","api_em_not_found_txt":"\u0639\u0630\u0631\u0627 \u060c \u0644\u0645 \u064a\u062a\u0645 \u0627\u0644\u0639\u062b\u0648\u0631 \u0639\u0644\u0649 \u062d\u0633\u0627\u0628 \u0645\u0631\u062a\u0628\u0637 \u0628\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a \u0647\u0630\u0627.","p_status_verified":"\u062a\u0645 <b>\u062a\u0641\u0639\u064a\u0644  \u062d\u0633\u0627\u0628\u0643.","p_status_suspended":"\u062a\u0645 \u062a\u0639\u0644\u064a\u0642<b> \u062d\u0633\u0627\u0628\u0643 . \u064a\u062a\u0637\u0644\u0628 \u0627\u0644\u0642\u0627\u0646\u0648\u0646 \u0627\u0644\u0623\u0648\u0631\u0648\u0628\u064a \u0645\u0646 Capital.com \u062a\u062d\u062f\u064a\u062f \u0647\u0648\u064a\u0629 \u0639\u0645\u0644\u0627\u0626\u0647\u0627. <br> \u064a\u0631\u062c\u0649 \u062a\u062d\u0645\u064a\u0644 \u0628\u0637\u0627\u0642\u0629 \u0627\u0644\u0647\u0648\u064a\u0629 \u0648\u0645\u0633\u062a\u0646\u062f \u0625\u062b\u0628\u0627\u062a \u0627\u0644\u0639\u0646\u0648\u0627\u0646.","p_status_cant_trade":"\u0644\u0645 \u064a\u062a\u0645 \u062a\u0641\u0639\u064a\u0644  \u062d\u0633\u0627\u0628\u0643 . \u064a\u0645\u0643\u0646\u0643 \u0627\u0644\u0622\u0646 \u0627\u0633\u062a\u0643\u0634\u0627\u0641 \u0627\u0644\u062a\u0637\u0628\u064a\u0642 \u0648\u0625\u0646\u0634\u0627\u0621 \u0642\u0627\u0626\u0645\u0629 \u0645\u0631\u0627\u0642\u0628\u0629. \u0648\u0645\u0639 \u0630\u0644\u0643 \u060c \u0644\u0646 \u062a\u062a\u0645\u0643\u0646 \u0645\u0646 \u0627\u0644\u062a\u062f\u0627\u0648\u0644. \u0645\u0646 \u0627\u062c\u0644 \u062a\u0641\u0639\u064a\u0644 \u062d\u0633\u0627\u0628\u0643 \u064a\u0631\u062c\u0649 \u0625\u0643\u0645\u0627\u0644 \u0627\u0644\u062e\u0637\u0648\u0627\u062a \u0627\u0644\u0645\u0630\u0643\u0648\u0631\u0629 \u0623\u062f\u0646\u0627\u0647.","p_status_can_trade":"\u0644\u0645 \u064a\u062a\u0645 \u062a\u0641\u0639\u064a\u0644  \u062d\u0633\u0627\u0628\u0643 . \u064a\u062a\u0637\u0644\u0628 \u0627\u0644\u0642\u0627\u0646\u0648\u0646 \u0627\u0644\u0623\u0648\u0631\u0648\u0628\u064a \u0645\u0646 Capital.com \u062a\u062d\u062f\u064a\u062f \u0647\u0648\u064a\u0629 \u0639\u0645\u0644\u0627\u0626\u0647\u0627. <br> \u064a\u0631\u062c\u0649 \u062a\u062d\u0645\u064a\u0644 \u0628\u0637\u0627\u0642\u0629 \u0627\u0644\u0647\u0648\u064a\u0629 \u0648\u0645\u0633\u062a\u0646\u062f \u0625\u062b\u0628\u0627\u062a \u0627\u0644\u0639\u0646\u0648\u0627\u0646.","p_status_review":"\u0627\u0646 \u062d\u0633\u0627\u0628\u0643 \u0645\u0648\u062c\u0648\u062f<b> \u0642\u064a\u062f \u0627\u0644\u0645\u0631\u0627\u062c\u0639\u0629 <\/b>. \u064a\u0645\u0643\u0646 \u0623\u0646 \u062a\u0633\u062a\u063a\u0631\u0642 \u0639\u0645\u0644\u064a\u0629 \u0627\u0644\u0645\u0648\u0627\u0641\u0642\u0629 \u0645\u0647\u0644\u0629 \u062a\u0635\u0644 \u0625\u0644\u0649 5 \u0623\u064a\u0627\u0645 \u0639\u0645\u0644.","p_dp_bank_txt0":"To fund your account via Wire Transfer please use the data below.","p_a_btn_later":"\u0644\u0627\u062d\u0642\u0627","p_a_btn_start":"\u0627\u0628\u062f\u0623 \u0627\u0644\u062a\u062f\u0627\u0648\u0644","p_a_btn_ok":"\u0645\u0648\u0627\u0641\u0642","p_a_btn_fund":"\u062a\u0639\u0628\u0626\u0629 \u0627\u0644\u062d\u0633\u0627\u0628","p_a_btn_reg":"\u0627\u0643\u0645\u0644 \u0627\u0644\u062a\u0633\u062c\u064a\u0644","p_a_notlogged_ttl":"\u0627\u0628\u062f\u0623 \u0627\u0644\u062a\u062f\u0627\u0648\u0644","p_a_notlogged_txt":"\u0644\u0628\u062f\u0621 \u0627\u0644\u062a\u062f\u0627\u0648\u0644 \u060c \u064a\u0631\u062c\u0649 \u0628\u062f\u0621 \u0627\u0644\u062a\u0633\u062c\u064a\u0644 \u0648\u062a\u0645\u0648\u064a\u0644 \u062d\u0633\u0627\u0628\u0643.","p_a_locked_ttl":"\u0627\u0646 \u062d\u0633\u0627\u0628\u0643 \u0645\u063a\u0644\u0642","p_a_locked_txt":"\u0639\u0630\u0631\u0627 \u060c \u0644\u0627 \u064a\u0645\u0643\u0646\u0643 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u0649 \u0627\u0644\u0645\u0646\u0635\u0629 \u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0627\u0644\u062d\u0627\u0644\u064a. \u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0645\u0639 \u0641\u0631\u064a\u0642 \u0627\u0644\u062f\u0639\u0645 \u0644\u062f\u064a\u0646\u0627 \u0639\u0644\u0649 <a href='\/contact-us' target='_blank'> support@capital.com <\/a>","p_a_fund_ttl":"\u062a\u0639\u0628\u0626\u0629 \u0627\u0644\u062d\u0633\u0627\u0628","p_a_fund_txt":"\u0644\u0627 \u062a\u0648\u062c\u062f \u0623\u0645\u0648\u0627\u0644 \u0643\u0627\u0641\u064a\u0629 \u0641\u064a \u062d\u0633\u0627\u0628\u0643. \u064a\u0631\u062c\u0649 \u062a\u0645\u0648\u064a\u0644 \u062d\u0633\u0627\u0628\u0643.","p_a_reg_ttl":"\u0627\u0643\u0645\u0644 \u0627\u0644\u062a\u0633\u062c\u064a\u0644","p_a_reg_txt":"\u0644\u0628\u062f\u0621 \u0627\u0644\u062a\u062f\u0627\u0648\u0644 \u060c \u064a\u0631\u062c\u0649 \u0625\u0643\u0645\u0627\u0644 \u0627\u0644\u062a\u0633\u062c\u064a\u0644 \u0648\u062a\u0645\u0648\u064a\u0644 \u062d\u0633\u0627\u0628\u0643.","p_l_g_SHARES":"\u0627\u0644\u0623\u0633\u0647\u0645","p_l_g_CURRENCIES":"\u0641\u0648\u0631\u0643\u0633","p_l_g_INDICES":"\u0627\u0644\u0645\u0624\u0634\u0631\u0627\u062a","p_l_g_COMMODITIES":"\u0627\u0644\u0633\u0644\u0639","p_l_g_CRYPTOCURRENCIES":"\u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0627\u0644\u0631\u0642\u0645\u064a\u0629","p_l_g_ETF":"\u0635\u0646\u0627\u062f\u064a\u0642 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0627\u0644\u0645\u062a\u062f\u0627\u0648\u0644\u0629","p_a_suspend_ttl":"\u062a\u0645 \u062a\u0639\u0644\u064a\u0642 \u062d\u0633\u0627\u0628\u0643","p_a_suspend_txt":"\u0627\u0644\u0631\u062c\u0627\u0621 \u062a\u062d\u0645\u064a\u0644 \u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u0645\u062a\u0628\u0642\u064a\u0629","p_a_btn_upload":"\u062a\u062d\u0645\u064a\u0644","api_err_exists_ttl":"\u062d\u0633\u0627\u0628 \u0645\u0648\u062c\u0648\u062f \u0628\u0627\u0644\u0641\u0639\u0644","api_err_exists_txt":"\u064a\u0648\u062c\u062f \u062d\u0633\u0627\u0628 \u0645\u0631\u062a\u0628\u0637 \u0628\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a \u0647\u0630\u0627 . \u062d\u0627\u0648\u0644 <a href='#'> \u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u062f\u062e\u0648\u0644 <\/a> \u0628\u062f\u0644\u0627\u064b \u0645\u0646 \u0630\u0644\u0643.","dp_m_card":"Bank card","dp_m_bank":"Bank transfer","dp_m_unav":"Unavailable for your first deposit","dp_m_klarna":"Online bank transfer","dp_m_trustly":"\u0645\u062f\u0641\u0648\u0639\u0627\u062a \u0627\u0644\u0628\u0646\u0643 \u0627\u0644\u0641\u0648\u0631\u064a","m_signup":"\u0642\u0645 \u0628\u0627\u0644\u062a\u0633\u062c\u064a\u0644","j_monthes":"\u064a\u0646\u0627\u064a\u0631 \u060c \u0641\u0628\u0631\u0627\u064a\u0631 \u060c \u0645\u0627\u0631\u0633 \u060c \u0623\u0628\u0631\u064a\u0644 \u060c \u0645\u0627\u064a\u0648 \u060c \u064a\u0648\u0646\u064a\u0648 \u060c \u064a\u0648\u0644\u064a\u0648 \u060c \u0623\u063a\u0633\u0637\u0633 \u060c \u0633\u0628\u062a\u0645\u0628\u0631 \u060c \u0623\u0643\u062a\u0648\u0628\u0631 \u060c \u0646\u0648\u0641\u0645\u0628\u0631 \u060c \u062f\u064a\u0633\u0645\u0628\u0631","j_min_ago":"\u0645\u0646\u0630 \u062f\u0642\u064a\u0642\u0629 \u0648\u0627\u062d\u062f\u0629","j_mins_ago":"## \u062f\u0642\u0627\u0626\u0642 \u0645\u0636\u062a","j_hour_ago":"\u0642\u0628\u0644 \u0633\u0627\u0639\u0629","j_hours_ago":"\u0645\u0646\u0630 ## \u0633\u0627\u0639\u0629","p_days_left":"\u0627\u064a\u0627\u0645 \u0645\u062a\u0628\u0642\u064a\u0629: #","p_nci_popup_ttl":"Why we need this info","p_nci_popup_txt":"Capital.com is obligated by EU Directive 2014\/65\/EU (MiFID II) to report trades, including our clients\u2019 National Client Identifiers (NCI). NCIs can be found on various official documents (depending on the country of nationality).","rg_3_f_err_code":"\u0644\u0627 \u064a\u0648\u062c\u062f \u0639\u0646\u0635\u0631\u0645\u0637\u0627\u0628\u0642 & nbsp\u061b <strong> ## <\/strong>","p_nci_not_req":"We don\u2019t require NCI for the nationals of #","p_nci_ttl_one":"Please provide","p_nci_ttl_many":"Please provide one of the following","p_nci_descr2":"Trading CFDs on shares and indices is not available without providing your National identifier.","p_nci_ttl0":"Please provide your National identifier","p_nci_btn_now":"Provide now","p_nci_btn_later":" Provide later","p_accept_terms":"\u0627\u0644\u0631\u062c\u0627\u0621 \u0642\u0628\u0648\u0644 \u0627\u0644\u0634\u0631\u0648\u0637 \u0648\u0627\u0644\u0633\u064a\u0627\u0633\u0627\u062a","rg_btn_continue":"\u0627\u0643\u0645\u0644","rg_btn_cancel":"\u0625\u0644\u063a\u0627\u0621","p_dp_bank_userref_txt":"User Reference","rg_1_pp_ttl":"\u0623\u0646\u062a \u062d\u0627\u0644\u064a\u064b\u0627 \u0641\u064a ##","rg_1_pp_text":"<p> \u0644\u0644\u0623\u0633\u0641 \u060c Capital.com \u063a\u064a\u0631 \u0645\u062a\u0648\u0641\u0631 \u062d\u0627\u0644\u064a\u064b\u0627 \u0641\u064a \u0628\u0644\u062f\u0643. <\/p> <p> \u064a\u0631\u062c\u0649 \u062a\u0623\u0643\u064a\u062f \u0623\u0646\u0643 \u0644\u0633\u062a \u0645\u0642\u064a\u0645\u064b\u0627 \u0641\u064a ## \u0648\u062a\u0633\u0627\u0641\u0631 \u0625\u0644\u0649 \u0647\u0646\u0627\u0643 \u0645\u0624\u0642\u062a\u064b\u0627. <\/p>"};
+    </script> {% endcomment %}
+
+<div class="overlay hidden" id="l_overlay">
+    <!-- TEST 43 - origin -->
+    <div class="form-container-small modal">
+        <div class="form-container-small-header">
+            <div class="h2">تسجيل الدخول</div>
+            <button class="button-cleared small l_cancel" >إلغاء</button>
+        </div>
+        <div class="form-container-small-content">
+            <div class="error-container l_error hidden" >
+                <h6 class="errTitle"></h6>
+                <p class="errDescr"></p>
+                <p class="errActionWrap"><a href="#" class="errAction"></a></p>
+            </div>
+            <div class="step0">
+                <div class="form-group">
+                    <label class="label-form">عنوان البريد الالكترونى</label>
+                    <div class="control-form"  id="l_f_email" >
+                        <input type="email" class="field-form" maxlength="255" name="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="label-form">كلمة المرور</label>
+                    <div class="control-form" id="l_f_pass">
+                        <input type="password" class="field-form" maxlength="100" autocorrect="off" autocapitalize="off" autocomplete="off" name="password">
+                    </div>
+                </div>
+                <div class="form-group  ">
+                    <label class="checkbox">
+                        <input type="checkbox" name="l_rem" value="1" class="l_rem">
+                        <span>تذكير لمدة 24 ساعة</span>
+                    </label>
+                </div>
+            </div>
+            <div class="step1 hidden">
+                <div class="form-group">
+                    <label class="label-form">كود من التطبيق 2FA</label>
+                    <div class="control-form" id="l_f_code">
+                        <input type="number" class="field-form" maxlength="6" name="ff33">
+                        <div class="control-hint-wrapper">
+                            <div class="control-hint">
+                                <span class="control-hint-arrow"></span>
+                                <p>يجب أن يحتوي كود 2FA على 6 رموز</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="button-main l_btn" disabled>اكمل</button>
+                <div class="socialsLogin ">
+        <div class="linedTitle"><span>أو</span></div>
+        <div class="inline ">
+            <a href="#" class="socialsLogin__btn socialsLogin__btn--google sn-login-gg">
+                <div class="socialsLogin__ico">
+                    <svg width="16" height="16"><use xlink:href="http://capital.com/img/icons/social/google-sm.svg?v1#google"></use></svg>
+                </div>
+                تابع مع Google
+            </a>
+            <a href="#" class="socialsLogin__btn socialsLogin__btn--fb sn-login-fb" >
+                <div class="socialsLogin__ico">
+                   <svg width="16" height="16"><use xlink:href="http://capital.com/img/icons/social/fb-round.svg?v1#facebook"></use></svg>
+                </div>
+                تابع مع Facebook
+            </a>
+            <a href="#" class="socialsLogin__btn socialsLogin__btn--apple sn-login-ap">
+                <div class="socialsLogin__ico">
+                    <svg width="16" height="16"><use xlink:href="http://capital.com/img/icons/social/apple-sm.svg?v1#apple"></use></svg>
+                </div>
+                تابع مع Apple
+            </a>
+        </div>
+    </div>
+        </div>
+        <div class="form-container-small-footer">ليس لديك حساب؟
+            <a href="#" class="l_btn_signup">قم بالتسجيل</a><br>
+            <a href="#" class="l_btn_forgot">نسيت كلمة المرور؟</a>
+        </div>
+    </div>
+
+    </div>
+
+<div class="overlay hidden" id="f_overlay">
+    <div class="form-container-small forgot-popup">
+        <div class="form-container-small-header">
+            <div class="h2">هل نسيت كلمة المرور</div>
+            <button class="button-cleared small f_cancel" >إلغاء</button>
+        </div>
+        <div class="form-container-small-content">
+            <div class="form-description">أدخل عنوان بريدك الإلكتروني لإعادة تعيين كلمة المرور الخاصة بك.</div>
+
+            <div class="error-container f_error hidden" >
+                <h6 class="errTitle"></h6>
+                <p class="errDescr"></p>
+                <p class="errActionWrap"><a href="#" class="errAction"></a></p>
+            </div>
+
+            <div class="error-container positive-container hidden f_sent"><p></p></div>
+            <div class="form-group">
+                <label class="label-form">عنوان البريد الالكترونى</label>
+                <div class="control-form" id="f_f_email">
+                    <input type="email" class="field-form" maxlength="255" name="email1">
+                </div>
+            </div>
+            <button type="submit" class="button-main f_btn" >إرسال بريد إلكتروني لإعادة التعيين</button>
+            <button type="submit" class="button-main f_continue hidden">تابع إلى Capital.com</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="overlay hidden" id="s_overlay">
+    <div class="form-container-signup modal custom-signup cc_ab_43_12_0"> <!-- 0 - '', 12 - '--test43' -->
+        <button class="button-cleared small s_cancel hidden cc_ab_43_12_1" >إلغاء</button> <!-- 0 - 'hidden', 12 - '' -->
+        <div class="registrationPromo ">
+            <div class="registrationPromo__holder">
+                <div>
+                    <h2 class="cc_ab_43_0_0">Capital.com:</h2><!-- 0 - '', 12 - 'hidden' -->
+                    <h2 class="hidden cc_ab_43_12_2"><img src="http://capital.com/img/logo.svg" alt=""></h2> <!-- 0 - 'hidden', 12 - '' -->
+                    <div class="list-webinar ab1 ab1_0">
+                        <div class="list-webinar__item">
+                            <i class="icn-check"></i>
+                            <strong>دراسة الاتجاهات مع الرسوم البيانية القوية.</strong>
+                        </div>
+                        <div class="list-webinar__item">
+                            <i class="icn-check"></i>
+                            <strong>تطبيق واحد. أكثر من 6500 سوق.</strong>
+                        </div>
+                        <div class="list-webinar__item">
+                            <i class="icn-check"></i>
+                            <strong class="hidden" data-id="CYSEC">منظمة بواسطة FCA و ASIC و CySEC.</strong>
+                            <strong class="hidden" data-id="FCA">مرخّصة ومنظّمة من قبل سلطة السلوك المالي (FCA)</strong>
+                            <strong class="hidden" data-id="ASIC">منظمة بواسطة FCA و ASIC و CySEC.</strong>
+                            <strong class="" data-id="NBRB">مُنظَّمة عن طريق FCA و ASIC و CySEC و NBRB</strong>
+                        </div>
+                    </div>
+
+                    <div class="list-webinar _gray ab1 ab1_1 hidden">
+                        <div class="list-webinar__item">
+                            <i class="icn-check"></i>
+                            <strong>تطبيق واحد. أكثر من 6500 سوق.</strong>
+                        </div>
+                        <div class="list-webinar__item">
+                            <i class="icn-check"></i>
+                            <strong>Free Demo trading account</strong>
+                        </div>
+                        <div class="list-webinar__item">
+                            <i class="icn-check"></i>
+                            <strong>Online trading courses</strong>
+                        </div>
+                    </div>
+
+
+                    <div class="list-webinar _gray ab1 ab1_2 hidden">
+                        <div class="list-webinar__item">
+                            <i class="icn-check"></i>
+                            <strong>تطبيق واحد. أكثر من 6500 سوق.</strong>
+                        </div>
+                        <div class="list-webinar__item">
+                            <i class="icn-check"></i>
+                            <strong>Free Demo trading account</strong>
+                        </div>
+                        <div class="list-webinar__item">
+                            <i class="icn-check"></i>
+                            <strong>Online trading courses</strong>
+                        </div>
+                        <div class="list-webinar__item">
+                            <i class="icn-check"></i>
+                            <strong class="hidden" data-id="CYSEC">منظمة بواسطة FCA و ASIC و CySEC.</strong>
+                            <strong class="hidden" data-id="FCA">مرخّصة ومنظّمة من قبل سلطة السلوك المالي (FCA)</strong>
+                            <strong class="hidden" data-id="ASIC">منظمة بواسطة FCA و ASIC و CySEC.</strong>
+                            <strong class="" data-id="NBRB">مُنظَّمة عن طريق FCA و ASIC و CySEC و NBRB</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="registrationPromo__holder logos logos--reviews  hidden cp_ab15_1">
+                <p class="logos__desc">Ratings and reviews</p>
+                <div class="logos__overlay">
+                    <svg class="logos__icon">
+                        <use href="http://capital.com/img/trust-logos/sprite.svg?v3#trustpilot-logo"></use>
+                    </svg>
+                    <svg class="logos__icon">
+                        <use href="http://capital.com/img/trust-logos/sprite.svg?v3#trustpilot-rating-4"></use>
+                    </svg>
+                    <span>Reviews 2,872 • Great</span>
+                </div>
+            </div>
+
+            <div class="registrationPromo__holder logos logos--reviews hidden cp_ab15_2">
+                <p class="logos__desc">Ratings and reviews</p>
+                <div class="logos__overlay">
+                    <svg class="logos__icon">
+                        <use href="http://capital.com/img/trust-logos/sprite.svg?v3#ios-rating"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="registrationPromo__holder logos logos--reviews hidden cp_ab15_3">
+                <p class="logos__desc">Ratings and reviews</p>
+                <div class="logos__overlay logos__overlay--row">
+                    <div class="logos__icon--min">
+                        <svg class="logos__icon">
+                            <use href="http://capital.com/img/trust-logos/sprite.svg?v3#trust-min"></use>
+                        </svg>
+                        <span>4.1</span>
+                    </div>
+                    <div class="logos__icon--min">
+                        <svg class="logos__icon">
+                            <use href="http://capital.com/img/trust-logos/sprite.svg?v3#apple-min"></use>
+                        </svg>
+                        <span>4.7</span>
+                    </div>
+                    <div class="logos__icon--min">
+                        <img class="logos__icon" src="http://capital.com/img/trust-logos/gplay-min.png" alt="" srcset="/img/trust-logos/gplay-min.png, /img/trust-logos/gplay-min@2x.png 2x">
+                        <span>4.3</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        
+        <div class="signup-form">
+            <div class="form-container-small-header s-between">
+                <div class="h1">قم بالتسجيل</div>
+                <p class="hidden cc_ab_43_12_2"> <!-- 0 - 'hidden', 12 - '' -->
+                    هل لديك حساب؟
+                    <a href="#" class="l_btn_signup">تسجيل الدخول</a>
+                </p>
+                <button class="button-cleared small s_cancel cc_ab_43_0_1" >إلغاء</button><!-- 0 - '', 12 - 'hidden' -->
+            </div>
+            <div class="form-container-small-content cc_ab_43_2_0"><!-- 01 - '', 2 - '--inversion' -->
+                <div> 
+                    <div class="error-container s_error hidden" >
+                        <h6 class="errTitle"></h6>
+                        <p class="errDescr"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-outline control-outline--input">
+                            <label class="label-form">عنوان البريد الكتروني</label>
+                            <div class="control-form" id="s_overlay-email"> <!-- error -->
+                                <span class="clear-field"></span>
+                                <input type="email" class="field-form" placeholder="" autocorrect="off" autocapitalize="off" autocomplete="off" maxlength="255" name="ff0"> <!--على سبيل المثال john.smith@gmail.com-->
+                                <div class="control-hint-wrapper">
+                                    <div class="control-hint">
+                                        <span class="control-hint-arrow"></span>
+                                        <p>يرجى إدخال بريد الكتروني صالح</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <div class="control-outline control-outline--input">
+                            <label class="label-form">كلمة المرور</label>
+                            <div class="control-form" id="s_overlay-pass">
+                                <span class="clear-field"></span>
+                                <input type="password" name="ff1" class="field-form" placeholder=""  maxlength="100" autocorrect="off" autocapitalize="off" autocomplete="off"><!--كلمة المرور-->
+                                <em class="sprite4 sprite4-pass-show  pass-ico pass-ico--reg s2_eye"></em>
+                            </div>
+                            <ul class="password-list password-list--new" style="z-index: 1000">
+                                <li class="tale"></li>
+                                <li class="s2_ok0">8 رموز كحد ادنى</li>
+                                <li class="s2_ok1">رقم واحد على الأقل</li>
+                                <li class="s2_ok2">حرف صغير واحد على الأقل</li>
+                                <li class="s2_ok3">حرف كبير واحد على الأقل</li>
+                                <li class="s2_ok4">رمز واحد على الأقل</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button type="submit" class="button-main s2_btn" >اكمل</button>
+                </div>
+                
+                <!-- <br> -->
+                
+                    <div class="socialsLogin ">
+        <div class="linedTitle"><span>أو</span></div>
+        <div class="inline ">
+            <a href="#" class="socialsLogin__btn socialsLogin__btn--google sn-login-gg">
+                <div class="socialsLogin__ico">
+                    <svg width="16" height="16"><use xlink:href="http://capital.com/img/icons/social/google-sm.svg?v1#google"></use></svg>
+                </div>
+                تابع مع Google
+            </a>
+            <a href="#" class="socialsLogin__btn socialsLogin__btn--fb sn-login-fb" >
+                <div class="socialsLogin__ico">
+                   <svg width="16" height="16"><use xlink:href="http://capital.com/img/icons/social/fb-round.svg?v1#facebook"></use></svg>
+                </div>
+                تابع مع Facebook
+            </a>
+            <a href="#" class="socialsLogin__btn socialsLogin__btn--apple sn-login-ap">
+                <div class="socialsLogin__ico">
+                    <svg width="16" height="16"><use xlink:href="http://capital.com/img/icons/social/apple-sm.svg?v1#apple"></use></svg>
+                </div>
+                تابع مع Apple
+            </a>
+        </div>
+    </div>
+
+            </div>
+
+            <div class="form-container-small-footer">
+                <p class="reg-desc">
+                    عند إنشاء حساب ، فأنا أقبل <a href='http://capital.com/privacy-policy' target='_blank'> بسياسة الخصوصية </a>
+                </p>
+                <p class="cc_ab_43_12_3"><!-- 0 - '', 12 - 'hidden' -->
+                    هل لديك حساب؟
+                    <a href="#" class="l_btn_signup">تسجيل الدخول</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- original v1 -->
+<div class="overlay hidden enc enc_v1" id="s_overlay_exit">
+    <div class="form-container-big modal">
+        <div class="form-container-small__img form-container-small__img-2">
+            <img src="http://capital.com/img/icons/ico-popup-profile-2.svg?v2" alt="">
+        </div>
+        <div class="form-container-small__content">
+            <div class="h2">نحن متحمسون لرؤيتك هنا!</div>
+            <p>Complete your profile to start trading</p>
+        </div>
+        <div class="form-container-small__buttons">
+            <a href="http://capital.com/trading/signup" class="button-main rounded-lg  ln-auto" >أكمل</a>
+            <a href="http://capital.com/trading/platform/" class="button-outlined rounded">انتقل إلى المنصة</a>
+        </div>
+    </div>
+</div>     
+
+
+{% load wagtailcore_tags wagtailimages_tags %}
+{% for block in self.redirection %}
+    {% include_block block %}
+{% endfor %}
+
+<script>
+    var country_code_server = "{{ country_code }}";
+</script>
+
+
+{% comment %} <script src="http://capital.com/js/p_signup.js?v=2.0.44"></script> {% endcomment %}
+
+
+{% comment %} <script>
+        signupObj('wsignup' );signupShow();
+    devicePr  = "investing";
+    var loc = window.location.href;
+
+    $('.field-form').on('keyup blur', function () {
+        wrap = $(this).closest('.control-form');
+        if ($(this).val().length) {
+            $(this).prev('.clear-field').show();
+            $(this).next('.pass-ico--reg').show();
+        } else {
+            $(this).prev('.clear-field').hide();
+            $(this).next('.pass-ico--reg').hide();
+            $(wrap).next('.password-list--new').hide();
+        }
+
+        if ($(wrap).hasClass('error')) {
+            $(wrap).next('.password-list--new').show();
+            setTimeout(function () {
+                $(wrap).next('.password-list--new').hide();
+            }, 3200);
+        }
+    });
+
+    $('.clear-field').on('click', function() {
+        $(this).hide();
+        $(this).next('.field-form').val('').keyup();
+        $(this).closest('.control-outline--input').removeClass('active');
+    });
+
+
+    $('.field-form.filter').on('click blur', function(e) {
+        var wrap = $(this).closest('.control-outline--select');
+
+        if (e.type == 'click') {
+            $('.label-form', wrap).addClass('active');
+        } else if (e.type == 'blur') {
+            $('.label-form', wrap).removeClass('active');
+        }
+    });
+
+
+    $('.registration-main-slider').slick({
+        dots: true,
+        infinite: true,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 5000,
+                rtl: true,
+                autoplay: true
+    });
+
+    var langPP = $('.js-langspp');
+    langPP.on('click', function (e) {
+        if ($(e.target).hasClass('js-langspp')) {
+            langPP.addClass('hidden');
+            $('body').removeClass('disabled-scroll-body');
+        }
+    });
+    $('.close-button', langPP).on('click', function () {
+        langPP.addClass('hidden');
+        $('body').removeClass('disabled-scroll-body');
+    });
+    $('.langbtn').on('click', function () {
+        langPP.removeClass('hidden');
+        $('body').addClass('disabled-scroll-body');
+    });
+    function initRW(){
+        APICall("country.detect").then(function(d){
+            if (d && d.countryInfo && d.countryInfo.licenses && d.countryInfo.licenses.length ){
+				 changeRW(d.countryInfo.licenses[0]);
+			}else{
+				changeRW('CYSEC');
+			}
+        }).catch(function(e){
+            setTimeout(initRW, 1000);
+        });
+    }
+    initRW();
+			
+	function changeRW(license){
+		$('.rw_change_txt').addClass('hidden');
+		$('.rw_change_txt[data-id="' + license + '"]').removeClass('hidden');
+	}		
+			
+</script> {% endcomment %}
+
+    
+
+    {% comment %} <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbqReInit = function(){
+            fbq('init', '226746234435298', {'em': sha256(uEm)});
+            fbq('init', '890935508482198', {'em': sha256(uEm)});
+        };
+        if(uEm){
+            fbqReInit();
+        }else{
+            fbq('init', '226746234435298');
+            fbq('init', '890935508482198');
+        }
+        fbq('track', 'PageView');
+    </script> {% endcomment %}
+
+
+
+
+
+    <div class="blg-wd shiftedBottom" id="blinger-btn">
+        <div class="blg-btn-w"><a class="blg-btn"><div class="blg-rs"><div class="blg-r"></div><div class="blg-r"></div><div class="blg-r"></div></div></a></div><div class="blg-c-w"><div class="blg-cs">
+                <div class="blg-c-wp"><a href="https://capital.zendesk.com/hc/ar" class="blg-c zd "  target="_blank"><span class="blg-tp"><span class="blg-tp-inner">Livechat</span></span></a></div>
+                <div class="blg-c-wp"><a href="viber://pa?chatURI=capitalcomsupport" class="blg-c vb ln-auto"><span class="blg-tp"><span class="blg-tp-inner">Viber</span></span></a></div>
+                <div class="blg-c-wp"><a href="https://api.whatsapp.com/send?phone=447897000276" class="blg-c wp"><span class="blg-tp"><span class="blg-tp-inner">Whatsapp</span></span></a></div>
+                <div class="blg-c-wp"><a href="http://t.me/Capital_com_bot" class="blg-c tg"><span class="blg-tp"><span class="blg-tp-inner">Telegram</span></span></a></div>
+                <div class="blg-c-wp"><a href="https://m.me/368730813475599" class="blg-c fb"><span class="blg-tp"><span class="blg-tp-inner">Facebook</span></span></a></div>
+            </div></div>
+    </div>
+{% comment %} <script>
+    $('.event_45_click').on('click', function(){
+        try { dataLayer.push({'event': 'siteEvent', 'eventCategory': 'blinger', 'eventAction': 'blinger_btn_click'}); } catch (e) {};
+        var day = new Date();
+        day.setTime(day.getTime() + 86400000); //24h
+        cookieSet("__test_45_b", "1", day.toGMTString());
+    });
+    $('#blinger-btn, #blinger-btn_2, #blinger-btn_3, #blinger-btn_4').on('click', function(){
+
+                $('.blg-c-w').toggleClass('blinger-show');
+        $('.blg-btn').toggleClass('blinger-opened');
+        $('.blg-rs').toggleClass("blinger-hide");
+        $('.fixed-contact__icon').toggleClass('fixed-contact__icon--active');
+            });
+</script> {% endcomment %}
+
+
+<script src='https://www.google.com/recaptcha/api.js?render=6LeUuLoZAAAAADHg_o02k1zHLlIwCKwmEpnOxnwb'></script>
+<style>.grecaptcha-badge {display: none;}.cplzd {min-height: 150px;}</style>
+{% comment %} <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId            : snAppIdFb,
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v8.0'
+        });
+    };
+</script> {% endcomment %}
+{% comment %} <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> {% endcomment %}
+{% comment %} <script src="https://apis.google.com/js/platform.js" async defer></script> {% endcomment %}
+{% comment %} <script src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js" ></script> {% endcomment %}
+{% comment %} <script>
+    AppleID.auth.init({
+        clientId: "trading.capital.com",
+        scope: 'email',
+        redirectURI: window.location.origin + '/redirect-apple-signin',
+        state: 'capital',
+        nonce: (new Date().getTime()).toString(),
+        usePopup: true,
+    });
+
+    if(logged) {
+        sendGAEvent("PageView", "logged_user");
+    }else if(document.cookie.match(new RegExp("__cp_uid=([0-9]+)"))){
+        sendGAEvent("PageView", "prev_logged_user");
+    }
+</script> {% endcomment %}
+<script src="{% static 'script/redirect_script.js'%}"></script>
+
+</body>
+<!-- tm: 0.018392086029053  -->
+<!-- Mirrored from capital.com/ar/testregform1 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Mar 2022 11:00:13 GMT -->
+</html>

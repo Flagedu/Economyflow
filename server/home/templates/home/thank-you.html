@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Thank you</title>
+    {% include "home/tagmanager_head.html" %}
+  </head>
+  <body>
+
+    <script>
+      gtag('event', 'conversion', {'send_to': 'AW-11019154453/78Q7CJ2gnYEYEJXoq4Yp'});
+      function redirection(){
+        const red_url = "{{ request.GET.red_url }}";
+        location.href = red_url;
+      }
+
+      setTimeout(function(){ 
+        redirection();
+       }, 1000);
+    </script>
+  </body>
+</html>

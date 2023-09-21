@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1.2fr 4fr;
+}
+
+.form-wrapper{
+    padding: 30px;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+form{
+    margin-top: 50px;
+}
+
+.field{
+    margin-bottom: 20px !important;
+}
+
+.field input{
+    text-align: right;
+}
+
+.top-right-head{
+}
+
+.right-container{
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+}
+
+.right-logo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.trade-360-subtitle{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.trade-360-title{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 80px;
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.three-column-block{
+    height: 400px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+.three-column-block > div{
+    margin: 30px;
+}
+
+.single-column{
+    width: 300px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-body{
+    width: 100%;
+    min-height: 150px;
+
+}
+
+.red-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: red;
+    width: 300px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.red-subtitle{
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+}

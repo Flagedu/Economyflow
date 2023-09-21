@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+{% include "home/tagmanager_head.html" %}
+{% block extra_css %}
+    <style>
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .demo-account-btn{
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            font-size: 30px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 30px;
+        }
+        .demo-account-btn:hover{
+            color: white;
+        }
+
+        .investment-plan-btn{
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: navy;
+            font-size: 30px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .investment-plan-btn:hover{
+            color: white;
+        }
+        
+    </style>
+{% endblock extra_css %}
+
+{% block content %}
+    <div class="container">
+        <div class="demo-account-btn-container">
+            <a class="demo-account-btn" href="{{ btn_url }}">
+                سجل حساب تجريبى مجاني
+            </a>
+        </div>
+        <div class="investment-plan">
+            <a class="investment-plan-btn" href="{{ self.investment_plan_link }}">
+                اطلب خطة استثمار متكاملة  ٪١٠٠ مجاناً !
+            </a>
+        </div>
+    </div>
+{% endblock content %}
+
+
+{% block extra_js %}
+{% endblock %}
